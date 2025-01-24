@@ -17,3 +17,116 @@ a{
     text-decoration: none;
 }
 
+
+/*davit-section*/
+.first-container{ /*ჰეადერის შემდეკი სექცია კონტეინერი*/
+    width: auto;
+    height: 4452px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.modular-solutions{ /*სექცია კონტეინერის პირველი შვილი*/
+    width: 1080px;
+    height: 504px;
+}
+.container{
+    display: flex;
+    gap: 5px;
+}
+.modular-solutions h3{ /*სათაური პირველი შვილის */
+    width: 150px;
+    height: 28px;
+    font-weight: 500;
+    font-size: 16.73px;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+    color: #635bff;
+    margin-left: 16px;
+}
+.to-manage-content{
+    width: 540px;
+    height: 470px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.to-manage-content h2{ /*კონტენტის სათაურის გასასტილად*/
+    width: 460px;
+    height: 272px;
+    font-weight: 700;
+    font-size: 51.63px;
+    letter-spacing: -1.12px;
+    color: #0a2540;
+    margin-left: 16px;
+}
+.to-manage-content p{
+    width: 522px;
+    height: 140px;
+    font-weight: 700;
+    font-size: 17.58px;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+    color: #425466;
+    margin-left: 16px;
+}
+.to-manage-img{
+    width: 540px;
+    height: 470px;
+    border: 2px solid red;
+    display: flex;
+}
+.left{
+    width: 100px;
+    height: 467px;
+    border: 2px solid red;
+}
+.left div{
+    width: 100px;
+    height: 232px;
+    border: 2px solid red;
+}
+.img-wraper{
+    width: 351px;
+    height: 467px;
+    border: 2px solid red;
+}
+.right{
+    width: 100px;
+    height: 467px;
+    border: 2px solid red;
+    display: flex;
+    align-items: center;
+}
+.right div{
+    width: 100px;
+    height: 300px;
+    border: 2px solid red
+}
+
+
+
+
+
+
+.payments{
+    width: 1080px;
+    height: 900px;
+    border: 2px solid red;
+}
+.billing{
+    width: 1080px;
+    height: 900px;
+    border: 2px solid red;
+}
+.connect{
+    width: 1080px;
+    height: 900px;
+    border: 2px solid red;
+}
+.issuing{
+    width: 1080px;
+    height: 449px;
+    border: 2px solid red;
+}
