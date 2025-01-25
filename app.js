@@ -1,6 +1,6 @@
 const openBtn = document.querySelector('#burger-button');
 const btnIcon = document.querySelector('#burger-button-icon');
-const headerContainer = document.querySelector('.header-container');
+const headerContainer = document.querySelector('header');
 const headerIcon = document.querySelector('.header-icon');
 const navBar = document.querySelector('nav');
 const contactBtn = document.querySelector('.contact');
