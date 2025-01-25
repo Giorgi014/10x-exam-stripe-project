@@ -22,87 +22,150 @@ a{
 .first-container{ /*ჰეადერის შემდეკი სექცია კონტეინერი*/
     width: auto;
     height: 4452px;
-    display: flex;
+    display: flex; /*სიმაღლეზე განაწილებული თანაბრად სიგანეზე ცენტრში*/
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
 }
 .modular-solutions{ /*სექცია კონტეინერის პირველი შვილი*/
-    width: 1080px;
+    width: 1080px;  /*სიგრძე სიგანე*/
     height: 504px;
 }
 .container{
-    display: flex;
+    display: flex; /*გვერდი გვერდ დაშორებით*/
     gap: 5px;
 }
 .modular-solutions h3{ /*სათაური პირველი შვილის */
-    width: 150px;
+    width: 150px; /*სიგრძე სიგანე*/
     height: 28px;
-    font-weight: 500;
+    font-weight: 500; /*წრწერის ფონი სტილი და ზომა*/
     font-size: 16.73px;
     line-height: 28px;
     letter-spacing: 0.2px;
-    color: #635bff;
+    color: #635bff; /*ფერი და დაშორება გარედან*/
     margin-left: 16px;
 }
-.to-manage-content{
-    width: 540px;
+.to-manage-content{ /*სათაური და პარაგრაფის მსობელი*/
+    width: 540px;  /*სიგრძე სიგანე*/
     height: 470px;
-    display: flex;
+    display: flex; /**/
     flex-direction: column;
     gap: 16px;
 }
 .to-manage-content h2{ /*კონტენტის სათაურის გასასტილად*/
-    width: 460px;
+    width: 460px;  /*სიგრძე სიგანე*/
     height: 272px;
-    font-weight: 700;
+    font-weight: 700; /*წრწერის ფონი სტილი და ზომა*/
     font-size: 51.63px;
     letter-spacing: -1.12px;
     color: #0a2540;
     margin-left: 16px;
 }
-.to-manage-content p{
-    width: 522px;
+.to-manage-content p{ /*კონკრეტულად პარაგრაფს*/
+    width: 522px;  /*სიგრძე სიგანე*/
     height: 140px;
-    font-weight: 700;
+    font-weight: 700; /*წრწერის ფონი სტილი და ზომა*/
     font-size: 17.58px;
     line-height: 28px;
     letter-spacing: 0.2px;
-    color: #425466;
+    color: #425466; /*ფერი და დაშორება გარედან*/
     margin-left: 16px;
 }
 .to-manage-img{
-    width: 540px;
+    width: 540px;  /*სიგრძე სიგანე*/
     height: 470px;
-    border: 2px solid red;
     display: flex;
 }
-.left{
-    width: 100px;
+.left{ /*მარცხენა იკონების მშობელი*/
+    width: 100px;  /*სიგრძე სიგანე*/
     height: 467px;
-    border: 2px solid red;
 }
-.left div{
-    width: 100px;
+.icon1{ /**/
+    width: 100px;  /*სიგრძე სიგანე*/
     height: 232px;
-    border: 2px solid red;
+    display: flex; /**/
+    justify-content: center;
+    align-items:flex-end;
 }
-.img-wraper{
-    width: 351px;
-    height: 467px;
-    border: 2px solid red;
+
+.wraper{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    height: 70vh;
 }
+.kavholm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    border-radius: 8px;
+    opacity: 0;
+    transform: translateY(100%);
+    animation: moveUp 1.5s ease-out forwards;
+}
+.rocket-rider{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    border-radius: 8px;
+    opacity: 0;
+    transform: translateY(100%);
+    animation: moveUp 1.5s ease-out forwards; 
+}
+.powdur{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    border-radius: 8px;
+    opacity: 0;
+    transform: translateY(100%);
+    animation: moveUp 1.5s ease-out forwards;
+}
+
+@keyframes moveUp {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    50%{
+        opacity: o.5;
+        transform: translateY(30%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.card:nth-child(1){
+    animation-delay: 0.2s;
+}
+.card:nth-child(2){
+    animation-delay: 0.4s;
+}
+.card:nth-child(3){
+    animation-delay: 0.6s;
+}
+
+
 .right{
-    width: 100px;
+    width: 100px;  /*სიგრძე სიგანე*/
     height: 467px;
-    border: 2px solid red;
     display: flex;
     align-items: center;
 }
-.right div{
-    width: 100px;
+.icon2{
+    width: 100px;  /*სიგრძე სიგანე*/
     height: 300px;
-    border: 2px solid red
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 
@@ -111,22 +174,22 @@ a{
 
 
 .payments{
-    width: 1080px;
+    width: 1080px;  /*სიგრძე სიგანე*/
     height: 900px;
     border: 2px solid red;
 }
 .billing{
-    width: 1080px;
+    width: 1080px;  /*სიგრძე სიგანე*/
     height: 900px;
     border: 2px solid red;
 }
 .connect{
-    width: 1080px;
+    width: 1080px;  /*სიგრძე სიგანე*/
     height: 900px;
     border: 2px solid red;
 }
 .issuing{
-    width: 1080px;
+    width: 1080px;  /*სიგრძე სიგანე*/
     height: 449px;
     border: 2px solid red;
 }

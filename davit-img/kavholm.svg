@@ -1,20 +1,20 @@
 <svg width="507" height="373" viewBox="0 0 507 373" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g filter="url(#filter0_dd_4003_509)">
+<g filter="url(#filter0_dd_4003_508)">
 <rect x="80" y="30" width="347" height="213" rx="14" fill="white" fill-opacity="0.01" shape-rendering="crispEdges"/>
 </g>
-<mask id="mask0_4003_509" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="79" y="29" width="349" height="216">
+<mask id="mask0_4003_508" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="79" y="29" width="349" height="216">
 <path d="M413.344 29H93.6562C85.5618 29 79 35.5618 79 43.6562V229.606C79 237.7 85.5618 244.262 93.6562 244.262H413.344C421.438 244.262 428 237.7 428 229.606V43.6562C428 35.5618 421.438 29 413.344 29Z" fill="white"/>
 </mask>
-<g mask="url(#mask0_4003_509)">
+<g mask="url(#mask0_4003_508)">
 <path d="M413.826 29H93.1737C85.3458 29 79 35.3458 79 43.1737V230.088C79 237.916 85.3458 244.262 93.1737 244.262H413.826C421.654 244.262 428 237.916 428 230.088V43.1737C428 35.3458 421.654 29 413.826 29Z" fill="black"/>
-<mask id="mask1_4003_509" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="79" y="29" width="349" height="216">
+<mask id="mask1_4003_508" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="79" y="29" width="349" height="216">
 <path d="M428 29H79V244.262H428V29Z" fill="white"/>
 </mask>
-<g mask="url(#mask1_4003_509)">
-<mask id="mask2_4003_509" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="342" y="186" width="72" height="44">
+<g mask="url(#mask1_4003_508)">
+<mask id="mask2_4003_508" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="342" y="186" width="72" height="44">
 <path d="M413.914 186H342.808V229.944H413.914V186Z" fill="white"/>
 </mask>
-<g mask="url(#mask2_4003_509)">
+<g mask="url(#mask2_4003_508)">
 <path d="M387.979 190.697H368.746V225.247H387.979V190.697Z" fill="#F16122"/>
 <path d="M369.971 207.979C369.971 200.969 373.246 194.725 378.361 190.697C374.626 187.756 369.901 186 364.786 186C352.647 186 342.808 195.84 342.808 207.979C342.808 220.118 352.647 229.958 364.786 229.958C369.915 229.958 374.626 228.201 378.361 225.261C373.246 221.233 369.971 214.989 369.971 207.979Z" fill="#ED1C24"/>
 <path d="M411.807 221.596V220.886H412.086V220.746H411.361V220.886H411.64V221.596H411.793H411.807ZM413.215 221.596V220.746H412.992L412.742 221.331L412.49 220.746H412.267V221.596H412.421V220.955L412.658 221.512H412.825L413.062 220.955V221.596H413.215Z" fill="#F99F1C"/>
@@ -36,23 +36,23 @@
 </g>
 </g>
 <defs>
-<filter id="filter0_dd_4003_509" x="0" y="0" width="507" height="373" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter0_dd_4003_508" x="0" y="0" width="507" height="373" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-<feMorphology radius="30" operator="erode" in="SourceAlpha" result="effect1_dropShadow_4003_509"/>
+<feMorphology radius="30" operator="erode" in="SourceAlpha" result="effect1_dropShadow_4003_508"/>
 <feOffset dy="30"/>
 <feGaussianBlur stdDeviation="30"/>
 <feComposite in2="hardAlpha" operator="out"/>
 <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0"/>
-<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_4003_509"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_4003_508"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-<feMorphology radius="20" operator="erode" in="SourceAlpha" result="effect2_dropShadow_4003_509"/>
+<feMorphology radius="20" operator="erode" in="SourceAlpha" result="effect2_dropShadow_4003_508"/>
 <feOffset dy="50"/>
 <feGaussianBlur stdDeviation="50"/>
 <feComposite in2="hardAlpha" operator="out"/>
 <feColorMatrix type="matrix" values="0 0 0 0 0.196078 0 0 0 0 0.196078 0 0 0 0 0.364706 0 0 0 0.25 0"/>
-<feBlend mode="normal" in2="effect1_dropShadow_4003_509" result="effect2_dropShadow_4003_509"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_4003_509" result="shape"/>
+<feBlend mode="normal" in2="effect1_dropShadow_4003_508" result="effect2_dropShadow_4003_508"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_4003_508" result="shape"/>
 </filter>
 </defs>
 </svg>
