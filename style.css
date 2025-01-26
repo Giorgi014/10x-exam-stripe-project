@@ -93,43 +93,42 @@ a{
     align-items:flex-end;
 }
 
-.wraper{
-    display: flex;
+.wraper{ /*ბარათების ვრაპერი*/
+    display: flex; /*სიმაღლეზე ერთმანეთის ქვემოთ სიგრძეზე ცენტრში */
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     position: relative;
     height: 100vh;
 }
-.kavholm{
-    display: flex;
+.kavholm{ /*პირველი ბარათი*/
+    display: flex; /*გაცენტვრა*/
     justify-content: center;
     align-items: center;
-    font-size: 18px;
+    font-size: 18px; /*სიგრძე სიგანე*/
     border-radius: 8px;
     opacity: 0;
-    transform: translateY(100%);
+    transform: translateY(100%); /**/
     animation: moveUp 1.5s ease-out forwards;
 }
 .rocket-rider{
-    color: white;
-    display: flex;
+    display: flex; /*გაცენტვრა*/
     justify-content: center;
     align-items: center;
-    font-size: 18px;
+    font-size: 18px; /*სიგრძე სიგანე*/
     border-radius: 8px;
     opacity: 0;
-    transform: translateY(100%);
+    transform: translateY(100%); /**/
     animation: moveUp 1.5s ease-out forwards; 
 }
 .powdur{
-    display: flex;
+    display: flex;  /*გაცენტვრა*/
     justify-content: center;
     align-items: center;
-    font-size: 18px;
+    font-size: 18px; /*სიგრძე სიგანე*/
     border-radius: 8px;
     opacity: 0;
-    transform: translateY(100%);
+    transform: translateY(100%); /**/
     animation: moveUp 1.5s ease-out forwards;
 }
 
@@ -147,27 +146,27 @@ a{
         transform: translateY(0);
     }
 }
-.card:nth-child(1){
-    animation-delay: 0.2s;
+.card:nth-child(1){ /*პირველი ბარათი*/
+    animation-delay: 0.2s; /*ანიმაცის სისწრაფე*/
 }
-.card:nth-child(2){
-    animation-delay: 0.4s;
+.card:nth-child(2){ /*მეორე ბარათი*/
+    animation-delay: 0.4s; /*ანიმაცის სისწრაფე*/
 }
-.card:nth-child(3){
-    animation-delay: 0.6s;
+.card:nth-child(3){ /*მესამე ბარათი*/
+    animation-delay: 0.6s; /*ანიმაცის სისწრაფე*/
 }
 
 
-.right{
+.right{ /*მარჯვენა იკონი*/
     width: 100px;  /*სიგრძე სიგანე*/
     height: 467px;
-    display: flex;
+    display: flex; /*სიგრძეზე ცენტრში*/
     align-items: center;
 }
-.icon2{
+.icon2{ /*ორი იკონი ერთ კონტეინერში*/
     width: 100px;  /*სიგრძე სიგანე*/
     height: 300px;
-    display: flex;
+    display: flex; /*ერთმანეთის ქვემოთ კუთხებისკენ გადაწეული სიგრძეზე ცენტრში*/
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
@@ -177,23 +176,20 @@ a{
 
 
 
-/*მეორე არტიკლი*/
+/*მეორე არტიკლი payments*/
 .payments{
     width: 1080px;  /*სიგრძე სიგანე*/
     height: 900px;
-    border: 2px solid red;
-    display: flex;
+    display: flex; /*სიგრძეზე ცენტრში*/
     align-items: center;
 }
 .Container{
     width: 540px;
     height: 477px;
-    border: 2px solid red;
 }
 .chir-pay{
     width: 540px;
     height: 900px;
-    border: 2px solid red;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -201,7 +197,110 @@ a{
 .pay{
     width: 335px;
     height: 617px;
-    border: 2px solid red;
+}
+.logo{
+    width: 140px; /*გავზარდე რათა დატეულიყო სახელიც და ლოგოც*/
+    height: 28px;
+    margin: 0 0 16px 16px;
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 17.16px;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+    color: #2e3a55;
+}
+.logo svg{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+.Container h2{
+    width: 460px;
+    height: 96px;
+    margin: 0 0 24px 16px;
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 35.77px;
+    line-height: 48px;
+    letter-spacing: -0.2px;
+    color: #0a2540;
+}
+.paragraf{
+    width: 460px;
+    height: 84px;
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 16.59px;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+    color: #425466;
+    margin: 0 0 24px 16px;
+}
+.swp{
+    width: 183.7px;
+    height: 33px;
+    border-radius: 16.5px;
+    background-color: #635bff;
+    border: none;
+    margin: 0 0 56px 16px;
+    /*წარწერას*/
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 13.48px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #fff;
+}
+.Container h3{
+    width: 140px; /*მომიწია გამეწერა რადგან ორი h3 მაქვს და ამირია*/
+    height: 24px;
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 14.18px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #0a2540;
+    margin: 0 0 8px 16px;
+}
+.tax{
+    width: 508px;
+    height: 24px;
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 13.71px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    margin: 0 0 4px 16px;
+}
+.tax a{
+    color: #635bff;
+}
+.rader{
+    width: 508px;
+    height: 24px;
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 13.71px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    margin: 0 0 4px 16px;
+    color: #425466; 
+}
+.rader a{
+    color: #635bff; 
+}
+.terminal{
+    width: 508px;
+    height: 24px;
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 13.71px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    margin: 0 0 4px 16px;
+}
+.terminal a{
+    color: #635bff; 
 }
 
 
