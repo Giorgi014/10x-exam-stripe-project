@@ -149,3 +149,23 @@ a{
 .seventh-container p, h4{
     padding-bottom: 16px;
 }
+
+/* Footer */
+
+.footer {
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .column {
+    width: 248px;
+}
+
+.footer .unitedstate {
+    height: 496px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
