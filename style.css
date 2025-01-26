@@ -20,13 +20,16 @@ a{
 
 /*davit-section*/
 .first-container{ /*ჰეადერის შემდეკი სექცია კონტეინერი*/
-    width: auto;
+    /* background-color: ; */
+    width: 1024px;
+    margin: 0 auto;
     height: 4452px;
     display: flex; /*სიმაღლეზე განაწილებული თანაბრად სიგანეზე ცენტრში*/
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
 }
+/*პირველი არტიკლი*/
 .modular-solutions{ /*სექცია კონტეინერის პირველი შვილი*/
     width: 1080px;  /*სიგრძე სიგანე*/
     height: 504px;
@@ -34,6 +37,8 @@ a{
 .container{
     display: flex; /*გვერდი გვერდ დაშორებით*/
     gap: 5px;
+    width: 1075px;
+    height: 445px;
 }
 .modular-solutions h3{ /*სათაური პირველი შვილის */
     width: 150px; /*სიგრძე სიგანე*/
@@ -94,7 +99,7 @@ a{
     justify-content: flex-end;
     align-items: center;
     position: relative;
-    height: 70vh;
+    height: 100vh;
 }
 .kavholm{
     display: flex;
@@ -172,12 +177,40 @@ a{
 
 
 
-
+/*მეორე არტიკლი*/
 .payments{
     width: 1080px;  /*სიგრძე სიგანე*/
     height: 900px;
     border: 2px solid red;
+    display: flex;
+    align-items: center;
 }
+.Container{
+    width: 540px;
+    height: 477px;
+    border: 2px solid red;
+}
+.chir-pay{
+    width: 540px;
+    height: 900px;
+    border: 2px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pay{
+    width: 335px;
+    height: 617px;
+    border: 2px solid red;
+}
+
+
+
+
+
+
+
+
 .billing{
     width: 1080px;  /*სიგრძე სიგანე*/
     height: 900px;
