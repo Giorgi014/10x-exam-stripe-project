@@ -6,6 +6,7 @@
 
 /* ---- GLOBAL TAGS ---- */
 
+/* Sixth Cotainer */
 body{
     overflow-x: hidden;
 }
@@ -79,4 +80,72 @@ a{
     height: 508px;
     border-radius: 8px;
     box-shadow: 0px 0px 8px 2px rgba(167, 167, 167, 0.532)
+}
+
+
+/* Seventh Container */
+
+.seventh-container {
+    height: 590px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; background-color: rgb(246,249,252);
+}
+
+.seventh-container h3 {
+    padding: 0px 0px 16px 16px;
+    font-size: 22.13px;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+}
+
+.seventh-container .second {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seventh-container .ready {
+    width: 496px;
+}
+
+.seventh-container .mainready {
+    width: 1024px;
+    display: flex;
+    justify-content: center;
+}
+
+.seventh-container .second1 {
+    width: 248px;
+}
+
+.seventh-container .second p {
+    width: 200px;
+    font-size: 13.59px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+}
+
+.seventh-container .ready p {
+    width: 368px;
+    font-size: 13.59px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+}
+
+.seventh-container button {
+    border-radius: 16px;
+    border: none;
+    width: 111px;
+    height: 33px;
+    background-color: #635BFF;
+    color: #ffffff;
+}
+
+.seventh-container p, h4{
+    padding-bottom: 16px;
 }
