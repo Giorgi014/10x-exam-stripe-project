@@ -17,3 +17,66 @@ a{
     text-decoration: none;
 }
 
+.sixth-container {
+    margin: 0 auto;
+    width: 1024px;
+}
+
+.sixth-container .launch3 {
+    padding: 0px 0px 24px 16px;
+    color: #635BFF; 
+    font-size: 16.88px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+}
+
+.sixth-container .card h3 {
+    padding: 0px 0px 16px 16px;
+    color: #635BFF; 
+    font-size: 16.88px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+}
+
+.sixth-container h2 {
+    padding: 0px 0px 24px 16px;
+    font-size: 35.77px;
+    font-weight: 500;
+    line-height: 48px;
+    letter-spacing: -0.2px;
+}
+
+.sixth-container .launchbar {
+    padding: 0px 0px 24px 16px;
+    width: 980px;
+    font-size: 16.45px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+}
+
+.sixth-container .cardbar {
+    padding: 0px 16px 16px 16px;
+    font-size: 16.45px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+}
+
+.sixth-container a {
+    margin: 0px 0px 0px 16px;
+}
+
+.sixth-container .card3 {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+} 
+
+.sixth-container .card3 .card {
+    width: 308px;
+    height: 508px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 8px 2px rgba(167, 167, 167, 0.532)
+}
