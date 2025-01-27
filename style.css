@@ -205,11 +205,10 @@ header .btns .sign-in:hover .right-row {
 /* ---- SECTION CONTAINER ---- */
 
 .section-container {
-  width: auto;
+  width: 1080px;
   display: flex;
-  justify-content: center;
-  margin-top: 48px;
-  gap: 148px;
+  margin: 48px auto;
+  gap: 253px;
 }
 .section-container .stripe {
   display: flex;
@@ -218,14 +217,15 @@ header .btns .sign-in:hover .right-row {
   padding-left: 16px;
 }
 .section-container .stripe .financial-infrastructure {
-  font-size: 83.35px;
-  line-height: 97.76px;
+  margin-top: 100px;
+  font-size: clamp(46.02px, 5vw, 83.35px);
+  line-height: clamp(53.94px, 5vw, 97.76px);
   color: rgba(58, 58, 58, 1);
   padding-bottom: 20px;
-  letter-spacing: -3.36px;
+  letter-spacing: clamp(-3.36px, 3vw, -2.08px);
 }
 .section-container .stripe .about-stripe {
-  font-size: 16.59;
+  font-size: 16.59px, 5vw, 17.86px;
   font-weight: 700;
   line-height: 28px;
   color: rgba(66, 84, 102, 1);
@@ -307,10 +307,11 @@ header .btns .sign-in:hover .right-row {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 48px;
 }
 .section-container .payments-and-transfers .phone{
   position: absolute;
-  top: 68px;
+  transform: translateY(8%);
   left: -120px;
   width: 254px;
   height: 520px;
@@ -387,6 +388,45 @@ header .btns .sign-in:hover .right-row {
 
 /* ---- RESPONSIVE ---- */
 
+@media screen and (max-width: 1024px){
+  .section-container {
+    width: 1024px;
+  }
+}
+@media screen and (max-width: 890px){
+  .section-container .stripe .email-and-contact {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    margin-left: -18px;
+  }
+  .section-container .stripe .email-and-contact .email-address input {
+    display: none;
+  }
+  .section-container .stripe .email-and-contact .email-address button {
+    position: relative;
+    left: 0;
+  }
+  .section-container .stripe .resp-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 111px;
+    height: 33px;
+    white-space: nowrap;
+  }
+  .section-container .stripe .resp-contact a{
+    text-decoration: none;
+    color: #0A2540;
+  }
+}
+@media screen and (max-width: 768px){
+  .section-container .stripe {
+    width: 368px;
+  }
+}
 @media screen and (max-width: 1023px) {
   header {
     display: none;
@@ -398,10 +438,12 @@ header .btns .sign-in:hover .right-row {
     align-items: start;
     justify-content: flex-start;
     position: fixed;
+    top: 0;
     left: 0;
     background-color: #ffffff;
     width: 100%;
     height: 100vh;
+    z-index: 98;
   }
 
   header .header-icon img {
@@ -477,10 +519,17 @@ header .btns .sign-in:hover .right-row {
     position: absolute;
     top: 15px;
     right: 20px;
+    z-index: 99;
   }
 
   .resp-btn #burger-button {
     display: block;
     color: #ffffff;
+  }
+}
+@media screen and (max-width: 414px){
+  .section-container .stripe .about-stripe{
+    width: max-content;
+    max-width: 400px;
   }
 }
