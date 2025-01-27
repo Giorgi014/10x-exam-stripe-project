@@ -533,6 +533,7 @@ header .btns .sign-in:hover .right-row {
     width: max-content;
     max-width: 400px;
   }
+}
 
 
 /*davit-section*/
@@ -965,10 +966,6 @@ header .btns .sign-in:hover .right-row {
     background-position: center;
     background-repeat: no-repeat;  
 }
-
-
-
-
 .issuing{
     width: 1080px;  /*სიგრძე სიგანე*/
     height: 449px;
