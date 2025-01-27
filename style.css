@@ -17,3 +17,443 @@ a{
     text-decoration: none;
 }
 
+
+/*davit-section*/
+.first-container{ /*ჰეადერის შემდეკი სექცია კონტეინერი*/
+    /* background-color: ; */
+    width: 1080px;
+    margin: 0 auto;
+    height: 4452px;
+    display: flex; /*სიმაღლეზე განაწილებული თანაბრად სიგანეზე ცენტრში*/
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.first-container a{
+    color: #635bff;
+}
+/*პირველი არტიკლი*/
+.modular-solutions{ /*სექცია კონტეინერის პირველი შვილი*/
+    width: 1080px;  /*სიგრძე სიგანე*/
+    height: 504px;
+}
+.container{
+    display: flex; /*გვერდი გვერდ დაშორებით*/
+    gap: 5px;
+    width: 1075px;
+    height: 445px;
+}
+.modular-solutions h3{ /*სათაური პირველი შვილის */
+    width: 150px; /*სიგრძე სიგანე*/
+    height: 28px;
+    font-weight: 500; /*წრწერის ფონი სტილი და ზომა*/
+    font-size: 16.73px;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+    color: #635bff; /*ფერი და დაშორება გარედან*/
+    margin-left: 16px;
+}
+.to-manage-content{ /*სათაური და პარაგრაფის მსობელი*/
+    width: 540px;  /*სიგრძე სიგანე*/
+    height: 470px;
+    display: flex; /**/
+    flex-direction: column;
+    gap: 16px;
+}
+.to-manage-content h2{ /*კონტენტის სათაურის გასასტილად*/
+    width: 460px;  /*სიგრძე სიგანე*/
+    height: 272px;
+    font-weight: 700; /*წრწერის ფონი სტილი და ზომა*/
+    font-size: 51.63px;
+    letter-spacing: -1.12px;
+    color: #0a2540;
+    margin-left: 16px;
+}
+.to-manage-content p{ /*კონკრეტულად პარაგრაფს*/
+    width: 522px;  /*სიგრძე სიგანე*/
+    height: 140px;
+    font-weight: 700; /*წრწერის ფონი სტილი და ზომა*/
+    font-size: 17.58px;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+    color: #425466; /*ფერი და დაშორება გარედან*/
+    margin-left: 16px;
+}
+.to-manage-img{
+    width: 540px;  /*სიგრძე სიგანე*/
+    height: 470px;
+    display: flex;
+}
+.left{ /*მარცხენა იკონების მშობელი*/
+    width: 100px;  /*სიგრძე სიგანე*/
+    height: 467px;
+}
+.icon1{ /*იკონების კონტეინერი*/
+    width: 100px;  /*სიგრძე სიგანე*/
+    height: 232px;
+    display: flex; /**/
+    justify-content: center;
+    align-items:flex-end;
+}
+.wraper{ /*ბარათების ვრაპერი*/
+    display: flex; /*სიმაღლეზე ერთმანეთის ქვემოთ სიგრძეზე ცენტრში */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100vh;
+}
+.kavholm{ /*პირველი ბარათი*/
+    display: flex; /*გაცენტვრა*/
+    justify-content: center;
+    align-items: center;
+    font-size: 18px; /*სიგრძე სიგანე*/
+    border-radius: 8px;
+    opacity: 0;
+    transform: translateY(100%); /**/
+    animation: moveUp 1.5s ease-out forwards;
+}
+.rocket-rider{
+    display: flex; /*გაცენტვრა*/
+    justify-content: center;
+    align-items: center;
+    font-size: 18px; /*სიგრძე სიგანე*/
+    border-radius: 8px;
+    opacity: 0;
+    transform: translateY(100%); /**/
+    animation: moveUp 1.5s ease-out forwards; 
+}
+.powdur{
+    display: flex;  /*გაცენტვრა*/
+    justify-content: center;
+    align-items: center;
+    font-size: 18px; /*სიგრძე სიგანე*/
+    border-radius: 8px;
+    opacity: 0;
+    transform: translateY(100%); /**/
+    animation: moveUp 1.5s ease-out forwards;
+}
+@keyframes moveUp {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    50%{
+        opacity: o.5;
+        transform: translateY(30%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.card:nth-child(1){ /*პირველი ბარათი*/
+    animation-delay: 0.2s; /*ანიმაცის სისწრაფე*/
+}
+.card:nth-child(2){ /*მეორე ბარათი*/
+    animation-delay: 0.4s; /*ანიმაცის სისწრაფე*/
+}
+.card:nth-child(3){ /*მესამე ბარათი*/
+    animation-delay: 0.6s; /*ანიმაცის სისწრაფე*/
+}
+.right{ /*მარჯვენა იკონი*/
+    width: 100px;  /*სიგრძე სიგანე*/
+    height: 467px;
+    display: flex; /*სიგრძეზე ცენტრში*/
+    align-items: center;
+}
+.icon2{ /*ორი იკონი ერთ კონტეინერში*/
+    width: 100px;  /*სიგრძე სიგანე*/
+    height: 300px;
+    display: flex; /*ერთმანეთის ქვემოთ კუთხებისკენ გადაწეული სიგრძეზე ცენტრში*/
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+/*მეორე არტიკლი payments*/
+.payments{ /*არტიკლის სრულად სამართავად*/
+    width: 1080px;  /*სიგრძე სიგანე*/
+    height: 900px;
+    display: flex; /*სიგრძეზე ცენტრში*/
+    align-items: center;
+}
+.Container{ /*კონტენტის კონტეინერი */
+    width: 540px; /*სიგრძე სიგანე*/
+    height: 477px;
+}
+.Container h2{ /*ამ არტიკლის მთავარი სათაური*/
+    width: 460px; /*სიგრძე სიგანე*/
+    height: 96px;
+    margin: 0 0 24px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
+    font-weight: 700; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
+    font-size: 35.77px;
+    line-height: 48px;
+    letter-spacing: -0.2px;
+    color: #0a2540;
+}
+.logo{ /*მესამე დონის სათაური ლოგოსთან ერთად*/
+    width: 140px; /*გავზარდე რათა დატეულიყო სახელიც და ლოგოც*/
+    height: 28px;
+    margin: 0 0 16px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
+    font-weight: 500; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
+    font-size: 17.16px;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+    color: #2e3a55;
+}
+.logo svg{ /*ლოგო სვგ ფორმატში*/
+    width: 20px; /*სიგრძე სიგანე მოშორება მარჯვნიდან*/
+    height: 20px;
+    margin-right: 10px;
+}
+.paragraf{ /*მოკლე შინარსის სტილისთვის*/
+    width: 460px; /*სიგრძე სიგანე*/
+    height: 84px;
+    font-weight: 700; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
+    font-size: 16.59px;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+    color: #425466;
+    margin: 0 0 24px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
+}
+/*აერთიანებს paiments billings*/
+.primary{ /*ღილაკი*/
+    width: 183.7px; /*სიგრძე სიგანე*/
+    height: 33px;
+    border-radius: 16.5px;
+    background-color: #635bff;
+    border: none;
+    margin: 0 0 56px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
+    /*წარწერას*/
+    font-weight: 500; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
+    font-size: 13.48px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #fff;
+}
+.primary svg{
+
+}
+.Sa{ /*პატარა სათაური*/
+    width: 140px; /*სიგრძე სიგანე*/ 
+    height: 24px;
+    font-weight: 700; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
+    font-size: 14.18px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #0a2540;
+    margin: 0 0 8px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
+}
+.tax{ /*პარაგრაფი*/
+    width: 508px; /*სიგრძე სიგანე*/
+    height: 24px;
+    font-weight: 500; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
+    font-size: 13.71px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    margin: 0 0 4px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
+    color: #425466;
+}
+.rader{ /*პარაგრაფი*/
+    width: 508px; /*სიგრძე სიგანე*/
+    height: 24px;
+    font-weight: 500; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
+    font-size: 13.71px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    margin: 0 0 4px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
+    color: #425466; 
+}
+.terminal{ /*პარაგრაფი*/
+    width: 508px;  /*სიგრძე სიგანე*/
+    height: 24px;
+    font-weight: 500; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
+    font-size: 13.71px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    margin: 0 0 4px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
+    color: #425466; 
+}
+.chir-pay{ /*შვილის გაცენტვრისთვის*/
+    width: 540px; /*სიგრძე სიგანე*/
+    height: 900px;
+    display: flex; /*გაცენტვრა*/
+    justify-content: center;
+    align-items: center;
+}
+.pay{ /*შვილი რომელშიც სვგ ფოტოა ჩაგდებული*/
+    width: 450px; /*სიგრძე სიგანე*/
+    height: 700px;
+    background-size: cover; /*ქავერზე მოსარგებად*/
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/*მესამე არტიკლი billing*/
+.billing{ /*მშობელი კლასი*/
+    width: 1080px;  /*სიგრძე სიგანე*/
+    height: 900px;
+    display: flex; /*სიმაღლეზე ცენტრში დაშორებით*/
+    align-items: center;
+    gap: 20px;
+}
+.viewBox{ /*უბრალობ ყუთი*/
+    width: 540px;
+    height: 401px;
+}
+.box-logo{
+    width: 90px;
+    height: 28px;
+    margin: 0 0 16px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
+    font-weight: 500; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
+    font-size: 17.16px;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+    color: #2e3a55; 
+}
+.box-logo svg{
+    width: 20px; /*სიგრძე სიგანე მოშორება მარჯვნიდან*/
+    height: 20px;
+    margin-right: 10px;
+}
+.viewBox h2{
+    width: 460px; /*სიგრძე სიგანე*/
+    height: 48px;
+    margin: 0 0 24px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
+    font-weight: 700; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
+    font-size: 34.88px;
+    line-height: 48px;
+    letter-spacing: -0.2px;
+    color: #0a2540;
+}
+.mini-paragraf{
+    width: 460px; /*სიგრძე სიგანე*/
+    height: 56px;
+    font-weight: 500; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
+    font-size: 16.45px;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+    color: #425466;
+    margin: 0 0 24px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
+}
+.Invoicing{
+    width: 508px; /*სიგრძე სიგანე*/
+    height: 24px;
+    font-weight: 500; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
+    font-size: 13.71px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    margin: 0 0 4px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
+    color: #425466;
+}
+.Revenue{
+    width: 508px; /*სიგრძე სიგანე*/
+    height: 24px;
+    font-weight: 500; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
+    font-size: 13.83px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    margin: 0 0 4px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
+    color: #425466; 
+}
+
+.Sigma{
+    width: 508px;  /*სიგრძე სიგანე*/
+    height: 24px;
+    font-weight: 500; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
+    font-size: 13.71px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    margin: 0 0 4px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
+    color: #425466; 
+}
+.quantum{
+    width: 511px; /*სიგრძე სიგანე*/
+    height: 400px;
+    background-size: cover; /*ქავერზე მოსარგებად*/
+    background-position: center;
+    background-repeat: no-repeat; 
+}
+
+/*მეოთხე არტიკლა connect*/
+.connect{
+    width: 1080px;  /*სიგრძე სიგანე*/
+    height: 900px;
+    display: flex; /*სიმაღლეზე ცენტრში დაშორებით*/
+    align-items: center;
+    gap: 20px;
+}
+.connectBox{
+    width: 540px;
+    height: 401px;
+}
+.connectlogo{
+    width: 71px;
+    height: 28px;
+    margin: 0 0 16px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
+    font-weight: 500; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
+    font-size: 17.02px;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+    color: #2e3a55; 
+}
+.connectlogo svg{
+    width: 20px; /*სიგრძე სიგანე მოშორება მარჯვნიდან*/
+    height: 20px;
+    margin-right: 10px;
+}
+.connectBox h2{
+    width: 460px; /*სიგრძე სიგანე*/
+    height: 96px;
+    margin: 0 0 24px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
+    font-weight: 700; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
+    font-size: 34.92px;
+    line-height: 48px;
+    letter-spacing: -0.2px;
+    color: #0a2540;
+}
+.connect-paragraf{
+    width: 460px; /*სიგრძე სიგანე*/
+    height: 56px;
+    font-weight: 500; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
+    font-size: 16.31px;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+    color: #425466;
+    margin: 0 0 24px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
+}
+.instant{
+    width: 508px;  /*სიგრძე სიგანე*/
+    height: 24px;
+    font-weight: 500; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
+    font-size: 13.71px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    margin: 0 0 4px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
+    color: #425466;
+}
+.payment{
+    width: 508px;  /*სიგრძე სიგანე*/
+    height: 24px;
+    font-weight: 500; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
+    font-size: 13.71px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    margin: 0 0 4px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
+    color: #425466; 
+}
+.connect-img{
+    width: 511px; /*სიგრძე სიგანე*/
+    height: 400px;
+    background-size: cover; /*ქავერზე მოსარგებად*/
+    background-position: center;
+    background-repeat: no-repeat;  
+}
+
+
+
+
+.issuing{
+    width: 1080px;  /*სიგრძე სიგანე*/
+    height: 449px;
+    border: 2px solid red;
+}
