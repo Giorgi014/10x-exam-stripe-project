@@ -19,6 +19,11 @@ a{
 }
 
 
+
+
+
+
+
 /* Sixth Cotainer ----------------------------------------------------- */
 
 
@@ -85,6 +90,18 @@ a{
     border-radius: 8px;
     box-shadow: 0px 0px 8px 2px rgba(167, 167, 167, 0.532)
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Seventh Container -------------------------------------------------------- */
@@ -154,6 +171,16 @@ a{
     padding-bottom: 16px;
 }
 
+
+
+
+
+
+
+
+
+
+
 /* Footer */
 
 .footer {
@@ -173,6 +200,16 @@ a{
     flex-direction: column;
     justify-content: space-between;
 }
+
+
+
+
+
+
+
+
+
+
 
 /* fifth-container ----------------------------------------------------------- */  
 
@@ -263,4 +300,66 @@ line-height: 24px;
 letter-spacing: 0.2px;
 color: #00D4FF;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+/* Forth-Container -------------------------------------------------------- */
     
+
+.forth-container {
+    margin: 0 auto;
+    width: 1024px;
+}
+
+.forth-container .textarea {
+    width: 650px;
+    justify-content: center;
+    align-items: center;
+}
+
+.forth-container .textarea p2 {
+    font-size: 16.17px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0.24px;
+    color: #635BFF;
+}
+
+.forth-container .textarea h3 {
+    font-size: 30.41px;
+    font-weight: 500;
+    line-height: 44px;
+    letter-spacing: -0.1px;
+    color: #0A2540;    
+}
+
+.forth-container .textarea p {
+font-size: 16.59px;
+font-weight: 500;
+line-height: 28px;
+letter-spacing: 0.20000000298023224px;
+color: #425466;
+}
+
+.forth-container .banners {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+}
+
+
+.forth-container .banner {
+    width: 465px;
+    height: 525px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 8px 2px rgba(167, 167, 167, 0.532)
+}
+
