@@ -386,12 +386,78 @@ header .btns .sign-in:hover .right-row {
   margin-left: 180px;
 }
 
+/* ---- SITES SECTIION ---- */
+
+.sites-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1080px;
+  height: 250px;
+  margin: 128px auto;
+}
+.sites-section .sites-container{
+  display: grid;
+  grid-template-columns: repeat(2,auto);
+  height: 140px;
+}
+.sites-section .sites-container .sites{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+}
+.sites-section .sites-container .sites .icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+}
+.sites-section .sites-container .bottom-sites{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 100%;
+}
+.sites-section .sites-container .bottom-sites .icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+}
+
 /* ---- RESPONSIVE ---- */
 
 @media screen and (max-width: 1024px){
   .section-container {
-    width: 1024px;
+    max-width: 1024px;
+    width: auto;
   }
+  .sites-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 952px;
+    height: 245.45px;
+    margin: 121.32px auto;
+  }
+  .sites-section .sites-container .sites .icon{
+    width: 248px;
+  }
+  .sites-section .sites-container .bottom-sites .icon{
+    width: 248px;
+  }
+}
+@media screen and (max-width: 950px){
+  .section-container {
+    max-width: 950px;
+    width: auto;
+    height: 340px;
+  }
+}
+.sites-section .sites-container{
+  display: flex;
+  flex-direction: column;
 }
 @media screen and (max-width: 890px){
   .section-container .stripe .email-and-contact {
