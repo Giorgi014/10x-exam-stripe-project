@@ -392,7 +392,7 @@ header .btns .sign-in:hover .right-row {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: clamp(347px, 10vw, 1080px);
+  width: clamp(347px, 18vw, 1080px);
   height: 250px;
   margin: 128px auto;
 }
@@ -411,7 +411,7 @@ header .btns .sign-in:hover .right-row {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: clamp(184px, 5vw, 270px);
+  width: clamp(184px, 27vw, 370px);
 }
 .sites-section .sites-container .bottom-sites{
   display: flex;
@@ -423,7 +423,7 @@ header .btns .sign-in:hover .right-row {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 270px;
+  width: clamp(184px, 27vw, 370px);
 }
 
 /* ---- SECOND CONTAINER ---- */
@@ -436,40 +436,7 @@ header .btns .sign-in:hover .right-row {
 
 /* ---- RESPONSIVE ---- */
 
-@media screen and (max-width: 890px){
-  .section-container .stripe .email-and-contact {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 250px;
-    margin-left: -18px;
-  }
-  .section-container .stripe .email-and-contact .email-address input {
-    display: none;
-  }
-  .section-container .stripe .email-and-contact .email-address button {
-    position: relative;
-    left: 0;
-  }
-  .section-container .stripe .resp-contact {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 111px;
-    height: 33px;
-    white-space: nowrap;
-  }
-  .section-container .stripe .resp-contact a{
-    text-decoration: none;
-    color: #0A2540;
-  }
-}
-@media screen and (max-width: 768px){
-  .section-container .stripe {
-    width: 368px;
-  }
-}
+
 @media screen and (max-width: 1023px) {
   header {
     display: none;
@@ -535,7 +502,6 @@ header .btns .sign-in:hover .right-row {
   }
 
   header .btns {
-    /* display: flex; */
     width: 100%;
     flex-direction: column;
   }
@@ -571,9 +537,64 @@ header .btns .sign-in:hover .right-row {
     color: #ffffff;
   }
 }
+@media screen and (max-width: 890px){
+  .section-container .stripe .email-and-contact {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    margin-left: -18px;
+  }
+  .section-container .stripe .email-and-contact .email-address input {
+    display: none;
+  }
+  .section-container .stripe .email-and-contact .email-address button {
+    position: relative;
+    left: 0;
+  }
+  .section-container .stripe .resp-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 111px;
+    height: 33px;
+    white-space: nowrap;
+  }
+  .section-container .stripe .resp-contact a{
+    text-decoration: none;
+    color: #0A2540;
+  }
+}
+@media screen and (max-width: 768px){
+  .section-container .stripe {
+    width: 368px;
+  }
+}
+@media screen and (max-width: 700px){
+  .sites-section{
+    width: clamp(347px, 18vw, 668px);
+    height: 340px;
+    margin: 73px auto;
+  }
+  .sites-section .sites-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+  .sites-section .sites-container .sites{
+    align-items: center;
+  }
+  .sites-section .sites-container .sites .icon{
+    width: clamp(170px, 35vw, 370px);
+  }
+  .sites-section .sites-container .bottom-sites .icon{
+    width: clamp(170px, 35vw, 370px);
+  }
+}
 @media screen and (max-width: 414px){
   .section-container .stripe .about-stripe{
-    width: max-content;
     max-width: 400px;
   }
 }
