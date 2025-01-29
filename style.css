@@ -14,6 +14,9 @@
 
 /* ---- GLOBAL TAGS ---- */
 
+
+
+
 body {
   overflow-x: hidden;
   /* background: linear-gradient(
@@ -384,6 +387,7 @@ header .btns .sign-in:hover .right-row {
 }
 .section-container .payments-and-transfers .transfer .dashboard{
   margin-left: 180px;
+
 }
 
 /* ---- RESPONSIVE ---- */
@@ -535,6 +539,350 @@ header .btns .sign-in:hover .right-row {
   }
 }
 
+
+
+
+
+
+
+
+/* Sixth Cotainer ----------------------------------------------------- */
+
+
+.sixth-container {
+    margin: 0 auto;
+    width: 1024px;
+}
+
+.sixth-container .launch3 {
+    padding: 0px 0px 24px 16px;
+    color: #635BFF; 
+    font-size: 16.88px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+}
+
+.sixth-container .card h3 {
+    padding: 0px 0px 16px 16px;
+    color: #635BFF; 
+    font-size: 16.88px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+}
+
+.sixth-container h2 {
+    padding: 0px 0px 24px 16px;
+    font-size: 35.77px;
+    font-weight: 500;
+    line-height: 48px;
+    letter-spacing: -0.2px;
+}
+
+.sixth-container .launchbar {
+    padding: 0px 0px 24px 16px;
+    width: 980px;
+    font-size: 16.45px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+}
+
+.sixth-container .cardbar {
+    padding: 0px 16px 16px 16px;
+    font-size: 16.45px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+}
+
+.sixth-container a {
+    margin: 0px 0px 0px 16px;
+}
+
+.sixth-container .card3 {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+} 
+
+.sixth-container .card3 .card {
+    width: 308px;
+    height: 508px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 8px 2px rgba(167, 167, 167, 0.532)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Seventh Container -------------------------------------------------------- */
+
+.seventh-container {
+    height: 590px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; background-color: rgb(246,249,252);
+}
+
+.seventh-container h3 {
+    padding: 0px 0px 16px 16px;
+    font-size: 22.13px;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+}
+
+.seventh-container .second {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seventh-container .ready {
+    width: 496px;
+}
+
+.seventh-container .mainready {
+    width: 1024px;
+    display: flex;
+    justify-content: center;
+}
+
+.seventh-container .second1 {
+    width: 248px;
+}
+
+.seventh-container .second p {
+    width: 200px;
+    font-size: 13.59px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+}
+
+.seventh-container .ready p {
+    width: 368px;
+    font-size: 13.59px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+}
+
+.seventh-container button {
+    border-radius: 16px;
+    border: none;
+    width: 111px;
+    height: 33px;
+    background-color: #635BFF;
+    color: #ffffff;
+}
+
+.seventh-container p, h4{
+    padding-bottom: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+
+.footer {
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .column {
+    width: 248px;
+}
+
+.footer .unitedstate {
+    height: 496px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* fifth-container ----------------------------------------------------------- */  
+
+.fifth-container {
+    height: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0A2540;
+}
+
+.fifth-container .devsection {
+    width: 496px;
+}
+
+.fifth-container .devsection p2 {
+    font-size: 17.02px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+    color: #00D4FF;
+}
+
+.fifth-container .devsection h2 {
+    width: 416px;
+    font-size: 32.27px;
+    font-weight: 500;
+    line-height: 44px;
+    letter-spacing: -0.1px;
+    color: #ffffff;
+}
+
+.fifth-container .devsection p {
+    padding: 0px 0px 24px 0px;
+    font-size: 17.16px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+    color: #ADBDCC;
+}
+
+.fifth-container .devsection button {
+    border-radius: 16px;
+    border: none;
+    width: 130px;
+    height: 33px;
+    background-color: #00D4FF;
+    color: #000000;
+}
+
+.fifth-container .devcodarea {
+    width: 1024px;
+    display: flex;
+    justify-content: center;
+}
+
+.fifth-container .devoptions {
+    width: 992px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fifth-container .devoptions .option {
+    width: 200px;
+}
+    
+.fifth-container .devoptions .option h3 {
+    font-size: 13.71px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #ffffff;
+    }
+
+.fifth-container .devoptions .option p {
+    font-size: 13.59px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #ADBDCC;
+    }
+
+.fifth-container .devoptions .option a {
+font-size: 13.71px;
+font-weight: 500;
+line-height: 24px;
+letter-spacing: 0.2px;
+color: #00D4FF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Forth-Container -------------------------------------------------------- */
+    
+
+.forth-container {
+    margin: 0 auto;
+    width: 1024px;
+}
+
+.forth-container .textarea {
+    width: 650px;
+    justify-content: center;
+    align-items: center;
+}
+
+.forth-container .textarea p2 {
+    font-size: 16.17px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0.24px;
+    color: #635BFF;
+}
+
+.forth-container .textarea h3 {
+    font-size: 30.41px;
+    font-weight: 500;
+    line-height: 44px;
+    letter-spacing: -0.1px;
+    color: #0A2540;    
+}
+
+.forth-container .textarea p {
+font-size: 16.59px;
+font-weight: 500;
+line-height: 28px;
+letter-spacing: 0.20000000298023224px;
+color: #425466;
+}
+
+.forth-container .banners {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+}
+
+
+.forth-container .banner {
+    width: 465px;
+    height: 525px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 8px 2px rgba(167, 167, 167, 0.532)
 
 /*davit-section*/
 .first-container{ /*ჰეადერის შემდეკი სექცია კონტეინერი*/
