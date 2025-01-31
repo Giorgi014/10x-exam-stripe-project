@@ -443,16 +443,18 @@ i {
 /* ---- SECOND CONTAINER ---- */
 
 .second-container {
+  position: relative;
   width: 100%;
   background-color: rgb(10, 37, 64);
   height: 1020px;
-  clip-path: polygon(0% 10%, 0% 100%, 100% 100%, 100% 0%);
+  /* clip-path: polygon(0% 10%, 0% 100%, 100% 100%, 100% 0%); */
   padding-top: 1px;
+  overflow-x: hidden;
 }
 
 .second-container .global-scale-main-container {
-  width: 1080px;
-  margin: 287px auto;
+  width: clamp(992px, 61vw, 1080px);
+  margin: 287px auto auto auto;
 }
 
 .second-container .global-scale-main-container .global-scale-info {
@@ -471,9 +473,10 @@ i {
 
 .second-container .global-scale-main-container .global-scale-info h2 {
   width: 300px;
-  font-size: 35.18px;
+  font-size: clamp(32.01px, 100%, 35.18px);
   font-weight: 500;
-  line-height: 48px;
+  /* line-height: 48px; */
+  line-height: clamp(41px, 100%, 48px);
   letter-spacing: -0.24px;
   color: #FFFFFF;
   padding-bottom: 24px;
@@ -520,6 +523,31 @@ i {
   color: #00D4FF;
 }
 
+.second-container .main-globe{
+  position: absolute;
+  top: 0;
+  right: -171px;
+  width: 1080px;
+  height: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.second-container .main-globe .globe {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  /* background: #0f2027; */
+  /* background: -webkit-linear-gradient(to top, #0f2027, #203a43, #2c5364);
+  background: linear-gradient(to top, #0f2027, #203a43, #2c5364); */
+  /* color: rgb(49, 98, 127); */
+}
+
+.second-container .canvas {
+  width: 100%;
+  height: 100%;
+}
 
 /* ---- RESPONSIVE ---- */
 
