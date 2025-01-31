@@ -452,7 +452,7 @@ i {
 
 .second-container .global-scale-main-container {
   width: 1080px;
-  margin: 185px auto;
+  margin: 287px auto;
 }
 
 .second-container .global-scale-main-container .global-scale-info {
@@ -505,7 +505,7 @@ i {
   line-height: 32px;
   letter-spacing: 0.12px;
   color: rgba(255, 255, 255, 1);
-  border-left: 1px solid blue;
+  border-left: 1px solid #00D4FF;
 }
 .second-container .global-scale-main-container .global-scale-container .min-container p{
   padding-left: 16px;
@@ -514,6 +514,10 @@ i {
   line-height: 24px;
   letter-spacing: 0.24px;
   color: rgba(173, 189, 204, 1);
+}
+.second-container .global-scale-main-container .global-scale-container .min-container a{
+  text-decoration: none;
+  color: #00D4FF;
 }
 
 
