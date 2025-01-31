@@ -627,11 +627,29 @@ i {
   height: 467px;
 }
 .icon1 { /*იკონების კონტეინერი*/
-  width: 340px; /*სიგრძე სიგანე*/
+  position: relative;
+  width: 100px; /*სიგრძე სიგანე*/
   height: 232px;
   display: flex; /*სიმაღლეზე ცენტრში სიგრძეზე ბოლოში*/
-  /* justify-content: center; */
+  justify-content: center;
   align-items: flex-end;
+}
+.line-left-top, .Line-Left-Top {
+  width: 55px;
+  height: 50px;
+  border-left: 1px solid red;
+  border-top: 1px solid red;
+  border-top-left-radius: 20px;
+}
+.line-left-top {
+  position: absolute;
+  top: 140px;
+  left: 48px;
+}
+.Line-Left-Top {
+  position: absolute;
+  top: 107px;
+  left: 43px;
 }
 .wraper { /*ბარათების ვრაპერი*/
   width: 340px;
@@ -642,10 +660,7 @@ i {
   position: relative;
   height: 70vh;
 }
-.kavholm { /*პირველი ბარათი*/
-  position: absolute;
-  top: 50px; /*კორდინატები*/
-  left: -80px;
+.kavholm, .rocket-rider, .powdur {
   display: flex; /*გაცენტვრა*/
   justify-content: center;
   align-items: center;
@@ -653,36 +668,27 @@ i {
   border-radius: 8px;
   opacity: 0;
   transform: translateY(100%); 
-  animation: moveUp 1.5s ease-out forwards;
+}
+.kavholm { /*პირველი ბარათი*/
+  position: absolute;
+  top: 50px; /*კორდინატები*/
+  left: -80px;
+  animation: moveUp 0.5s ease-out forwards;
 }
 .rocket-rider { /*მეორე ბარათი*/
   position: absolute;
   top: 120px; /*კორდინატები*/
   left: -80px;
-  display: flex; /*გაცენტვრა*/
-  justify-content: center;
-  align-items: center;
-  font-size: 18px; /*სიგრძე სიგანე*/
-  border-radius: 8px;
-  opacity: 0;
-  transform: translateY(100%);
-  animation: moveUp 1.5s ease-out forwards;
+  animation: moveUp 1s ease-out forwards;
 }
 .powdur { /*მესამე ბარათი*/
   position: absolute;
   top: 185px; /*კორდინატები*/
   left: -81px;
-  display: flex; /*გაცენტვრა*/
-  justify-content: center;
-  align-items: center;
-  font-size: 18px; /*სიგრძე სიგანე*/
-  border-radius: 8px;
-  opacity: 0;
-  transform: translateY(100%);
   animation: moveUp 1.5s ease-out forwards;
 }
 @keyframes moveUp {
-  0% {
+  0 {
     opacity: 0;
     transform: translateY(100%);
   }
@@ -697,14 +703,14 @@ i {
     transform: translateY(0);
   }
 }
-.card:nth-child(1) { /*პირველი ბარათი*/
-  animation-delay: 0.2s; /*ანიმაცის სისწრაფე*/
+.wraper .kavholm:nth-child(1) { /*პირველი ბარათი*/
+  animation-delay: 0.1s; /*ანიმაცის სისწრაფე*/
 }
-.card:nth-child(2) { /*მეორე ბარათი*/
-  animation-delay: 0.4s; /*ანიმაცის სისწრაფე*/
+.wrapwr .rocket-rider:nth-child(2) { /*მეორე ბარათი*/
+  animation-delay: 0.1s; /*ანიმაცის სისწრაფე*/
 }
-.card:nth-child(3) { /*მესამე ბარათი*/
-  animation-delay: 0.6s; /*ანიმაცის სისწრაფე*/
+.wraper .powdur:nth-child(3) { /*მესამე ბარათი*/
+  animation-delay: 0.1s; /*ანიმაცის სისწრაფე*/
 }
 .right { /*მარჯვენა იკონი*/
   width: 100px; /*სიგრძე სიგანე*/
@@ -713,12 +719,33 @@ i {
   align-items: center;
 }
 .icon2 { /*ორი იკონი ერთ კონტეინერში*/
+  position: relative;
   width: 100px; /*სიგრძე სიგანე*/
   height: 300px;
   display: flex; /*ერთმანეთის ქვემოთ კუთხებისკენ გადაწეული სიგრძეზე ცენტრში*/
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+}
+.line-right-top, .line-right-bottom {
+  width: 42px;
+  height: 107px;
+  border-right: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  border-image: linear-gradient(black, red, gray, white);
+}
+.line-right-bottom {
+  position: absolute;
+  top: 42px;
+  left: 9px;
+  
+  border-bottom-right-radius: 20px;
+}
+.line-right-top {
+  position: absolute;
+  top: 149px;
+  left: 8px;
+  border-top-right-radius: 20px;
 }
 /*მეორე არტიკლი payments*/
 .payments { /*არტიკლის სრულად სამართავად*/
