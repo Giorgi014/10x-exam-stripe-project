@@ -727,26 +727,95 @@ i {
   justify-content: space-between;
   align-items: center;
 }
-.line-right-top, .line-right-bottom {
+/* .line-right-top, .line-right-bottom {
   width: 42px;
   height: 107px;
   border-right: 3px solid transparent;
   border-bottom: 3px solid transparent;
-  border-image: linear-gradient(black, red, gray, white);
-}
+  border-image: linear-gradient(black, red, gray, white) 1;
+} */
+ 
+
 .line-right-bottom {
-  position: absolute;
-  top: 42px;
-  left: 9px;
-  
+  /* position: absolute; */
+  /* top: 42px; */
+  /* left: 9px; */
+  width: 42px;
+  height: 107px;
+  border: 2px solid red;
   border-bottom-right-radius: 20px;
+  position: relative;
 }
-.line-right-top {
+@property --angel {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+.line-right-bottom::after, .line-right-bottom::before {
+  content: '';
   position: absolute;
-  top: 149px;
-  left: 8px;
-  border-top-right-radius: 20px;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  background-image: conic-gradient(from var(--angel), transparent, blue); /**/
+  translate: -50% -50%;
+  z-index: 2; /*დადებითზე ჩანს მხოლოდ*/
+  padding: 5px; /*წესით გვერდებში როგორც ხაზი ისე უნდა გამოჩნდეს*/
+  border-bottom-right-radius: 20px;
+  animation: spin 3s linear infinite;
 }
+@keyframes spin {
+  from{
+    --angel: 0deg;
+  }
+  to{
+    --angel: 360deg;
+  }
+}
+.line-right-bottom::before {
+  filter: blur(1.5rem);
+  opacity: 0.5;
+}
+
+.line-right-top {
+  /* position: absolute;
+  top: 149px;
+  left: 8px; */
+  width: 42px;
+  height: 107px;
+  border: 2px solid red;
+  border-top-right-radius: 20px;
+  position: relative;
+}
+.line-right-top::after, .line-right-top::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  background-image: conic-gradient(from var(--angel), transparent, blue);
+  translate: -50% -50%;
+  z-index: 2; /*დადებითზე ჩანს მხოლოდ*/
+  padding: 5px; /*წესით გვერდებში როგორც ხაზი ისე უნდა გამოჩნდეს*/
+  border-top-right-radius: 20px;
+  animation: spin-2 3s linear infinite;
+}
+@keyframes spin-2 {
+  from{
+    --angel: 360deg;
+  }
+  to{
+    --angel: 0deg;
+  }
+}
+.line-right-top::before {
+  filter: blur(1.5rem);
+  opacity: 0.5;
+}
+
+
 /*მეორე არტიკლი payments*/
 .payments { /*არტიკლის სრულად სამართავად*/
   width: 1080px; /*სიგრძე სიგანე*/
