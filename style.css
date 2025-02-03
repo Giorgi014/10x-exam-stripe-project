@@ -453,7 +453,7 @@ i {
 }
 
 .second-container .global-scale-main-container {
-  width: clamp(992px, 61vw, 1080px);
+  width: clamp(736px, 100vw, 1080px);
   margin: 287px auto auto auto;
 }
 
@@ -463,6 +463,8 @@ i {
 }
 
 .second-container .global-scale-main-container .global-scale-info h5 {
+  position: relative;
+  z-index: 2;
   font-size: 17.16px;
   font-weight: 500;
   line-height: 28px;
@@ -472,6 +474,8 @@ i {
 }
 
 .second-container .global-scale-main-container .global-scale-info h2 {
+  position: relative;
+  z-index: 2;
   width: 300px;
   font-size: clamp(32.01px, 100%, 35.18px);
   font-weight: 500;
@@ -483,6 +487,8 @@ i {
 }
 
 .second-container .global-scale-main-container .global-scale-info p {
+  position: relative;
+  z-index: 2;
   width: 360px;
   font-size: 17.72px;
   font-weight: 500;
@@ -491,15 +497,17 @@ i {
   color: #ADBDCC;
 }
 .second-container .global-scale-main-container .global-scale-container {
+  position: relative;
+  z-index: 2;
   margin-top: 98px;
   width: 100%;
   height: 88px;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(4,auto);
 }
 .second-container .global-scale-main-container .global-scale-container .min-container{
-  width: 270px;
-  height: 32px;
+  width: clamp(248px, 100%, 270px);
+  height: 112px;
 }
 .second-container .global-scale-main-container .global-scale-container .min-container h2{
   padding-left: 16px;
@@ -526,7 +534,7 @@ i {
 .second-container .main-globe{
   position: absolute;
   top: 0;
-  right: -171px;
+  right: calc(-7% - (100vw - 1920px) * -0.5);
   width: 1080px;
   height: 900px;
   display: flex;
@@ -551,7 +559,7 @@ i {
 
 /* ---- RESPONSIVE ---- */
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1022px) {
   header {
     display: none;
   }
@@ -650,6 +658,9 @@ i {
     display: block;
     color: #ffffff;
   }
+  .second-container .global-scale-main-container .global-scale-container {
+    grid-template-columns: repeat(2,auto);
+  }
 }
 
 @media screen and (max-width: 890px) {
@@ -691,7 +702,11 @@ i {
     width: 368px;
   }
 }
-
+@media screen and (max-width: 700px) {
+  .second-container .global-scale-main-container .global-scale-container {
+    grid-template-columns: repeat(1,auto);
+  }
+}
 @media screen and (max-width: 700px) {
   .sites-section {
     width: clamp(347px, 18vw, 668px);
