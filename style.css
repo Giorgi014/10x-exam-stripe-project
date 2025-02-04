@@ -253,12 +253,14 @@ header .btns .sign-in:hover .right-row {
   margin: 48px auto;
   gap: 253px;
 }
+
 .section-container .stripe {
   display: flex;
   flex-direction: column;
   width: 540px;
   padding-left: 16px;
 }
+
 .section-container .stripe .financial-infrastructure {
   margin-top: 100px;
   font-size: clamp(46.02px, 5vw, 83.35px);
@@ -267,6 +269,7 @@ header .btns .sign-in:hover .right-row {
   padding-bottom: 20px;
   letter-spacing: clamp(-3.36px, 3vw, -2.08px);
 }
+
 .section-container .stripe .about-stripe {
   font-size: 16.59px, 5vw, 17.86px;
   font-weight: 700;
@@ -275,12 +278,14 @@ header .btns .sign-in:hover .right-row {
   letter-spacing: 0.2px;
   padding-right: 53px;
 }
+
 .section-container .stripe .email-and-contact {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 32px;
 }
+
 .section-container .stripe .email-and-contact .email-address {
   display: flex;
   justify-content: center;
@@ -290,6 +295,7 @@ header .btns .sign-in:hover .right-row {
   border-radius: 33px;
   position: relative;
 }
+
 .section-container .stripe .email-and-contact .email-address input {
   width: 100%;
   height: 100%;
@@ -300,6 +306,7 @@ header .btns .sign-in:hover .right-row {
   padding-left: 20px;
   font-size: 15px;
 }
+
 .section-container .stripe .email-and-contact .email-address button {
   position: absolute;
   display: flex;
@@ -316,17 +323,13 @@ header .btns .sign-in:hover .right-row {
   cursor: pointer;
   padding-left: 20px;
 }
+
 .section-container .stripe .email-and-contact .email-address button .both-rows {
   position: absolute;
   right: 0;
 }
 
-.section-container
-  .stripe
-  .email-and-contact
-  .email-address
-  button:hover
-  .right {
+.section-container .stripe .email-and-contact .email-address button:hover .right {
   visibility: hidden;
 }
 
@@ -334,17 +337,14 @@ header .btns .sign-in:hover .right-row {
   visibility: hidden;
 }
 
-.section-container
-  .stripe
-  .email-and-contact
-  .email-address
-  button:hover
-  .right-row {
+.section-container .stripe .email-and-contact .email-address button:hover .right-row {
   visibility: visible;
 }
+
 .section-container .stripe .resp-contact {
   display: none;
 }
+
 .section-container .payments-and-transfers {
   position: relative;
   display: flex;
@@ -352,39 +352,43 @@ header .btns .sign-in:hover .right-row {
   align-items: center;
   margin-top: 48px;
 }
-.section-container .payments-and-transfers .phone{
+
+.section-container .payments-and-transfers .phone {
   position: absolute;
   transform: translateY(8%);
   left: -120px;
   width: 254px;
   height: 520px;
   border-radius: 33px;
-  border: 5px solid rgb(246,249,252);
+  border: 5px solid rgb(246, 249, 252);
 }
+
 .section-container .payments-and-transfers .transfer {
   display: flex;
   flex-direction: column;
   width: min-content;
   height: 571.69px;
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.4) 0%,
-    rgba(255, 255, 255, 0.3) 25%,
-    rgba(246, 249, 252, 0.3) 50%,
-    #f6f9fc 60%
-  );
+  background: linear-gradient(180deg,
+      rgba(255, 255, 255, 0.4) 0%,
+      rgba(255, 255, 255, 0.3) 25%,
+      rgba(246, 249, 252, 0.3) 50%,
+      #f6f9fc 60%);
   border-radius: 8px;
 }
-.section-container .payments-and-transfers .transfer .header-section{
+
+.section-container .payments-and-transfers .transfer .header-section {
   display: flex;
   align-items: center;
   margin: 24px 24px;
 }
-.section-container .payments-and-transfers .transfer .header-section img{
+
+.section-container .payments-and-transfers .transfer .header-section img {
   width: 20px;
   height: 20px;
 }
-.section-container .payments-and-transfers .transfer .header-section .rocket-rides, i{
+
+.section-container .payments-and-transfers .transfer .header-section .rocket-rides,
+i {
   margin-left: 8px;
   color: rgba(255, 255, 255, 1);
   font-size: 9.5px;
@@ -393,7 +397,8 @@ header .btns .sign-in:hover .right-row {
   letter-spacing: 0.8px;
   cursor: pointer;
 }
-.section-container .payments-and-transfers .transfer .header-section .search{
+
+.section-container .payments-and-transfers .transfer .header-section .search {
   position: relative;
   display: flex;
   justify-content: center;
@@ -403,7 +408,8 @@ header .btns .sign-in:hover .right-row {
   border-radius: 4px;
   margin-left: 23px;
 }
-.section-container .payments-and-transfers .transfer .header-section .search input{
+
+.section-container .payments-and-transfers .transfer .header-section .search input {
   width: 100%;
   height: 100%;
   border-radius: 4px;
@@ -412,20 +418,23 @@ header .btns .sign-in:hover .right-row {
   outline: none;
   padding-left: 25px;
 }
-.section-container .payments-and-transfers .transfer .header-section .search input::placeholder{
+
+.section-container .payments-and-transfers .transfer .header-section .search input::placeholder {
   color: rgba(98, 120, 141, 1);
   font-size: 10.14px;
   line-height: 14px;
   letter-spacing: 0.2px;
 }
-.section-container .payments-and-transfers .transfer .header-section .search i{
+
+.section-container .payments-and-transfers .transfer .header-section .search i {
   position: absolute;
   color: rgba(98, 120, 141, 1);
   left: 0;
   width: 10px;
   height: 10px;
 }
-.section-container .payments-and-transfers .transfer .dashboard{
+
+.section-container .payments-and-transfers .transfer .dashboard {
   margin-left: 180px;
 
 }
@@ -458,12 +467,13 @@ header .btns .sign-in:hover .right-row {
 
 /* ---- RESPONSIVE ---- */
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1024px) {
   .section-container {
     width: 1024px;
   }
 }
-@media screen and (max-width: 890px){
+
+@media screen and (max-width: 890px) {
   .section-container .stripe .email-and-contact {
     position: relative;
     display: flex;
@@ -472,13 +482,16 @@ header .btns .sign-in:hover .right-row {
     width: 250px;
     margin-left: -18px;
   }
+
   .section-container .stripe .email-and-contact .email-address input {
     display: none;
   }
+
   .section-container .stripe .email-and-contact .email-address button {
     position: relative;
     left: 0;
   }
+
   .section-container .stripe .resp-contact {
     display: flex;
     justify-content: center;
@@ -487,16 +500,19 @@ header .btns .sign-in:hover .right-row {
     height: 33px;
     white-space: nowrap;
   }
-  .section-container .stripe .resp-contact a{
+
+  .section-container .stripe .resp-contact a {
     text-decoration: none;
     color: #0A2540;
   }
 }
-@media screen and (max-width: 768px){
+
+@media screen and (max-width: 768px) {
   .section-container .stripe {
     width: 368px;
   }
 }
+
 @media screen and (max-width: 1023px) {
   header {
     display: none;
@@ -598,8 +614,9 @@ header .btns .sign-in:hover .right-row {
     color: #ffffff;
   }
 }
-@media screen and (max-width: 414px){
-  .section-container .stripe .about-stripe{
+
+@media screen and (max-width: 414px) {
+  .section-container .stripe .about-stripe {
     width: max-content;
     max-width: 400px;
   }
@@ -615,7 +632,7 @@ header .btns .sign-in:hover .right-row {
 /* ლაშას სექცია - მეოთხე */
 
 /* Forth-Container -------------------------------------------------------- */
-    
+
 
 .forth-container {
   margin: 0 auto;
@@ -641,7 +658,7 @@ header .btns .sign-in:hover .right-row {
   font-weight: 500;
   line-height: 44px;
   letter-spacing: -0.1px;
-  color: #0A2540;    
+  color: #0A2540;
 }
 
 .forth-container .textarea p {
@@ -655,11 +672,12 @@ header .btns .sign-in:hover .right-row {
 .forth-container .banners {
   display: grid;
   grid-template-columns: repeat(2, auto);
-  
+
 }
-.forth-container .banners .Banner1{
+
+.forth-container .banners .Banner1 {
   margin-top: 130px;
-  
+
 }
 
 .forth-container .banner {
@@ -678,7 +696,7 @@ header .btns .sign-in:hover .right-row {
 
 /* ლაშას სექცია - მეხუთე */
 
-/* fifth-container ----------------------------------------------------------- */  
+/* fifth-container ----------------------------------------------------------- */
 
 .fifth-container {
   height: 1200px;
@@ -743,7 +761,7 @@ header .btns .sign-in:hover .right-row {
 .fifth-container .devoptions .option {
   width: 200px;
 }
-  
+
 .fifth-container .devoptions .option h3 {
   font-size: 13.71px;
   font-weight: 500;
@@ -781,66 +799,66 @@ header .btns .sign-in:hover .right-row {
 
 
 .sixth-container {
-    margin: 0 auto;
-    width: 1080px;
+  margin: 0 auto;
+  width: 1080px;
 }
 
 .sixth-container .launch3 {
-    padding: 0px 0px 24px 16px;
-    color: #635BFF; 
-    font-size: 16.88px;
-    font-weight: 500;
-    line-height: 28px;
-    letter-spacing: 0.2px;
+  padding: 0px 0px 24px 16px;
+  color: #635BFF;
+  font-size: 16.88px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0.2px;
 }
 
 .sixth-container .card h3 {
-    padding: 0px 0px 16px 16px;
-    color: #635BFF; 
-    font-size: 16.88px;
-    font-weight: 500;
-    line-height: 28px;
-    letter-spacing: 0.2px;
+  padding: 0px 0px 16px 16px;
+  color: #635BFF;
+  font-size: 16.88px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0.2px;
 }
 
 .sixth-container h2 {
-    padding: 0px 0px 24px 16px;
-    font-size: 36px;
-    font-weight: 500;
-    line-height: 36px;
+  padding: 0px 0px 24px 16px;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 36px;
 }
 
 .sixth-container .launchbar {
-    padding: 0px 0px 24px 16px;
-    width: 980px;
-    font-size: 16.45px;
-    font-weight: 500;
-    line-height: 28px;
-    letter-spacing: 0.2px;
+  padding: 0px 0px 24px 16px;
+  width: 980px;
+  font-size: 16.45px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0.2px;
 }
 
 .sixth-container .cardbar {
-    padding: 0px 16px 16px 16px;
-    font-size: 16.45px;
-    font-weight: 500;
-    line-height: 28px;
-    letter-spacing: 0.2px;
+  padding: 0px 16px 16px 16px;
+  font-size: 16.45px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0.2px;
 }
 
 .sixth-container a {
-    margin: 0px 0px 0px 16px;
+  margin: 0px 0px 0px 16px;
 }
 
 .sixth-container .card3 {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-} 
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+}
 
 .sixth-container .card3 .card {
-    width: 308px;
-    height: 508px;
-    border-radius: 8px;
-    box-shadow: 0px 0px 8px 2px rgba(167, 167, 167, 0.532)
+  width: 308px;
+  height: 508px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 8px 2px rgba(167, 167, 167, 0.532)
 }
 
 
@@ -859,69 +877,71 @@ header .btns .sign-in:hover .right-row {
 /* Seventh Container -------------------------------------------------------- */
 
 .seventh-container {
-    width: 1080px;
-    height: 590px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%; background-color: rgb(246,249,252);
+  width: 1080px;
+  height: 590px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(246, 249, 252);
 }
 
 .seventh-container h3 {
-    padding: 0px 0px 16px 16px;
-    font-size: 22.13px;
-    font-weight: 500;
-    line-height: 32px;
-    letter-spacing: 0.1px;
+  padding: 0px 0px 16px 16px;
+  font-size: 22.13px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 0.1px;
 }
 
 .seventh-container .second {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .seventh-container .ready {
-    width: 496px;
+  width: 496px;
 }
 
 .seventh-container .mainready {
-    width: 1024px;
-    display: flex;
-    justify-content: center;
+  width: 1024px;
+  display: flex;
+  justify-content: center;
 }
 
 .seventh-container .second1 {
-    width: 248px;
+  width: 248px;
 }
 
 .seventh-container .second p {
-    width: 200px;
-    font-size: 13.59px;
-    font-weight: 500;
-    line-height: 24px;
-    letter-spacing: 0.2px;
+  width: 200px;
+  font-size: 13.59px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.2px;
 }
 
 .seventh-container .ready p {
-    width: 368px;
-    font-size: 13.59px;
-    font-weight: 500;
-    line-height: 24px;
-    letter-spacing: 0.2px;
+  width: 368px;
+  font-size: 13.59px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.2px;
 }
 
 .seventh-container button {
-    border-radius: 16px;
-    border: none;
-    width: 111px;
-    height: 33px;
-    background-color: #635BFF;
-    color: #ffffff;
+  border-radius: 16px;
+  border: none;
+  width: 111px;
+  height: 33px;
+  background-color: #635BFF;
+  color: #ffffff;
 }
 
-.seventh-container p, h4{
-    padding-bottom: 16px;
+.seventh-container p,
+h4 {
+  padding-bottom: 16px;
 }
 
 
@@ -937,21 +957,21 @@ header .btns .sign-in:hover .right-row {
 /* Footer */
 
 .footer {
-    height: 1000px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer .column {
-    width: 248px;
+  width: 248px;
 }
 
 .footer .unitedstate {
-    height: 496px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  height: 496px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 
@@ -970,437 +990,627 @@ header .btns .sign-in:hover .right-row {
 
 
 /*davit-section*/
-.first-container{ /*ჰეადერის შემდეკი სექცია კონტეინერი*/
-    /* background-color: ; */
-    width: 1080px;
-    margin: 0 auto;
-    height: 4452px;
-    display: flex; /*სიმაღლეზე განაწილებული თანაბრად სიგანეზე ცენტრში*/
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+.first-container {
+  /*ჰეადერის შემდეკი სექცია კონტეინერი*/
+  /* background-color: ; */
+  width: 1080px;
+  margin: 0 auto;
+  height: 4452px;
+  display: flex;
+  /*სიმაღლეზე განაწილებული თანაბრად სიგანეზე ცენტრში*/
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
-.first-container a{
-    color: #635bff;
+
+.first-container a {
+  color: #635bff;
 }
+
 /*პირველი არტიკლი*/
-.modular-solutions{ /*სექცია კონტეინერის პირველი შვილი*/
-    width: 1080px;  /*სიგრძე სიგანე*/
-    height: 504px;
+.modular-solutions {
+  /*სექცია კონტეინერის პირველი შვილი*/
+  width: 1080px;
+  /*სიგრძე სიგანე*/
+  height: 504px;
 }
-.container{
-    display: flex; /*გვერდი გვერდ დაშორებით*/
-    gap: 5px;
-    width: 1075px;
-    height: 445px;
+
+.container {
+  display: flex;
+  /*გვერდი გვერდ დაშორებით*/
+  gap: 5px;
+  width: 1075px;
+  height: 445px;
 }
-.modular-solutions h3{ /*სათაური პირველი შვილის */
-    width: 150px; /*სიგრძე სიგანე*/
-    height: 28px;
-    font-weight: 500; /*წრწერის ფონი სტილი და ზომა*/
-    font-size: 16.73px;
-    line-height: 28px;
-    letter-spacing: 0.2px;
-    color: #635bff; /*ფერი და დაშორება გარედან*/
-    margin-left: 16px;
+
+.modular-solutions h3 {
+  /*სათაური პირველი შვილის */
+  width: 150px;
+  /*სიგრძე სიგანე*/
+  height: 28px;
+  font-weight: 500;
+  /*წრწერის ფონი სტილი და ზომა*/
+  font-size: 16.73px;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+  color: #635bff;
+  /*ფერი და დაშორება გარედან*/
+  margin-left: 16px;
 }
-.to-manage-content{ /*სათაური და პარაგრაფის მსობელი*/
-    width: 540px;  /*სიგრძე სიგანე*/
-    height: 470px;
-    display: flex; /**/
-    flex-direction: column;
-    gap: 16px;
+
+.to-manage-content {
+  /*სათაური და პარაგრაფის მსობელი*/
+  width: 540px;
+  /*სიგრძე სიგანე*/
+  height: 470px;
+  display: flex;
+  /**/
+  flex-direction: column;
+  gap: 16px;
 }
-.to-manage-content h2{ /*კონტენტის სათაურის გასასტილად*/
-    width: 460px;  /*სიგრძე სიგანე*/
-    height: 272px;
-    font-weight: 700; /*წრწერის ფონი სტილი და ზომა*/
-    font-size: 51.63px;
-    letter-spacing: -1.12px;
-    color: #0a2540;
-    margin-left: 16px;
+
+.to-manage-content h2 {
+  /*კონტენტის სათაურის გასასტილად*/
+  width: 460px;
+  /*სიგრძე სიგანე*/
+  height: 272px;
+  font-weight: 700;
+  /*წრწერის ფონი სტილი და ზომა*/
+  font-size: 51.63px;
+  letter-spacing: -1.12px;
+  color: #0a2540;
+  margin-left: 16px;
 }
-.to-manage-content p{ /*კონკრეტულად პარაგრაფს*/
-    width: 522px;  /*სიგრძე სიგანე*/
-    height: 140px;
-    font-weight: 700; /*წრწერის ფონი სტილი და ზომა*/
-    font-size: 17.58px;
-    line-height: 28px;
-    letter-spacing: 0.2px;
-    color: #425466; /*ფერი და დაშორება გარედან*/
-    margin-left: 16px;
+
+.to-manage-content p {
+  /*კონკრეტულად პარაგრაფს*/
+  width: 522px;
+  /*სიგრძე სიგანე*/
+  height: 140px;
+  font-weight: 700;
+  /*წრწერის ფონი სტილი და ზომა*/
+  font-size: 17.58px;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+  color: #425466;
+  /*ფერი და დაშორება გარედან*/
+  margin-left: 16px;
 }
-.to-manage-img{
-    width: 540px;  /*სიგრძე სიგანე*/
-    height: 470px;
-    display: flex;
+
+.to-manage-img {
+  width: 540px;
+  /*სიგრძე სიგანე*/
+  height: 470px;
+  display: flex;
 }
-.left{ /*მარცხენა იკონების მშობელი*/
-    width: 100px;  /*სიგრძე სიგანე*/
-    height: 467px;
+
+.left {
+  /*მარცხენა იკონების მშობელი*/
+  width: 100px;
+  /*სიგრძე სიგანე*/
+  height: 467px;
 }
-.icon1{ /*იკონების კონტეინერი*/
-    width: 100px;  /*სიგრძე სიგანე*/
-    height: 232px;
-    display: flex; /**/
-    justify-content: center;
-    align-items:flex-end;
+
+.icon1 {
+  /*იკონების კონტეინერი*/
+  width: 100px;
+  /*სიგრძე სიგანე*/
+  height: 232px;
+  display: flex;
+  /**/
+  justify-content: center;
+  align-items: flex-end;
 }
-.wraper{ /*ბარათების ვრაპერი*/
-    display: flex; /*სიმაღლეზე ერთმანეთის ქვემოთ სიგრძეზე ცენტრში */
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    height: 100vh;
+
+.wraper {
+  /*ბარათების ვრაპერი*/
+  display: flex;
+  /*სიმაღლეზე ერთმანეთის ქვემოთ სიგრძეზე ცენტრში */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100vh;
 }
-.kavholm{ /*პირველი ბარათი*/
-    display: flex; /*გაცენტვრა*/
-    justify-content: center;
-    align-items: center;
-    font-size: 18px; /*სიგრძე სიგანე*/
-    border-radius: 8px;
-    opacity: 0;
-    transform: translateY(100%); /**/
-    animation: moveUp 1.5s ease-out forwards;
+
+.kavholm {
+  /*პირველი ბარათი*/
+  display: flex;
+  /*გაცენტვრა*/
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  /*სიგრძე სიგანე*/
+  border-radius: 8px;
+  opacity: 0;
+  transform: translateY(100%);
+  /**/
+  animation: moveUp 1.5s ease-out forwards;
 }
-.rocket-rider{
-    display: flex; /*გაცენტვრა*/
-    justify-content: center;
-    align-items: center;
-    font-size: 18px; /*სიგრძე სიგანე*/
-    border-radius: 8px;
-    opacity: 0;
-    transform: translateY(100%); /**/
-    animation: moveUp 1.5s ease-out forwards; 
+
+.rocket-rider {
+  display: flex;
+  /*გაცენტვრა*/
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  /*სიგრძე სიგანე*/
+  border-radius: 8px;
+  opacity: 0;
+  transform: translateY(100%);
+  /**/
+  animation: moveUp 1.5s ease-out forwards;
 }
-.powdur{
-    display: flex;  /*გაცენტვრა*/
-    justify-content: center;
-    align-items: center;
-    font-size: 18px; /*სიგრძე სიგანე*/
-    border-radius: 8px;
-    opacity: 0;
-    transform: translateY(100%); /**/
-    animation: moveUp 1.5s ease-out forwards;
+
+.powdur {
+  display: flex;
+  /*გაცენტვრა*/
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  /*სიგრძე სიგანე*/
+  border-radius: 8px;
+  opacity: 0;
+  transform: translateY(100%);
+  /**/
+  animation: moveUp 1.5s ease-out forwards;
 }
+
 @keyframes moveUp {
-    0% {
-        opacity: 0;
-        transform: translateY(100%);
-    }
-    50%{
-        opacity: o.5;
-        transform: translateY(30%);
-    }
-    100%{
-        opacity: 1;
-        transform: translateY(0);
-    }
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+
+  50% {
+    opacity: o.5;
+    transform: translateY(30%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
-.card:nth-child(1){ /*პირველი ბარათი*/
-    animation-delay: 0.2s; /*ანიმაცის სისწრაფე*/
+
+.card:nth-child(1) {
+  /*პირველი ბარათი*/
+  animation-delay: 0.2s;
+  /*ანიმაცის სისწრაფე*/
 }
-.card:nth-child(2){ /*მეორე ბარათი*/
-    animation-delay: 0.4s; /*ანიმაცის სისწრაფე*/
+
+.card:nth-child(2) {
+  /*მეორე ბარათი*/
+  animation-delay: 0.4s;
+  /*ანიმაცის სისწრაფე*/
 }
-.card:nth-child(3){ /*მესამე ბარათი*/
-    animation-delay: 0.6s; /*ანიმაცის სისწრაფე*/
+
+.card:nth-child(3) {
+  /*მესამე ბარათი*/
+  animation-delay: 0.6s;
+  /*ანიმაცის სისწრაფე*/
 }
-.right{ /*მარჯვენა იკონი*/
-    width: 100px;  /*სიგრძე სიგანე*/
-    height: 467px;
-    display: flex; /*სიგრძეზე ცენტრში*/
-    align-items: center;
+
+.right {
+  /*მარჯვენა იკონი*/
+  width: 100px;
+  /*სიგრძე სიგანე*/
+  height: 467px;
+  display: flex;
+  /*სიგრძეზე ცენტრში*/
+  align-items: center;
 }
-.icon2{ /*ორი იკონი ერთ კონტეინერში*/
-    width: 100px;  /*სიგრძე სიგანე*/
-    height: 300px;
-    display: flex; /*ერთმანეთის ქვემოთ კუთხებისკენ გადაწეული სიგრძეზე ცენტრში*/
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+
+.icon2 {
+  /*ორი იკონი ერთ კონტეინერში*/
+  width: 100px;
+  /*სიგრძე სიგანე*/
+  height: 300px;
+  display: flex;
+  /*ერთმანეთის ქვემოთ კუთხებისკენ გადაწეული სიგრძეზე ცენტრში*/
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
+
 /*მეორე არტიკლი payments*/
-.payments{ /*არტიკლის სრულად სამართავად*/
-    width: 1080px;  /*სიგრძე სიგანე*/
-    height: 900px;
-    display: flex; /*სიგრძეზე ცენტრში*/
-    align-items: center;
+.payments {
+  /*არტიკლის სრულად სამართავად*/
+  width: 1080px;
+  /*სიგრძე სიგანე*/
+  height: 900px;
+  display: flex;
+  /*სიგრძეზე ცენტრში*/
+  align-items: center;
 }
-.Container{ /*კონტენტის კონტეინერი */
-    width: 540px; /*სიგრძე სიგანე*/
-    height: 477px;
+
+.Container {
+  /*კონტენტის კონტეინერი */
+  width: 540px;
+  /*სიგრძე სიგანე*/
+  height: 477px;
 }
-.Container h2{ /*ამ არტიკლის მთავარი სათაური*/
-    width: 460px; /*სიგრძე სიგანე*/
-    height: 96px;
-    margin: 0 0 24px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
-    font-weight: 700; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
-    font-size: 35.77px;
-    line-height: 48px;
-    letter-spacing: -0.2px;
-    color: #0a2540;
+
+.Container h2 {
+  /*ამ არტიკლის მთავარი სათაური*/
+  width: 460px;
+  /*სიგრძე სიგანე*/
+  height: 96px;
+  margin: 0 0 24px 16px;
+  /*დაშორება მარცხნიდან და ქვემოდან*/
+  font-weight: 700;
+  /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
+  font-size: 35.77px;
+  line-height: 48px;
+  letter-spacing: -0.2px;
+  color: #0a2540;
 }
-.logo{ /*მესამე დონის სათაური ლოგოსთან ერთად*/
-    width: 140px; /*გავზარდე რათა დატეულიყო სახელიც და ლოგოც*/
-    height: 28px;
-    margin: 0 0 16px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
-    font-weight: 500; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
-    font-size: 17.16px;
-    line-height: 28px;
-    letter-spacing: 0.2px;
-    color: #2e3a55;
+
+.logo {
+  /*მესამე დონის სათაური ლოგოსთან ერთად*/
+  width: 140px;
+  /*გავზარდე რათა დატეულიყო სახელიც და ლოგოც*/
+  height: 28px;
+  margin: 0 0 16px 16px;
+  /*დაშორება მარცხნიდან და ქვემოდან*/
+  font-weight: 500;
+  /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
+  font-size: 17.16px;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+  color: #2e3a55;
 }
-.logo svg{ /*ლოგო სვგ ფორმატში*/
-    width: 20px; /*სიგრძე სიგანე მოშორება მარჯვნიდან*/
-    height: 20px;
-    margin-right: 10px;
+
+.logo svg {
+  /*ლოგო სვგ ფორმატში*/
+  width: 20px;
+  /*სიგრძე სიგანე მოშორება მარჯვნიდან*/
+  height: 20px;
+  margin-right: 10px;
 }
-.paragraf{ /*მოკლე შინარსის სტილისთვის*/
-    width: 460px; /*სიგრძე სიგანე*/
-    height: 84px;
-    font-weight: 700; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
-    font-size: 16.59px;
-    line-height: 28px;
-    letter-spacing: 0.2px;
-    color: #425466;
-    margin: 0 0 24px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
+
+.paragraf {
+  /*მოკლე შინარსის სტილისთვის*/
+  width: 460px;
+  /*სიგრძე სიგანე*/
+  height: 84px;
+  font-weight: 700;
+  /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
+  font-size: 16.59px;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+  color: #425466;
+  margin: 0 0 24px 16px;
+  /*დაშორება მარცხნიდან და ქვემოდან*/
 }
+
 /*აერთიანებს paiments billings*/
-.primary{ /*ღილაკი*/
-    width: 183.7px; /*სიგრძე სიგანე*/
-    height: 33px;
-    border-radius: 16.5px;
-    background-color: #635bff;
-    border: none;
-    margin: 0 0 56px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
-    /*წარწერას*/
-    font-weight: 500; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
-    font-size: 13.48px;
-    line-height: 24px;
-    letter-spacing: 0.2px;
-    color: #fff;
+.primary {
+  /*ღილაკი*/
+  width: 183.7px;
+  /*სიგრძე სიგანე*/
+  height: 33px;
+  border-radius: 16.5px;
+  background-color: #635bff;
+  border: none;
+  margin: 0 0 56px 16px;
+  /*დაშორება მარცხნიდან და ქვემოდან*/
+  /*წარწერას*/
+  font-weight: 500;
+  /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
+  font-size: 13.48px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #fff;
 }
-.primary svg{
 
+.primary svg {}
+
+.Sa {
+  /*პატარა სათაური*/
+  width: 140px;
+  /*სიგრძე სიგანე*/
+  height: 24px;
+  font-weight: 700;
+  /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
+  font-size: 14.18px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: #0a2540;
+  margin: 0 0 8px 16px;
+  /*დაშორება მარცხნიდან და ქვემოდან*/
 }
-.Sa{ /*პატარა სათაური*/
-    width: 140px; /*სიგრძე სიგანე*/ 
-    height: 24px;
-    font-weight: 700; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
-    font-size: 14.18px;
-    line-height: 24px;
-    letter-spacing: -0.2px;
-    color: #0a2540;
-    margin: 0 0 8px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
+
+.tax {
+  /*პარაგრაფი*/
+  width: 508px;
+  /*სიგრძე სიგანე*/
+  height: 24px;
+  font-weight: 500;
+  /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
+  font-size: 13.71px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  margin: 0 0 4px 16px;
+  /*დაშორება მარცხნიდან და ქვემოდან*/
+  color: #425466;
 }
-.tax{ /*პარაგრაფი*/
-    width: 508px; /*სიგრძე სიგანე*/
-    height: 24px;
-    font-weight: 500; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
-    font-size: 13.71px;
-    line-height: 24px;
-    letter-spacing: 0.2px;
-    margin: 0 0 4px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
-    color: #425466;
+
+.rader {
+  /*პარაგრაფი*/
+  width: 508px;
+  /*სიგრძე სიგანე*/
+  height: 24px;
+  font-weight: 500;
+  /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
+  font-size: 13.71px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  margin: 0 0 4px 16px;
+  /*დაშორება მარცხნიდან და ქვემოდან*/
+  color: #425466;
 }
-.rader{ /*პარაგრაფი*/
-    width: 508px; /*სიგრძე სიგანე*/
-    height: 24px;
-    font-weight: 500; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
-    font-size: 13.71px;
-    line-height: 24px;
-    letter-spacing: 0.2px;
-    margin: 0 0 4px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
-    color: #425466; 
+
+.terminal {
+  /*პარაგრაფი*/
+  width: 508px;
+  /*სიგრძე სიგანე*/
+  height: 24px;
+  font-weight: 500;
+  /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
+  font-size: 13.71px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  margin: 0 0 4px 16px;
+  /*დაშორება მარცხნიდან და ქვემოდან*/
+  color: #425466;
 }
-.terminal{ /*პარაგრაფი*/
-    width: 508px;  /*სიგრძე სიგანე*/
-    height: 24px;
-    font-weight: 500; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
-    font-size: 13.71px;
-    line-height: 24px;
-    letter-spacing: 0.2px;
-    margin: 0 0 4px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
-    color: #425466; 
+
+.chir-pay {
+  /*შვილის გაცენტვრისთვის*/
+  width: 540px;
+  /*სიგრძე სიგანე*/
+  height: 900px;
+  display: flex;
+  /*გაცენტვრა*/
+  justify-content: center;
+  align-items: center;
 }
-.chir-pay{ /*შვილის გაცენტვრისთვის*/
-    width: 540px; /*სიგრძე სიგანე*/
-    height: 900px;
-    display: flex; /*გაცენტვრა*/
-    justify-content: center;
-    align-items: center;
+
+.pay {
+  /*შვილი რომელშიც სვგ ფოტოა ჩაგდებული*/
+  width: 450px;
+  /*სიგრძე სიგანე*/
+  height: 700px;
+  background-size: cover;
+  /*ქავერზე მოსარგებად*/
+  background-position: center;
+  background-repeat: no-repeat;
 }
-.pay{ /*შვილი რომელშიც სვგ ფოტოა ჩაგდებული*/
-    width: 450px; /*სიგრძე სიგანე*/
-    height: 700px;
-    background-size: cover; /*ქავერზე მოსარგებად*/
-    background-position: center;
-    background-repeat: no-repeat;
-}
+
 /*მესამე არტიკლი billing*/
-.billing{ /*მშობელი კლასი*/
-    width: 1080px;  /*სიგრძე სიგანე*/
-    height: 900px;
-    display: flex; /*სიმაღლეზე ცენტრში დაშორებით*/
-    align-items: center;
-    gap: 20px;
-}
-.viewBox{ /*უბრალობ ყუთი*/
-    width: 540px;
-    height: 401px;
-}
-.box-logo{
-    width: 90px;
-    height: 28px;
-    margin: 0 0 16px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
-    font-weight: 500; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
-    font-size: 17.16px;
-    line-height: 28px;
-    letter-spacing: 0.2px;
-    color: #2e3a55; 
-}
-.box-logo svg{
-    width: 20px; /*სიგრძე სიგანე მოშორება მარჯვნიდან*/
-    height: 20px;
-    margin-right: 10px;
-}
-.viewBox h2{
-    width: 460px; /*სიგრძე სიგანე*/
-    height: 48px;
-    margin: 0 0 24px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
-    font-weight: 700; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
-    font-size: 34.88px;
-    line-height: 48px;
-    letter-spacing: -0.2px;
-    color: #0a2540;
-}
-.mini-paragraf{
-    width: 460px; /*სიგრძე სიგანე*/
-    height: 56px;
-    font-weight: 500; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
-    font-size: 16.45px;
-    line-height: 28px;
-    letter-spacing: 0.2px;
-    color: #425466;
-    margin: 0 0 24px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
-}
-.Invoicing{
-    width: 508px; /*სიგრძე სიგანე*/
-    height: 24px;
-    font-weight: 500; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
-    font-size: 13.71px;
-    line-height: 24px;
-    letter-spacing: 0.2px;
-    margin: 0 0 4px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
-    color: #425466;
-}
-.Revenue{
-    width: 508px; /*სიგრძე სიგანე*/
-    height: 24px;
-    font-weight: 500; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
-    font-size: 13.83px;
-    line-height: 24px;
-    letter-spacing: 0.2px;
-    margin: 0 0 4px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
-    color: #425466; 
+.billing {
+  /*მშობელი კლასი*/
+  width: 1080px;
+  /*სიგრძე სიგანე*/
+  height: 900px;
+  display: flex;
+  /*სიმაღლეზე ცენტრში დაშორებით*/
+  align-items: center;
+  gap: 20px;
 }
 
-.Sigma{
-    width: 508px;  /*სიგრძე სიგანე*/
-    height: 24px;
-    font-weight: 500; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
-    font-size: 13.71px;
-    line-height: 24px;
-    letter-spacing: 0.2px;
-    margin: 0 0 4px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
-    color: #425466; 
+.viewBox {
+  /*უბრალობ ყუთი*/
+  width: 540px;
+  height: 401px;
 }
-.quantum{
-    width: 511px; /*სიგრძე სიგანე*/
-    height: 400px;
-    background-size: cover; /*ქავერზე მოსარგებად*/
-    background-position: center;
-    background-repeat: no-repeat; 
+
+.box-logo {
+  width: 90px;
+  height: 28px;
+  margin: 0 0 16px 16px;
+  /*დაშორება მარცხნიდან და ქვემოდან*/
+  font-weight: 500;
+  /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
+  font-size: 17.16px;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+  color: #2e3a55;
+}
+
+.box-logo svg {
+  width: 20px;
+  /*სიგრძე სიგანე მოშორება მარჯვნიდან*/
+  height: 20px;
+  margin-right: 10px;
+}
+
+.viewBox h2 {
+  width: 460px;
+  /*სიგრძე სიგანე*/
+  height: 48px;
+  margin: 0 0 24px 16px;
+  /*დაშორება მარცხნიდან და ქვემოდან*/
+  font-weight: 700;
+  /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
+  font-size: 34.88px;
+  line-height: 48px;
+  letter-spacing: -0.2px;
+  color: #0a2540;
+}
+
+.mini-paragraf {
+  width: 460px;
+  /*სიგრძე სიგანე*/
+  height: 56px;
+  font-weight: 500;
+  /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
+  font-size: 16.45px;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+  color: #425466;
+  margin: 0 0 24px 16px;
+  /*დაშორება მარცხნიდან და ქვემოდან*/
+}
+
+.Invoicing {
+  width: 508px;
+  /*სიგრძე სიგანე*/
+  height: 24px;
+  font-weight: 500;
+  /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
+  font-size: 13.71px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  margin: 0 0 4px 16px;
+  /*დაშორება მარცხნიდან და ქვემოდან*/
+  color: #425466;
+}
+
+.Revenue {
+  width: 508px;
+  /*სიგრძე სიგანე*/
+  height: 24px;
+  font-weight: 500;
+  /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
+  font-size: 13.83px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  margin: 0 0 4px 16px;
+  /*დაშორება მარცხნიდან და ქვემოდან*/
+  color: #425466;
+}
+
+.Sigma {
+  width: 508px;
+  /*სიგრძე სიგანე*/
+  height: 24px;
+  font-weight: 500;
+  /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
+  font-size: 13.71px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  margin: 0 0 4px 16px;
+  /*დაშორება მარცხნიდან და ქვემოდან*/
+  color: #425466;
+}
+
+.quantum {
+  width: 511px;
+  /*სიგრძე სიგანე*/
+  height: 400px;
+  background-size: cover;
+  /*ქავერზე მოსარგებად*/
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 /*მეოთხე არტიკლა connect*/
-.connect{
-    width: 1080px;  /*სიგრძე სიგანე*/
-    height: 900px;
-    display: flex; /*სიმაღლეზე ცენტრში დაშორებით*/
-    align-items: center;
-    gap: 20px;
+.connect {
+  width: 1080px;
+  /*სიგრძე სიგანე*/
+  height: 900px;
+  display: flex;
+  /*სიმაღლეზე ცენტრში დაშორებით*/
+  align-items: center;
+  gap: 20px;
 }
-.connectBox{
-    width: 540px;
-    height: 401px;
+
+.connectBox {
+  width: 540px;
+  height: 401px;
 }
-.connectlogo{
-    width: 71px;
-    height: 28px;
-    margin: 0 0 16px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
-    font-weight: 500; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
-    font-size: 17.02px;
-    line-height: 28px;
-    letter-spacing: 0.2px;
-    color: #2e3a55; 
+
+.connectlogo {
+  width: 71px;
+  height: 28px;
+  margin: 0 0 16px 16px;
+  /*დაშორება მარცხნიდან და ქვემოდან*/
+  font-weight: 500;
+  /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
+  font-size: 17.02px;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+  color: #2e3a55;
 }
-.connectlogo svg{
-    width: 20px; /*სიგრძე სიგანე მოშორება მარჯვნიდან*/
-    height: 20px;
-    margin-right: 10px;
+
+.connectlogo svg {
+  width: 20px;
+  /*სიგრძე სიგანე მოშორება მარჯვნიდან*/
+  height: 20px;
+  margin-right: 10px;
 }
-.connectBox h2{
-    width: 460px; /*სიგრძე სიგანე*/
-    height: 96px;
-    margin: 0 0 24px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
-    font-weight: 700; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
-    font-size: 34.92px;
-    line-height: 48px;
-    letter-spacing: -0.2px;
-    color: #0a2540;
+
+.connectBox h2 {
+  width: 460px;
+  /*სიგრძე სიგანე*/
+  height: 96px;
+  margin: 0 0 24px 16px;
+  /*დაშორება მარცხნიდან და ქვემოდან*/
+  font-weight: 700;
+  /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
+  font-size: 34.92px;
+  line-height: 48px;
+  letter-spacing: -0.2px;
+  color: #0a2540;
 }
-.connect-paragraf{
-    width: 460px; /*სიგრძე სიგანე*/
-    height: 56px;
-    font-weight: 500; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
-    font-size: 16.31px;
-    line-height: 28px;
-    letter-spacing: 0.2px;
-    color: #425466;
-    margin: 0 0 24px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
+
+.connect-paragraf {
+  width: 460px;
+  /*სიგრძე სიგანე*/
+  height: 56px;
+  font-weight: 500;
+  /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
+  font-size: 16.31px;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+  color: #425466;
+  margin: 0 0 24px 16px;
+  /*დაშორება მარცხნიდან და ქვემოდან*/
 }
-.instant{
-    width: 508px;  /*სიგრძე სიგანე*/
-    height: 24px;
-    font-weight: 500; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
-    font-size: 13.71px;
-    line-height: 24px;
-    letter-spacing: 0.2px;
-    margin: 0 0 4px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
-    color: #425466;
+
+.instant {
+  width: 508px;
+  /*სიგრძე სიგანე*/
+  height: 24px;
+  font-weight: 500;
+  /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
+  font-size: 13.71px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  margin: 0 0 4px 16px;
+  /*დაშორება მარცხნიდან და ქვემოდან*/
+  color: #425466;
 }
-.payment{
-    width: 508px;  /*სიგრძე სიგანე*/
-    height: 24px;
-    font-weight: 500; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
-    font-size: 13.71px;
-    line-height: 24px;
-    letter-spacing: 0.2px;
-    margin: 0 0 4px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
-    color: #425466; 
+
+.payment {
+  width: 508px;
+  /*სიგრძე სიგანე*/
+  height: 24px;
+  font-weight: 500;
+  /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
+  font-size: 13.71px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  margin: 0 0 4px 16px;
+  /*დაშორება მარცხნიდან და ქვემოდან*/
+  color: #425466;
 }
-.connect-img{
-    width: 511px; /*სიგრძე სიგანე*/
-    height: 400px;
-    background-size: cover; /*ქავერზე მოსარგებად*/
-    background-position: center;
-    background-repeat: no-repeat;  
+
+.connect-img {
+  width: 511px;
+  /*სიგრძე სიგანე*/
+  height: 400px;
+  background-size: cover;
+  /*ქავერზე მოსარგებად*/
+  background-position: center;
+  background-repeat: no-repeat;
 }
-.issuing{
-    width: 1080px;  /*სიგრძე სიგანე*/
-    height: 449px;
-    border: 2px solid red;
+
+.issuing {
+  width: 1080px;
+  /*სიგრძე სიგანე*/
+  height: 449px;
+  border: 2px solid red;
 }
