@@ -1171,437 +1171,465 @@ i {
 
 
 /*davit-section*/
-.first-container{ /*ჰეადერის შემდეკი სექცია კონტეინერი*/
-    /* background-color: ; */
-    width: 1080px;
-    margin: 0 auto;
-    height: 4452px;
-    display: flex; /*სიმაღლეზე განაწილებული თანაბრად სიგანეზე ცენტრში*/
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+.first-container { /*ჰეადერის შემდეკი სექცია კონტეინერი*/
+  background-color: rgba(249, 252, 249);
+  width: 100%;
+  margin: 0 auto;
 }
-.first-container a{
-    color: #635bff;
+.first-container a {
+  color: #635bff;
+}
+.container-inside-container {
+  width: 1080px;
+  margin: 0 auto;
+  display: flex; 
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 /*პირველი არტიკლი*/
-.modular-solutions{ /*სექცია კონტეინერის პირველი შვილი*/
-    width: 1080px;  /*სიგრძე სიგანე*/
-    height: 504px;
+.modular-solutions { /*სექცია კონტეინერის პირველი შვილი*/
+  width: 1080px; /*სიგრძე სიგანე*/
+  height: 504px;
 }
-.container{
-    display: flex; /*გვერდი გვერდ დაშორებით*/
-    gap: 5px;
-    width: 1075px;
-    height: 445px;
+.container { /*კონტენტის სამართავად*/
+  display: flex; /*გვერდი გვერდ დაშორებით*/
+  gap: 5px;
+  width: 1075px;
+  height: 445px;
 }
-.modular-solutions h3{ /*სათაური პირველი შვილის */
-    width: 150px; /*სიგრძე სიგანე*/
-    height: 28px;
-    font-weight: 500; /*წრწერის ფონი სტილი და ზომა*/
-    font-size: 16.73px;
-    line-height: 28px;
-    letter-spacing: 0.2px;
-    color: #635bff; /*ფერი და დაშორება გარედან*/
-    margin-left: 16px;
+.modular-solutions h3 { /*სათაური პირველი შვილის */
+  width: 150px; /*სიგრძე სიგანე*/
+  height: 28px;
+  font-weight: 500; /*წრწერის ფონი სტილი და ზომა*/
+  font-size: 16.73px;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+  color: #635bff;/*ფერი და დაშორება გარედან*/
+  margin-left: 16px;
 }
-.to-manage-content{ /*სათაური და პარაგრაფის მსობელი*/
-    width: 540px;  /*სიგრძე სიგანე*/
-    height: 470px;
-    display: flex; /**/
-    flex-direction: column;
-    gap: 16px;
+.to-manage-content { /*სათაური და პარაგრაფის მსობელი*/
+  width: 540px; /*სიგრძე სიგანე*/
+  height: 470px;
+  display: flex; /*სიმაღლეზე ერთმანეთის ქვემოთ დაშორებული 16პხ*/
+  flex-direction: column;
+  gap: 16px;
 }
-.to-manage-content h2{ /*კონტენტის სათაურის გასასტილად*/
-    width: 460px;  /*სიგრძე სიგანე*/
-    height: 272px;
-    font-weight: 700; /*წრწერის ფონი სტილი და ზომა*/
-    font-size: 51.63px;
-    letter-spacing: -1.12px;
-    color: #0a2540;
-    margin-left: 16px;
+.to-manage-content h2 { /*კონტენტის სათაურის გასასტილად*/
+  width: 460px; /*სიგრძე სიგანე*/
+  height: 272px;
+  font-weight: 700; /*წრწერის ფონი სტილი და ზომა*/
+  font-size: 51.63px;
+  letter-spacing: -1.12px;
+  color: #0a2540;
+  margin-left: 16px;
 }
-.to-manage-content p{ /*კონკრეტულად პარაგრაფს*/
-    width: 522px;  /*სიგრძე სიგანე*/
-    height: 140px;
-    font-weight: 700; /*წრწერის ფონი სტილი და ზომა*/
-    font-size: 17.58px;
-    line-height: 28px;
-    letter-spacing: 0.2px;
-    color: #425466; /*ფერი და დაშორება გარედან*/
-    margin-left: 16px;
+.to-manage-content p { /*კონკრეტულად პარაგრაფს*/
+  width: 522px; /*სიგრძე სიგანე*/
+  height: 140px;
+  font-weight: 700; /*წრწერის ფონი სტილი და ზომა*/
+  font-size: 17.58px;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+  color: #425466; /*ფერი და დაშორება გარედან*/
+  margin-left: 16px;
 }
-.to-manage-img{
-    width: 540px;  /*სიგრძე სიგანე*/
-    height: 470px;
-    display: flex;
+.icon-container {
+  width: 736px;
+  height: 588px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.left{ /*მარცხენა იკონების მშობელი*/
-    width: 100px;  /*სიგრძე სიგანე*/
-    height: 467px;
+.first-pair, .second-pair, .first-triplet, .quattro, .second-triplet, .third-pair {
+  width: 122px;
+  height: 588px;
 }
-.icon1{ /*იკონების კონტეინერი*/
-    width: 100px;  /*სიგრძე სიგანე*/
-    height: 232px;
-    display: flex; /**/
-    justify-content: center;
-    align-items:flex-end;
+.third-pair div:nth-child(1), .third-pair div:nth-child(2),
+.second-pair div:nth-child(1), .second-pair div:nth-child(2),
+.first-pair div:nth-child(1), .first-pair div:nth-child(2) {
+  width: 122px;
+  height: 294px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.wraper{ /*ბარათების ვრაპერი*/
-    display: flex; /*სიმაღლეზე ერთმანეთის ქვემოთ სიგრძეზე ცენტრში */
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    height: 100vh;
+.third-pair,
+.second-triplet,
+.first-triplet {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
 }
-.kavholm{ /*პირველი ბარათი*/
-    display: flex; /*გაცენტვრა*/
-    justify-content: center;
-    align-items: center;
-    font-size: 18px; /*სიგრძე სიგანე*/
-    border-radius: 8px;
-    opacity: 0;
-    transform: translateY(100%); /**/
-    animation: moveUp 1.5s ease-out forwards;
+.second-triplet div:nth-child(1), .second-triplet div:nth-child(2), .second-triplet div:nth-child(3),
+.first-triplet div:nth-child(1), .first-triplet div:nth-child(2), .first-triplet div:nth-child(3) {
+  width: 122px;
+  height: 164px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.rocket-rider{
-    display: flex; /*გაცენტვრა*/
-    justify-content: center;
-    align-items: center;
-    font-size: 18px; /*სიგრძე სიგანე*/
-    border-radius: 8px;
-    opacity: 0;
-    transform: translateY(100%); /**/
-    animation: moveUp 1.5s ease-out forwards; 
+.quattro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 12px;
 }
-.powdur{
-    display: flex;  /*გაცენტვრა*/
-    justify-content: center;
-    align-items: center;
-    font-size: 18px; /*სიგრძე სიგანე*/
-    border-radius: 8px;
-    opacity: 0;
-    transform: translateY(100%); /**/
-    animation: moveUp 1.5s ease-out forwards;
-}
-@keyframes moveUp {
-    0% {
-        opacity: 0;
-        transform: translateY(100%);
-    }
-    50%{
-        opacity: o.5;
-        transform: translateY(30%);
-    }
-    100%{
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-.card:nth-child(1){ /*პირველი ბარათი*/
-    animation-delay: 0.2s; /*ანიმაცის სისწრაფე*/
-}
-.card:nth-child(2){ /*მეორე ბარათი*/
-    animation-delay: 0.4s; /*ანიმაცის სისწრაფე*/
-}
-.card:nth-child(3){ /*მესამე ბარათი*/
-    animation-delay: 0.6s; /*ანიმაცის სისწრაფე*/
-}
-.right{ /*მარჯვენა იკონი*/
-    width: 100px;  /*სიგრძე სიგანე*/
-    height: 467px;
-    display: flex; /*სიგრძეზე ცენტრში*/
-    align-items: center;
-}
-.icon2{ /*ორი იკონი ერთ კონტეინერში*/
-    width: 100px;  /*სიგრძე სიგანე*/
-    height: 300px;
-    display: flex; /*ერთმანეთის ქვემოთ კუთხებისკენ გადაწეული სიგრძეზე ცენტრში*/
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+.quattro div:nth-child(1), .quattro div:nth-child(2), .quattro div:nth-child(3), .quattro div:nth-child(4) {
+  width: 122px;
+  height: 102px;
 }
 /*მეორე არტიკლი payments*/
-.payments{ /*არტიკლის სრულად სამართავად*/
-    width: 1080px;  /*სიგრძე სიგანე*/
-    height: 900px;
-    display: flex; /*სიგრძეზე ცენტრში*/
-    align-items: center;
+.payments { /*არტიკლის სრულად სამართავად*/
+  width: 1080px; /*სიგრძე სიგანე*/
+  height: 900px;
+  display: flex; /*სიგრძეზე ცენტრში*/
+  align-items: center;
 }
-.Container{ /*კონტენტის კონტეინერი */
-    width: 540px; /*სიგრძე სიგანე*/
-    height: 477px;
+.Container { /*კონტენტის კონტეინერი */
+  width: 540px; /*სიგრძე სიგანე*/
+  height: 477px;
 }
-.Container h2{ /*ამ არტიკლის მთავარი სათაური*/
-    width: 460px; /*სიგრძე სიგანე*/
-    height: 96px;
-    margin: 0 0 24px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
-    font-weight: 700; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
-    font-size: 35.77px;
-    line-height: 48px;
-    letter-spacing: -0.2px;
-    color: #0a2540;
+.Container h2 { /*ამ არტიკლის მთავარი სათაური*/
+  width: 460px; /*სიგრძე სიგანე*/
+  height: 96px;
+  margin: 0 0 24px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
+  font-weight: 700; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
+  font-size: 35.77px;
+  line-height: 48px;
+  letter-spacing: -0.2px;
+  color: #0a2540;
 }
-.logo{ /*მესამე დონის სათაური ლოგოსთან ერთად*/
-    width: 140px; /*გავზარდე რათა დატეულიყო სახელიც და ლოგოც*/
-    height: 28px;
-    margin: 0 0 16px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
-    font-weight: 500; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
-    font-size: 17.16px;
-    line-height: 28px;
-    letter-spacing: 0.2px;
-    color: #2e3a55;
+.logo { /*მესამე დონის სათაური ლოგოსთან ერთად*/
+  width: 140px; /*გავზარდე რათა დატეულიყო სახელიც და ლოგოც*/
+  height: 28px;
+  margin: 0 0 16px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
+  font-weight: 500; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
+  font-size: 17.16px;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+  color: #2e3a55;
 }
-.logo svg{ /*ლოგო სვგ ფორმატში*/
-    width: 20px; /*სიგრძე სიგანე მოშორება მარჯვნიდან*/
-    height: 20px;
-    margin-right: 10px;
+.logo img { /*ლოგო სვგ ფორმატში*/
+  width: 20px; /*სიგრძე სიგანე მოშორება მარჯვნიდან*/
+  height: 20px;
+  margin-right: 10px;
 }
-.paragraf{ /*მოკლე შინარსის სტილისთვის*/
-    width: 460px; /*სიგრძე სიგანე*/
-    height: 84px;
-    font-weight: 700; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
-    font-size: 16.59px;
-    line-height: 28px;
-    letter-spacing: 0.2px;
-    color: #425466;
-    margin: 0 0 24px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
+.paragraf { /*მოკლე შინარსის სტილისთვის*/
+  width: 460px;/*სიგრძე სიგანე*/
+  height: 84px;
+  font-weight: 700; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
+  font-size: 16.59px;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+  color: #425466;
+  margin: 0 0 24px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
 }
 /*აერთიანებს paiments billings*/
-.primary{ /*ღილაკი*/
-    width: 183.7px; /*სიგრძე სიგანე*/
-    height: 33px;
-    border-radius: 16.5px;
-    background-color: #635bff;
-    border: none;
-    margin: 0 0 56px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
-    /*წარწერას*/
-    font-weight: 500; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
-    font-size: 13.48px;
-    line-height: 24px;
-    letter-spacing: 0.2px;
-    color: #fff;
+.primary { /*ღილაკი*/
+  width: 183.7px; /*სიგრძე სიგანე*/
+  height: 33px;
+  border-radius: 16.5px;
+  background-color: #635bff;
+  border: none;
+  margin: 0 0 56px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
+  /*წარწერას*/
+  font-weight: 500; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
+  font-size: 13.48px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #fff;
 }
-.primary svg{
-
+.Sa { /*პატარა სათაური*/
+  width: 140px; /*სიგრძე სიგანე*/
+  height: 24px;
+  font-weight: 700; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
+  font-size: 14.18px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: #0a2540;
+  margin: 0 0 8px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
 }
-.Sa{ /*პატარა სათაური*/
-    width: 140px; /*სიგრძე სიგანე*/ 
-    height: 24px;
-    font-weight: 700; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
-    font-size: 14.18px;
-    line-height: 24px;
-    letter-spacing: -0.2px;
-    color: #0a2540;
-    margin: 0 0 8px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
+.tax { /*პარაგრაფი*/
+  width: 508px; /*სიგრძე სიგანე*/
+  height: 24px;
+  font-weight: 500; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
+  font-size: 13.71px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  margin: 0 0 4px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
+  color: #425466;
 }
-.tax{ /*პარაგრაფი*/
-    width: 508px; /*სიგრძე სიგანე*/
-    height: 24px;
-    font-weight: 500; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
-    font-size: 13.71px;
-    line-height: 24px;
-    letter-spacing: 0.2px;
-    margin: 0 0 4px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
-    color: #425466;
+.rader { /*პარაგრაფი*/
+  width: 508px; /*სიგრძე სიგანე*/
+  height: 24px;
+  font-weight: 500; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
+  font-size: 13.71px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  margin: 0 0 4px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
+  color: #425466;
 }
-.rader{ /*პარაგრაფი*/
-    width: 508px; /*სიგრძე სიგანე*/
-    height: 24px;
-    font-weight: 500; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
-    font-size: 13.71px;
-    line-height: 24px;
-    letter-spacing: 0.2px;
-    margin: 0 0 4px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
-    color: #425466; 
+.terminal { /*პარაგრაფი*/
+  width: 508px; /*სიგრძე სიგანე*/
+  height: 24px;
+  font-weight: 500; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
+  font-size: 13.71px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  margin: 0 0 4px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
+  color: #425466;
 }
-.terminal{ /*პარაგრაფი*/
-    width: 508px;  /*სიგრძე სიგანე*/
-    height: 24px;
-    font-weight: 500; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
-    font-size: 13.71px;
-    line-height: 24px;
-    letter-spacing: 0.2px;
-    margin: 0 0 4px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
-    color: #425466; 
+.chir-pay { /*შვილის გაცენტვრისთვის*/
+  width: 540px; /*სიგრძე სიგანე*/
+  height: 900px;
+  display: flex; /*გაცენტვრა*/
+  justify-content: center;
+  align-items: center;
 }
-.chir-pay{ /*შვილის გაცენტვრისთვის*/
-    width: 540px; /*სიგრძე სიგანე*/
-    height: 900px;
-    display: flex; /*გაცენტვრა*/
-    justify-content: center;
-    align-items: center;
-}
-.pay{ /*შვილი რომელშიც სვგ ფოტოა ჩაგდებული*/
-    width: 450px; /*სიგრძე სიგანე*/
-    height: 700px;
-    background-size: cover; /*ქავერზე მოსარგებად*/
-    background-position: center;
-    background-repeat: no-repeat;
+.pay { /*შვილი რომელშიც სვგ ფოტოა ჩაგდებული*/
+  width: 450px; /*სიგრძე სიგანე*/
+  height: 700px;
+  background-size: cover; /*ქავერზე მოსარგებად*/
+  background-position: center;
+  background-repeat: no-repeat;
 }
 /*მესამე არტიკლი billing*/
-.billing{ /*მშობელი კლასი*/
-    width: 1080px;  /*სიგრძე სიგანე*/
-    height: 900px;
-    display: flex; /*სიმაღლეზე ცენტრში დაშორებით*/
-    align-items: center;
-    gap: 20px;
+.billing { /*მშობელი კლასი*/
+  width: 1080px; /*სიგრძე სიგანე*/
+  height: 900px;
+  display: flex; /*სიმაღლეზე ცენტრში დაშორებით*/
+  align-items: center;
+  gap: 25px;
 }
-.viewBox{ /*უბრალობ ყუთი*/
-    width: 540px;
-    height: 401px;
+.viewBox { /*უბრალობ ყუთი*/
+  width: 540px;
+  height: 401px;
 }
-.box-logo{
-    width: 90px;
-    height: 28px;
-    margin: 0 0 16px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
-    font-weight: 500; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
-    font-size: 17.16px;
-    line-height: 28px;
-    letter-spacing: 0.2px;
-    color: #2e3a55; 
+.box-logo { /*ლოგოს და სახელის სტილისთვის*/
+  width: 90px;
+  height: 28px;
+  margin: 0 0 16px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
+  font-weight: 500; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
+  font-size: 17.16px;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+  color: #2e3a55;
 }
-.box-logo svg{
-    width: 20px; /*სიგრძე სიგანე მოშორება მარჯვნიდან*/
-    height: 20px;
-    margin-right: 10px;
+.box-logo img { /*სვგ სამართავად*/
+  width: 20px; /*სიგრძე სიგანე მოშორება მარჯვნიდან*/
+  height: 20px;
+  margin-right: 10px;
 }
-.viewBox h2{
-    width: 460px; /*სიგრძე სიგანე*/
-    height: 48px;
-    margin: 0 0 24px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
-    font-weight: 700; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
-    font-size: 34.88px;
-    line-height: 48px;
-    letter-spacing: -0.2px;
-    color: #0a2540;
+.viewBox h2 { /*სათაურის სტილისთვის*/
+  width: 460px; /*სიგრძე სიგანე*/
+  height: 48px;
+  margin: 0 0 24px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
+  font-weight: 700; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
+  font-size: 34.88px;
+  line-height: 48px;
+  letter-spacing: -0.2px;
+  color: #0a2540;
 }
-.mini-paragraf{
-    width: 460px; /*სიგრძე სიგანე*/
-    height: 56px;
-    font-weight: 500; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
-    font-size: 16.45px;
-    line-height: 28px;
-    letter-spacing: 0.2px;
-    color: #425466;
-    margin: 0 0 24px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
+.mini-paragraf { /*პარაგრაფის სტილისტიკა*/
+  width: 460px; /*სიგრძე სიგანე*/
+  height: 56px;
+  font-weight: 500; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
+  font-size: 16.45px;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+  color: #425466;
+  margin: 0 0 24px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
 }
-.Invoicing{
-    width: 508px; /*სიგრძე სიგანე*/
-    height: 24px;
-    font-weight: 500; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
-    font-size: 13.71px;
-    line-height: 24px;
-    letter-spacing: 0.2px;
-    margin: 0 0 4px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
-    color: #425466;
+.Invoicing { /*ერთ ხაზიანი პარაგრაფი*/
+  width: 508px; /*სიგრძე სიგანე*/
+  height: 24px;
+  font-weight: 500; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
+  font-size: 13.71px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  margin: 0 0 4px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
+  color: #425466;
 }
-.Revenue{
-    width: 508px; /*სიგრძე სიგანე*/
-    height: 24px;
-    font-weight: 500; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
-    font-size: 13.83px;
-    line-height: 24px;
-    letter-spacing: 0.2px;
-    margin: 0 0 4px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
-    color: #425466; 
+.Revenue { /*ერთ ხაზიანი პარაგრაფი*/
+  width: 508px; /*სიგრძე სიგანე*/
+  height: 24px;
+  font-weight: 500; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
+  font-size: 13.83px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  margin: 0 0 4px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
+  color: #425466;
 }
-
-.Sigma{
-    width: 508px;  /*სიგრძე სიგანე*/
-    height: 24px;
-    font-weight: 500; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
-    font-size: 13.71px;
-    line-height: 24px;
-    letter-spacing: 0.2px;
-    margin: 0 0 4px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
-    color: #425466; 
+.Sigma { /*ერთ ხაზიანი პარაგრაფი*/
+  width: 508px; /*სიგრძე სიგანე*/
+  height: 24px;
+  font-weight: 500; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
+  font-size: 13.71px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  margin: 0 0 4px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
+  color: #425466;
 }
-.quantum{
-    width: 511px; /*სიგრძე სიგანე*/
-    height: 400px;
-    background-size: cover; /*ქავერზე მოსარგებად*/
-    background-position: center;
-    background-repeat: no-repeat; 
+.quantum { /*ფოტოსთვის*/
+  width: 511px; /*სიგრძე სიგანე*/
+  height: 400px;
+  background-size: cover; /*ქავერზე მოსარგებად*/
+  background-position: center;
+  background-repeat: no-repeat;
 }
-
 /*მეოთხე არტიკლა connect*/
-.connect{
-    width: 1080px;  /*სიგრძე სიგანე*/
-    height: 900px;
-    display: flex; /*სიმაღლეზე ცენტრში დაშორებით*/
-    align-items: center;
-    gap: 20px;
+.connect { /*კონტენტის სამართავად*/
+  width: 1080px; /*სიგრძე სიგანე*/
+  height: 900px;
+  display: flex; /*სიმაღლეზე ცენტრში დაშორებით*/
+  align-items: center;
+  gap: 142px;
 }
-.connectBox{
-    width: 540px;
-    height: 401px;
+.connectBox { /*უბრალოდ ყუთი*/
+  width: 540px; /*სიგრძე სიგანე*/
+  height: 401px;
 }
-.connectlogo{
-    width: 71px;
-    height: 28px;
-    margin: 0 0 16px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
-    font-weight: 500; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
-    font-size: 17.02px;
-    line-height: 28px;
-    letter-spacing: 0.2px;
-    color: #2e3a55; 
+.connectlogo { /*ლოგო და სატაური*/
+  width: 110px; /*სიგრძე სიგანე*/
+  height: 28px;
+  margin: 0 0 16px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
+  font-weight: 500; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
+  font-size: 17.02px;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+  color: #2e3a55;
 }
-.connectlogo svg{
-    width: 20px; /*სიგრძე სიგანე მოშორება მარჯვნიდან*/
-    height: 20px;
-    margin-right: 10px;
+.connectlogo img { /*ლოგოს სვგ*/
+  width: 20px; /*სიგრძე სიგანე მოშორება მარჯვნიდან*/
+  height: 20px;
+  margin-right: 10px;
 }
-.connectBox h2{
-    width: 460px; /*სიგრძე სიგანე*/
-    height: 96px;
-    margin: 0 0 24px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
-    font-weight: 700; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
-    font-size: 34.92px;
-    line-height: 48px;
-    letter-spacing: -0.2px;
-    color: #0a2540;
+.connectBox h2 { /*მთავარი სათაური*/
+  width: 460px; /*სიგრძე სიგანე*/
+  height: 96px;
+  margin: 0 0 24px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
+  font-weight: 700; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
+  font-size: 34.92px;
+  line-height: 48px;
+  letter-spacing: -0.2px;
+  color: #0a2540;
 }
-.connect-paragraf{
-    width: 460px; /*სიგრძე სიგანე*/
-    height: 56px;
-    font-weight: 500; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
-    font-size: 16.31px;
-    line-height: 28px;
-    letter-spacing: 0.2px;
-    color: #425466;
-    margin: 0 0 24px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
+.connect-paragraf { /*კონტენტის შინარსი*/
+  width: 460px; /*სიგრძე სიგანე*/
+  height: 56px;
+  font-weight: 500; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
+  font-size: 16.31px;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+  color: #425466;
+  margin: 0 0 24px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
 }
-.instant{
-    width: 508px;  /*სიგრძე სიგანე*/
-    height: 24px;
-    font-weight: 500; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
-    font-size: 13.71px;
-    line-height: 24px;
-    letter-spacing: 0.2px;
-    margin: 0 0 4px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
-    color: #425466;
+.instant { /*ერთ ხაზიანი პარაგრაფი*/
+  width: 508px; /*სიგრძე სიგანე*/
+  height: 24px;
+  font-weight: 500; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
+  font-size: 13.71px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  margin: 0 0 4px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
+  color: #425466;
 }
-.payment{
-    width: 508px;  /*სიგრძე სიგანე*/
-    height: 24px;
-    font-weight: 500; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
-    font-size: 13.71px;
-    line-height: 24px;
-    letter-spacing: 0.2px;
-    margin: 0 0 4px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
-    color: #425466; 
+.payment { /*ერთ ხაზიანი პარაგრაფი*/
+  width: 508px; /*სიგრძე სიგანე*/
+  height: 24px;
+  font-weight: 500; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
+  font-size: 13.71px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  margin: 0 0 4px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
+  color: #425466;
 }
-.connect-img{
-    width: 511px; /*სიგრძე სიგანე*/
-    height: 400px;
-    background-size: cover; /*ქავერზე მოსარგებად*/
-    background-position: center;
-    background-repeat: no-repeat;  
+.connect-img { /*კონტენტის ფოტო*/
+  width: 511px; /*სიგრძე სიგანე*/
+  height: 400px;
+  background-size: cover; /*ქავერზე მოსარგებად*/
+  background-position: center;
+  background-repeat: no-repeat;
 }
-.issuing{
-    width: 1080px;  /*სიგრძე სიგანე*/
-    height: 449px;
-    border: 2px solid red;
+/*მეხუთე არტიკლი*/
+.issuing { /*კონტენტის ყუთი*/
+  width: 1080px; /*სიგრძე სიგანე*/
+  height: 449px;
+  display: flex;
+  gap: 86.83px;
+}
+.issuing-logo { /*კონტენტის ლოგო და სახელი*/
+  width: 100px; /*სიგრძე სიგანე*/
+  height: 28px;
+  margin: 0 0 16px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
+  font-weight: 500; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
+  font-size: 17.02px;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+  color: #2e3a55;
+}
+.issuing-logo img { /*კონტენტის ლოგოს სვგ*/
+  width: 20px; /*სიგრძე სიგანე მოშორება მარჯვნიდან*/
+  height: 20px;
+  margin-right: 10px;
+}
+.issuing h2 { /*კონტენტის მთავარი სათაური*/
+  width: 460px; /*სიგრძე სიგანე*/
+  height: 96px;
+  margin: 0 0 24px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
+  font-weight: 700; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
+  font-size: 34.92px;
+  line-height: 48px;
+  letter-spacing: -0.2px;
+  color: #0a2540;
+}
+.issuing-paragraf { /*კონტანტის შინარსი*/
+  width: 460px; /*სიგრძე სიგანე*/
+  height: 56px;
+  font-weight: 500; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
+  font-size: 16.31px;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+  color: #425466;
+  margin: 0 0 24px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
+}
+.treasury { /*ერთ ხაზიანი პარაგრაფი*/
+  width: 508px; /*სიგრძე სიგანე*/
+  height: 24px;
+  font-weight: 500; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
+  font-size: 13.71px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  margin: 0 0 4px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
+  color: #425466;
+}
+.capital { /*ერთ ხაზიანი პარაგრაფი*/
+  width: 508px; /*სიგრძე სიგანე*/
+  height: 24px;
+  font-weight: 500; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
+  font-size: 13.71px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  margin: 0 0 4px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
+  color: #425466;
+}
+.isuing-connect { /*ერთ ხაზიანი პარაგრაფი*/
+  width: 508px; /*სიგრძე სიგანე*/
+  height: 24px;
+  font-weight: 500; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
+  font-size: 13.71px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  margin: 0 0 4px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
+  color: #425466;
+}
+.issuing-img { /*ფოტოსთვის*/
+  width: 511px; /*სიგრძე სიგანე*/
+  height: 400px;
+  background-size: cover; /*ქავერზე მოსარგებად*/
+  background-position: center;
+  background-repeat: no-repeat;
 }
