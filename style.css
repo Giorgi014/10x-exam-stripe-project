@@ -50,24 +50,6 @@ a {
   clip-path: polygon(0% 0, 0% 100%, 126% 0%, 0 0%);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ---- HEADER SECTION ---- */
 
 header {
@@ -220,28 +202,6 @@ header .btns .sign-in:hover .right-row {
   cursor: pointer;
   margin-top: 5px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* ---- SECTION CONTAINER ---- */
 
@@ -488,7 +448,7 @@ i {
   width: 100%;
   background-color: rgb(10, 37, 64);
   height: 1020px;
-  /* clip-path: polygon(0% 10%, 0% 100%, 100% 100%, 100% 0%); */
+  clip-path: polygon(0% 10%, 0% 100%, 100% 100%, 100% 0%);
   padding-top: 1px;
   overflow-x: hidden;
 }
@@ -520,7 +480,6 @@ i {
   width: 300px;
   font-size: clamp(32.01px, 100%, 35.18px);
   font-weight: 500;
-  /* line-height: 48px; */
   line-height: clamp(41px, 100%, 48px);
   letter-spacing: -0.24px;
   color: #FFFFFF;
@@ -587,10 +546,6 @@ i {
   height: 100%;
   margin: 0px;
   padding: 0px;
-  /* background: #0f2027; */
-  /* background: -webkit-linear-gradient(to top, #0f2027, #203a43, #2c5364);
-  background: linear-gradient(to top, #0f2027, #203a43, #2c5364); */
-  /* color: rgb(49, 98, 127); */
 }
 
 .second-container .canvas {
@@ -598,31 +553,11 @@ i {
   height: 100%;
 }
 
+/* ---- THIRD CONTANER ---- */
 
+.third-container{
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 /* ---- RESPONSIVE ---- */
 
