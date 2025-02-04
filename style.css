@@ -617,72 +617,107 @@ i {
   color: #425466; /*ფერი და დაშორება გარედან*/
   margin-left: 16px;
 }
-.to-manage-img { /*ფოტოების მართვისთვის*/
-  width: 540px; /*სიგრძე სიგანე*/
+.icon-container {
+  width: 736px;
+  height: 588px;
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.first-pair, .second-pair, .first-triplet, .quattro, .second-triplet, .third-pair {
+  width: 122px;
+  height: 588px;
+  border: 1px solid red;
+}
+.third-pair div:nth-child(1), .third-pair div:nth-child(2),
+.second-pair div:nth-child(1), .second-pair div:nth-child(2),
+.first-pair div:nth-child(1), .first-pair div:nth-child(2) {
+  width: 122px;
+  height: 294px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid red;
+}
+.third-pair,
+.second-triplet,
+.first-triplet {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.second-triplet div:nth-child(1), .second-triplet div:nth-child(2), .second-triplet div:nth-child(3),
+.first-triplet div:nth-child(1), .first-triplet div:nth-child(2), .first-triplet div:nth-child(3) {
+  border: 1px solid red;
+  width: 122px;
+  height: 164px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.quattro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 12px;
+}
+.quattro div:nth-child(1), .quattro div:nth-child(2), .quattro div:nth-child(3), .quattro div:nth-child(4) {
+  border: 1px solid red;
+  width: 122px;
+  height: 102px;
+}
+
+
+
+
+
+
+
+/* პროექტი დროებით შეჩერებულია
+.to-manage-img { /*ფოტოების მართვისთვის
+  width: 540px; /*სიგრძე სიგანე
   height: 470px;
   display: flex;
 }
-.left { /*მარცხენა იკონების მშობელი*/
-  width: 100px; /*სიგრძე სიგანე*/
+.left { /*მარცხენა იკონების მშობელი
+  width: 100px; /*სიგრძე სიგანე
   height: 467px;
 }
-.icon1 { /*იკონების კონტეინერი*/
+.the-first-icon { /*იკონების კონტეინერი
   position: relative;
-  width: 100px; /*სიგრძე სიგანე*/
+  width: 100px; /*სიგრძე სიგანე
   height: 232px;
-  display: flex; /*სიმაღლეზე ცენტრში სიგრძეზე ბოლოში*/
-  justify-content: center;
-  align-items: flex-end;
-  
+  display: flex; /*სიმაღლეზე ცენტრში სიგრძეზე ბოლოში
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
 }
-.icon1 img {
+.the-first-icon img {
   animation: moveUp 1.5s ease-out forwards;
-}
-
-.line-left-top, .Line-Left-Top {
-  position: relative;
-  width: 53px;
-  height: 50px;
-  border-top-left-radius: 10px;
-  /* background-image: conic-gradient(from var(--angel), transparent, blue, red, green, black);
-  animation: spin 3s linear infinite; */
+  width: 40px;
+  height: 40px;
 }
 .line-left-top {
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
-  position: absolute;
-  top: 140px;
-  left: 47px;
-}
-.line-left-top div {
-  position: absolute;
-  top: 5px;
-  left: 5px;
-}
-.line-left-top div, .Line-Left-Top div {
   content: '';
-  width: 49px;
-  height: 46px;
-  border-top-left-radius: 7px;
-  /* background-color: rgba(249, 252, 249); */
-}
-.Line-Left-Top div {
   position: absolute;
-  top: 5px;
-  left: 5px;
+  top: 112px;
+  left: 47px;
+  width: 52px;
+  height: 79px;
+  border: 1px solid red;
+  border-top-left-radius: 10px;
 }
-.Line-Left-Top {
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
-  position: absolute;
-  top: 107px;
-  left: 45px;
-}
-.wraper { /*ბარათების ვრაპერი*/
+
+
+
+
+
+.wraper { /*ბარათების ვრაპერი
   width: 340px;
-  display: flex; /*სიმაღლეზე ერთმანეთის ქვემოთ სიგრძეზე ცენტრში */
+  display: flex; /*სიმაღლეზე ერთმანეთის ქვემოთ სიგრძეზე ცენტრში 
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -690,29 +725,29 @@ i {
   height: 70vh;
 }
 .kavholm, .rocket-rider, .powdur {
-  display: flex; /*გაცენტვრა*/
+  display: flex; /*გაცენტვრა
   justify-content: center;
   align-items: center;
-  font-size: 18px; /*სიგრძე სიგანე*/
+  font-size: 18px; /*სიგრძე სიგანე
   border-radius: 8px;
   opacity: 0;
   transform: translateY(100%); 
 }
-.kavholm { /*პირველი ბარათი*/
+.kavholm { /*პირველი ბარათი
   position: absolute;
-  top: 50px; /*კორდინატები*/
+  top: 22px; /*კორდინატები
   left: -80px;
   animation: moveUp 0.5s ease-out forwards;
 }
-.rocket-rider { /*მეორე ბარათი*/
+.rocket-rider { /*მეორე ბარათი
   position: absolute;
-  top: 120px; /*კორდინატები*/
+  top: 112px; /*კორდინატები
   left: -80px;
   animation: moveUp 1s ease-out forwards;
 }
-.powdur { /*მესამე ბარათი*/
+.powdur { /*მესამე ბარათი
   position: absolute;
-  top: 185px; /*კორდინატები*/
+  top: 220px; /*კორდინატები
   left: -81px;
   animation: moveUp 1.5s ease-out forwards;
 }
@@ -732,26 +767,26 @@ i {
     transform: translateY(0);
   }
 }
-.wraper .kavholm:nth-child(1) { /*პირველი ბარათი*/
-  animation-delay: 0.1s; /*ანიმაცის სისწრაფე*/
+.wraper .kavholm:nth-child(1) { /*პირველი ბარათი
+  animation-delay: 0.1s; /*ანიმაცის სისწრაფე
 }
-.wrapwr .rocket-rider:nth-child(2) { /*მეორე ბარათი*/
-  animation-delay: 0.1s; /*ანიმაცის სისწრაფე*/
+.wrapwr .rocket-rider:nth-child(2) { /*მეორე ბარათი
+  animation-delay: 0.1s; /*ანიმაცის სისწრაფე
 }
-.wraper .powdur:nth-child(3) { /*მესამე ბარათი*/
-  animation-delay: 0.1s; /*ანიმაცის სისწრაფე*/
+.wraper .powdur:nth-child(3) { /*მესამე ბარათი
+  animation-delay: 0.1s; /*ანიმაცის სისწრაფე
 }
-.right { /*მარჯვენა იკონი*/
-  width: 100px; /*სიგრძე სიგანე*/
+.right { /*მარჯვენა იკონი
+  width: 100px; /*სიგრძე სიგანე
   height: 467px;
-  display: flex; /*სიგრძეზე ცენტრში*/
+  display: flex; /*სიგრძეზე ცენტრში
   align-items: center;
 }
-.icon2 { /*ორი იკონი ერთ კონტეინერში*/
+.icon2 { /*ორი იკონი ერთ კონტეინერში
   position: relative;
-  width: 100px; /*სიგრძე სიგანე*/
+  width: 100px; /*სიგრძე სიგანე
   height: 300px;
-  display: flex; /*ერთმანეთის ქვემოთ კუთხებისკენ გადაწეული სიგრძეზე ცენტრში*/
+  display: flex; /*ერთმანეთის ქვემოთ კუთხებისკენ გადაწეული სიგრძეზე ცენტრში
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
@@ -759,56 +794,12 @@ i {
 .icon2 img {
   animation: moveUp 1.5s ease-out forwards;
 }
-.line-right-bottom, .line-right-top {
-  width: 42px;
-  height: 107px;
-}
-.line-right-bottom {
-  content: '';
-  position: absolute;
-  top: 43px;
-  left: 8px;
-  border-bottom-right-radius: 10px;
-  /* background-image: conic-gradient(from var(--angel), transparent, blue, red, green, black);
-  animation: spin 3s linear infinite; */
-}
-@property --angel {
-  syntax: "<angle>";
-  initial-value: 0deg;
-  inherits: false;
-}
-@keyframes spin {
-  from{
-    --angel: 0deg;
-  }
-  to{
-    --angel: 360deg;
-  }
-}
-.line-right-bottom div {
-  width: 39px;
-  height: 102px;
-  border-bottom-right-radius: 7px;
-  /* background-color: rgba(249, 252, 249); */
-}
-.line-right-top {
-  display: flex;
-  align-items: flex-end;
-  content: '';
-  position: absolute;
-  top: 150px;
-  left: 8px;
-  width: 42px;
-  border-top-right-radius: 10px;
-  /* background-image: conic-gradient(from var(--angel), transparent, blue, red, green, black);
-  animation: spin 3s linear infinite; */
-}
-.line-right-top div {
-  width: 39px;
-  height: 102px;
-  border-top-right-radius: 7px;
-  /* background-color: rgba(249, 252, 249); */
-}
+*/
+
+
+
+
+
 /*მეორე არტიკლი payments*/
 .payments { /*არტიკლის სრულად სამართავად*/
   width: 1080px; /*სიგრძე სიგანე*/
