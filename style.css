@@ -628,7 +628,7 @@ header .btns .sign-in:hover .right-row {
   align-items: center;
 }
 
-.forth-container .textarea p2 {
+.forth-container .textarea .growth {
   font-size: 16.17px;
   font-weight: 500;
   line-height: 28px;
@@ -652,14 +652,15 @@ header .btns .sign-in:hover .right-row {
   color: #425466;
 }
 
-.forth-container .banners {;
+.forth-container .banners {
   display: grid;
-  grid-template-columns: repeat(4, auto);
+  grid-template-columns: repeat(2, auto);
+  
 }
-
-.forth-container .banner1 {
+.forth-container .banners .Banner1{
+  margin-top: 130px;
+  
 }
-
 
 .forth-container .banner {
   width: 465px;
