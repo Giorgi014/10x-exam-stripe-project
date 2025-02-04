@@ -50,6 +50,24 @@ a {
   clip-path: polygon(0% 0, 0% 100%, 126% 0%, 0 0%);
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ---- HEADER SECTION ---- */
 
 header {
@@ -202,6 +220,28 @@ header .btns .sign-in:hover .right-row {
   cursor: pointer;
   margin-top: 5px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ---- SECTION CONTAINER ---- */
 
@@ -553,11 +593,31 @@ i {
   height: 100%;
 }
 
-/* ---- THIRD CONTANER ---- */
 
-.third-container{
 
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ---- RESPONSIVE ---- */
 
@@ -748,12 +808,177 @@ i {
 
 
 
+/* ლაშას სექცია - მეოთხე */
+
+/* Forth-Container -------------------------------------------------------- */
+    
+
+.forth-container {
+  margin: 0 auto;
+  width: 1080px;
+}
+
+.forth-container .textarea {
+  width: 650px;
+  justify-content: center;
+  align-items: center;
+}
+
+.forth-container .textarea .growth {
+  font-size: 16.17px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0.24px;
+  color: #635BFF;
+}
+
+.forth-container .textarea h3 {
+  font-size: 30.41px;
+  font-weight: 500;
+  line-height: 44px;
+  letter-spacing: -0.1px;
+  color: #0A2540;    
+}
+
+.forth-container .textarea p {
+  font-size: 16.59px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0.20000000298023224px;
+  color: #425466;
+}
+
+.forth-container .banners {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  
+}
+.forth-container .banners .Banner1{
+  margin-top: 130px;
+  
+}
+
+.forth-container .banner {
+  width: 465px;
+  height: 525px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 8px 2px rgba(167, 167, 167, 0.532)
+}
+
+
+
+
+
+
+
+
+/* ლაშას სექცია - მეხუთე */
+
+/* fifth-container ----------------------------------------------------------- */  
+
+.fifth-container {
+  height: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0A2540;
+}
+
+.fifth-container .devsection {
+  width: 496px;
+}
+
+.fifth-container .devsection p2 {
+  font-size: 17.02px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+  color: #00D4FF;
+}
+
+.fifth-container .devsection h2 {
+  width: 416px;
+  font-size: 32.27px;
+  font-weight: 500;
+  line-height: 44px;
+  letter-spacing: -0.1px;
+  color: #ffffff;
+}
+
+.fifth-container .devsection p {
+  padding: 0px 0px 24px 0px;
+  font-size: 17.16px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+  color: #ADBDCC;
+}
+
+.fifth-container .devsection button {
+  border-radius: 16px;
+  border: none;
+  width: 130px;
+  height: 33px;
+  background-color: #00D4FF;
+  color: #000000;
+}
+
+.fifth-container .devcodarea {
+  width: 1024px;
+  display: flex;
+  justify-content: center;
+}
+
+.fifth-container .devoptions {
+  width: 992px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fifth-container .devoptions .option {
+  width: 200px;
+}
+  
+.fifth-container .devoptions .option h3 {
+  font-size: 13.71px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #ffffff;
+}
+
+.fifth-container .devoptions .option p {
+  font-size: 13.59px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #ADBDCC;
+}
+
+.fifth-container .devoptions .option a {
+  font-size: 13.71px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #00D4FF;
+}
+
+
+
+
+
+
+
+
+/* ლაშას სექცია - მეექვსე */
+
 /* Sixth Cotainer ----------------------------------------------------- */
 
 
 .sixth-container {
     margin: 0 auto;
-    width: 1024px;
+    width: 1080px;
 }
 
 .sixth-container .launch3 {
@@ -776,10 +1001,9 @@ i {
 
 .sixth-container h2 {
     padding: 0px 0px 24px 16px;
-    font-size: 35.77px;
+    font-size: 36px;
     font-weight: 500;
-    line-height: 48px;
-    letter-spacing: -0.2px;
+    line-height: 36px;
 }
 
 .sixth-container .launchbar {
@@ -826,11 +1050,12 @@ i {
 
 
 
-
+/* ლაშას სექცია - მეშვიდე */
 
 /* Seventh Container -------------------------------------------------------- */
 
 .seventh-container {
+    width: 1080px;
     height: 590px;
     display: flex;
     justify-content: center;
@@ -903,7 +1128,7 @@ i {
 
 
 
-
+/* ლაშას სექცია - ფუტერი */
 
 /* Footer */
 
@@ -931,161 +1156,6 @@ i {
 
 
 
-
-
-
-
-/* fifth-container ----------------------------------------------------------- */  
-
-.fifth-container {
-    height: 1200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #0A2540;
-}
-
-.fifth-container .devsection {
-    width: 496px;
-}
-
-.fifth-container .devsection p2 {
-    font-size: 17.02px;
-    font-weight: 500;
-    line-height: 28px;
-    letter-spacing: 0.2px;
-    color: #00D4FF;
-}
-
-.fifth-container .devsection h2 {
-    width: 416px;
-    font-size: 32.27px;
-    font-weight: 500;
-    line-height: 44px;
-    letter-spacing: -0.1px;
-    color: #ffffff;
-}
-
-.fifth-container .devsection p {
-    padding: 0px 0px 24px 0px;
-    font-size: 17.16px;
-    font-weight: 500;
-    line-height: 28px;
-    letter-spacing: 0.2px;
-    color: #ADBDCC;
-}
-
-.fifth-container .devsection button {
-    border-radius: 16px;
-    border: none;
-    width: 130px;
-    height: 33px;
-    background-color: #00D4FF;
-    color: #000000;
-}
-
-.fifth-container .devcodarea {
-    width: 1024px;
-    display: flex;
-    justify-content: center;
-}
-
-.fifth-container .devoptions {
-    width: 992px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.fifth-container .devoptions .option {
-    width: 200px;
-}
-    
-.fifth-container .devoptions .option h3 {
-    font-size: 13.71px;
-    font-weight: 500;
-    line-height: 24px;
-    letter-spacing: 0.2px;
-    color: #ffffff;
-    }
-
-.fifth-container .devoptions .option p {
-    font-size: 13.59px;
-    font-weight: 500;
-    line-height: 24px;
-    letter-spacing: 0.2px;
-    color: #ADBDCC;
-    }
-
-.fifth-container .devoptions .option a {
-font-size: 13.71px;
-font-weight: 500;
-line-height: 24px;
-letter-spacing: 0.2px;
-color: #00D4FF;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-/* Forth-Container -------------------------------------------------------- */
-    
-
-.forth-container {
-    margin: 0 auto;
-    width: 1024px;
-}
-
-.forth-container .textarea {
-    width: 650px;
-    justify-content: center;
-    align-items: center;
-}
-
-.forth-container .textarea p2 {
-    font-size: 16.17px;
-    font-weight: 500;
-    line-height: 28px;
-    letter-spacing: 0.24px;
-    color: #635BFF;
-}
-
-.forth-container .textarea h3 {
-    font-size: 30.41px;
-    font-weight: 500;
-    line-height: 44px;
-    letter-spacing: -0.1px;
-    color: #0A2540;    
-}
-
-.forth-container .textarea p {
-font-size: 16.59px;
-font-weight: 500;
-line-height: 28px;
-letter-spacing: 0.20000000298023224px;
-color: #425466;
-}
-
-.forth-container .banners {
-    display: grid;
-    grid-template-columns: repeat(4, auto);
-}
-
-
-.forth-container .banner {
-    width: 465px;
-    height: 525px;
-    border-radius: 8px;
-    box-shadow: 0px 0px 8px 2px rgba(167, 167, 167, 0.532)
-}
 
 
 
