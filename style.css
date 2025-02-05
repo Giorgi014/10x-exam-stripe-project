@@ -567,7 +567,7 @@ i {
 
 .third-container .slide-main {
   margin: 128px auto;
-  width: clamp(736px, 18vw, 1080px);
+  width: clamp(736px, 100vw, 1080px);
 }
 
 .third-container .slide-main .enterprise-container {
@@ -598,12 +598,16 @@ i {
   line-height: 28px;
   letter-spacing: 0.24px;
   margin-bottom: 24px;
+  width: 709.39px;
 }
-.third-container .slide-main .enterprise-container .services-highlight a{
+
+.third-container .slide-main .enterprise-container .services-highlight a {
   color: #635BFF;
 }
-.third-container .slide-main .enterprise-container button{
-  width: 250px;
+
+.third-container .slide-main .enterprise-container button {
+  position: relative;
+  width: 270px;
   height: 33px;
   color: #f6f9fc;
   background-color: #635BFF;
@@ -611,10 +615,15 @@ i {
   outline: none;
   border-radius: 22px;
   cursor: pointer;
+  font-size: 13.95px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.24px;
 }
+
 .third-container .slide-main .enterprise-container button .both-rows {
   position: absolute;
-  right: 0;
+  right: 0px;
 }
 
 .third-container .slide-main .enterprise-container:hover .right {
@@ -627,6 +636,95 @@ i {
 
 .third-container .slide-main .enterprise-container button:hover .right-row {
   visibility: visible;
+}
+
+.third-container .slide-main .slide-container .slide {
+  display: flex;
+  margin-top: 64px;
+}
+
+.third-container .slide-main .slide-container .slide .slide-head {
+  width: 270px;
+  height: 397.81px;
+}
+
+.third-container .slide-main .slide-container .slide .slide-head .number {
+  padding-left: 16px;
+  border-left: 1px solid #635BFF;
+  margin-bottom: 8px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 31.92px;
+  letter-spacing: 0.24px;
+  color: #0A2540;
+}
+
+.third-container .slide-main .slide-container .slide .slide-head .company-info {
+  padding-left: 16px;
+  font-size: 13.83px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.24px;
+  color: #425466;
+}
+
+.third-container .slide-main .slide-container .slide .slide-head .second-cont {
+  margin: 48px 0;
+}
+
+.third-container .slide-main .slide-container .slide .slide-head .second-cont .payment-info {
+  padding-left: 16px;
+  font-size: 13.83px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.24px;
+  color: #425466;
+}
+
+.third-container .slide-main .slide-container .slide .slide-head .product-cont .product-used {
+  padding-left: 16px;
+  border-left: 1px solid #635BFF;
+  margin-bottom: 8px;
+  font-size: 13.95px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.24px;
+  color: #0A2540;
+}
+
+.third-container .slide-main .slide-container .slide .slide-head .product-cont .slide-payments,
+.slide-connect {
+  padding-left: 16px;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 18.15px;
+  letter-spacing: 0.24px;
+  color: #425466;
+}
+
+.third-container .slide-main .slide-container .slide .slide-head .product-cont .slide-payments img,
+.slide-connect img{
+  margin-right: 16px;
+}
+.third-container .slide-main .slide-container .slide .slide-img{
+  width: 810px;
+  height: 410px;
+}
+.third-container .slide-main .slide-container .slide .slide-img img{
+  width: 100%;
+  height: 100%;
+}
+.third-container .slide-partner-sites{
+  margin-top: 40px;
+  display: flex;
+}
+.third-container .slide-partner-sites .slide-bmw, .slide-amazon, .slide-maersk, .slide-twilio{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 263px;
+  height: 100px;
+  border: 1px solid grey;
 }
 
 /* ---- RESPONSIVE ---- */
