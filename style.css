@@ -1119,21 +1119,25 @@ h4 {
 
 
 /*davit-section*/
+
 .first-container { /*ჰეადერის შემდეკი სექცია კონტეინერი*/
   background-color: rgba(249, 252, 249);
   width: 100%;
   margin: 0 auto;
+  padding-top: 1px;
 }
 .first-container a {
   color: #635bff;
 }
 .container-inside-container {
+  /* width: clamp(390px, 100vw, 1080px); */
   width: 1080px;
-  margin: 0 auto;
+  margin: 123px auto;
   display: flex; 
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  border: 1px solid red;
 }
 /*პირველი არტიკლი*/
 .modular-solutions { /*სექცია კონტეინერის პირველი შვილი*/
@@ -1183,11 +1187,12 @@ h4 {
   margin-left: 16px;
 }
 .icon-container {
-  width: 736px;
-  height: 588px;
+  width: 690px;
+  height: 508px;
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 1px solid red;
 }
 .first-pair, .second-pair, .first-triplet, .quattro, .second-triplet, .third-pair {
   width: 122px;
@@ -1580,4 +1585,180 @@ h4 {
   background-size: cover; /*ქავერზე მოსარგებად*/
   background-position: center;
   background-repeat: no-repeat;
+}
+
+/* რესპონსივი */
+@media (max-width: 1200px) {
+  .container-inside-container {
+    width: 90%;
+  }
+
+  .modular-solutions {
+    width: 100%;
+    height: 880px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .modular-solutions h3 {
+    width: 170px;
+    margin: 8px;
+  }
+
+  .to-manage-content {
+    width: 1080px;
+    height: 208px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+  }
+
+  .container {
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+
+  .to-manage-content h2 {
+    font-size: 36px;
+    width: 600px;
+    height: 87px;
+    margin: 8px;
+  }
+
+  .to-manage-content p {
+    font-size: 16px;
+    width: 700px;
+    height: 85px;
+    margin: 8px;
+  }
+
+  .payments, .billing, .connect {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .payments .Container, .billing .viewBox, .connectBox {
+    width: 100%;
+  }
+
+  .primary {
+    width: 100%;
+  }
+
+  .connect-img, .quantum, .payment {
+    width: 100%;
+    height: auto;
+    background-size: contain;
+  }
+
+  /* Adjusting image sizes */
+  .pay, .quantum, .connect-img {
+    height: 300px; /* Adjust image sizes */
+  }
+}
+
+@media (max-width: 768px) {
+  .first-container a {
+    font-size: 14px;
+  }
+
+  .container-inside-container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .to-manage-content h2 {
+    font-size: 28px;
+    margin-left: 10px;
+  }
+
+  .to-manage-content p {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .logo img {
+    width: 15px;
+    height: 15px;
+  }
+
+  .primary {
+    width: 100%;
+    font-size: 12px;
+  }
+
+  .connect {
+    gap: 50px;
+  }
+
+  .connectBox {
+    width: 100%;
+  }
+
+  .connect-img {
+    height: 250px;
+  }
+
+  /* Adjust text for mobile */
+  .viewBox h2, .issuing h2 {
+    font-size: 28px;
+  }
+
+  .box-logo, .issuing-logo, .connectlogo {
+    font-size: 15px;
+  }
+
+  .viewBox h2, .issuing h2, .connectBox h2 {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 480px) {
+  .first-container {
+    padding: 0 10px;
+  }
+
+  .modular-solutions, .payments, .billing, .connect {
+    width: 100%;
+    height: auto;
+  }
+
+  .to-manage-content h2 {
+    font-size: 22px;
+  }
+
+  .to-manage-content p {
+    font-size: 12px;
+  }
+
+  .logo img {
+    width: 12px;
+    height: 12px;
+  }
+
+  .primary {
+    width: 100%;
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  .connect, .issuing {
+    gap: 20px;
+  }
+
+  .connectBox, .viewBox {
+    width: 100%;
+  }
+
+  .connect-img {
+    height: 200px;
+  }
+
+  .pay {
+    height: 250px;
+  }
 }
