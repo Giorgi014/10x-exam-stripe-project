@@ -819,6 +819,10 @@ i {
 
 
 
+
+
+
+
 /* ლაშას სექცია - მეოთხე */
 
 /* Forth-Container -------------------------------------------------------- */
@@ -843,7 +847,8 @@ i {
   color: #635BFF;
 }
 
-.forth-container .textarea h3 {
+.forth-container .textarea h2 {
+  padding: 0px 0px 16px 0px;
   font-size: 30.41px;
   font-weight: 500;
   line-height: 44px;
@@ -852,10 +857,11 @@ i {
 }
 
 .forth-container .textarea p {
+  padding: 0px 0px 16px 0px;
   font-size: 16.59px;
   font-weight: 500;
   line-height: 28px;
-  letter-spacing: 0.20000000298023224px;
+  letter-spacing: 0.2px;
   color: #425466;
 }
 
@@ -876,6 +882,12 @@ i {
   border-radius: 8px;
   box-shadow: 0px 0px 8px 2px rgba(167, 167, 167, 0.532)
 }
+
+.forth-container .bannertext {
+  margin: 16px;
+}
+
+
 
 
 
@@ -1163,8 +1175,6 @@ h4 {
   flex-direction: column;
   justify-content: space-between;
 }
-
-
 
 
 
