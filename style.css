@@ -1130,10 +1130,9 @@ h4 {
   color: #635bff;
 }
 .container-inside-container {
-  /* width: clamp(390px, 100vw, 1080px); */
-  width: 1080px;
+  width: clamp(379px, 76vw, 1080px);
   margin: 123px auto;
-  display: flex; 
+  display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
@@ -1141,8 +1140,9 @@ h4 {
 }
 /*პირველი არტიკლი*/
 .modular-solutions { /*სექცია კონტეინერის პირველი შვილი*/
-  width: 1080px; /*სიგრძე სიგანე*/
-  height: 504px;
+  width: calc(347px + (1080px - 347px) * ((100vw - 347px) / (1080 - 347)));
+  height: calc(1160px - (1160px - 504px) * ((100vw - 347px) / (1080 - 347)));
+  border: 1px solid green;
 }
 .container { /*კონტენტის სამართავად*/
   display: flex; /*გვერდი გვერდ დაშორებით*/
@@ -1186,9 +1186,10 @@ h4 {
   color: #425466; /*ფერი და დაშორება გარედან*/
   margin-left: 16px;
 }
+
+
 .icon-container {
-  width: 690px;
-  height: 508px;
+  height: 588px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1197,6 +1198,7 @@ h4 {
 .first-pair, .second-pair, .first-triplet, .quattro, .second-triplet, .third-pair {
   width: 122px;
   height: 588px;
+  border: 1px solid red;
 }
 .third-pair div:nth-child(1), .third-pair div:nth-child(2),
 .second-pair div:nth-child(1), .second-pair div:nth-child(2),
@@ -1206,6 +1208,7 @@ h4 {
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 1px solid red;
 }
 .third-pair,
 .second-triplet,
@@ -1214,6 +1217,7 @@ h4 {
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
+  border: 1px solid red;
 }
 .second-triplet div:nth-child(1), .second-triplet div:nth-child(2), .second-triplet div:nth-child(3),
 .first-triplet div:nth-child(1), .first-triplet div:nth-child(2), .first-triplet div:nth-child(3) {
@@ -1222,6 +1226,7 @@ h4 {
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 1px solid red;
 }
 .quattro {
   display: flex;
@@ -1229,10 +1234,12 @@ h4 {
   align-items: center;
   flex-direction: column;
   gap: 12px;
+  border: 1px solid red;
 }
 .quattro div:nth-child(1), .quattro div:nth-child(2), .quattro div:nth-child(3), .quattro div:nth-child(4) {
   width: 122px;
-  height: 102px;
+  height: 102px; 
+  border: 1px solid red;
 }
 /*მეორე არტიკლი payments*/
 .payments { /*არტიკლის სრულად სამართავად*/
@@ -1337,7 +1344,7 @@ h4 {
 }
 .chir-pay { /*შვილის გაცენტვრისთვის*/
   width: 540px; /*სიგრძე სიგანე*/
-  height: 900px;
+  height: 300px;
   display: flex; /*გაცენტვრა*/
   justify-content: center;
   align-items: center;
@@ -1588,9 +1595,9 @@ h4 {
 }
 
 /* რესპონსივი */
-@media (max-width: 1200px) {
+@media (max-width: 1080px ) {
   .container-inside-container {
-    width: 90%;
+    /* width: 90%; */
   }
 
   .modular-solutions {
@@ -1635,18 +1642,31 @@ h4 {
     height: 85px;
     margin: 8px;
   }
+  .card-container {
+    display: block;
+  }
+
+  .icon-container {
+    display: none;
+  }
 
   .payments, .billing, .connect {
     flex-direction: column;
     gap: 20px;
+    height: 1180px;
   }
 
   .payments .Container, .billing .viewBox, .connectBox {
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
   }
 
   .primary {
-    width: 100%;
+    width: 180px;
   }
 
   .connect-img, .quantum, .payment {
@@ -1679,6 +1699,14 @@ h4 {
   .to-manage-content p {
     font-size: 14px;
     width: 100%;
+  }
+
+  .card-container {
+    display: none;
+  }
+
+  .icon-container {
+    display: block;
   }
 
   .logo img {
