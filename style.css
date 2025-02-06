@@ -1130,18 +1130,19 @@ h4 {
   color: #635bff;
 }
 .container-inside-container {
-  width: clamp(379px, 76vw, 1080px);
+  width: 1080px;
+  height: 4427px;
   margin: 123px auto;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   border: 1px solid red;
 }
 /*პირველი არტიკლი*/
 .modular-solutions { /*სექცია კონტეინერის პირველი შვილი*/
-  width: calc(347px + (1080px - 347px) * ((100vw - 347px) / (1080 - 347)));
-  height: calc(1160px - (1160px - 504px) * ((100vw - 347px) / (1080 - 347)));
+  width: 1078px;
+  height: 504px;
   border: 1px solid green;
 }
 .container { /*კონტენტის სამართავად*/
@@ -1188,7 +1189,8 @@ h4 {
 }
 
 
-.icon-container {
+.icon-container { 
+  display: none;
   height: 588px;
   display: flex;
   justify-content: center;
@@ -1243,10 +1245,11 @@ h4 {
 }
 /*მეორე არტიკლი payments*/
 .payments { /*არტიკლის სრულად სამართავად*/
-  width: 1080px; /*სიგრძე სიგანე*/
-  height: 900px;
+  width: 1075px; /*სიგრძე სიგანე*/
+  height: 645px;
   display: flex; /*სიგრძეზე ცენტრში*/
   align-items: center;
+  border: 1px solid red;
 }
 .Container { /*კონტენტის კონტეინერი */
   width: 540px; /*სიგრძე სიგანე*/
@@ -1358,11 +1361,12 @@ h4 {
 }
 /*მესამე არტიკლი billing*/
 .billing { /*მშობელი კლასი*/
-  width: 1080px; /*სიგრძე სიგანე*/
-  height: 900px;
+  width: 1075px; /*სიგრძე სიგანე*/
+  height: 450px;
   display: flex; /*სიმაღლეზე ცენტრში დაშორებით*/
   align-items: center;
   gap: 25px;
+  border: 1px solid red;
 }
 .viewBox { /*უბრალობ ყუთი*/
   width: 540px;
@@ -1442,11 +1446,12 @@ h4 {
 }
 /*მეოთხე არტიკლა connect*/
 .connect { /*კონტენტის სამართავად*/
-  width: 1080px; /*სიგრძე სიგანე*/
-  height: 900px;
+  width: 1075px; /*სიგრძე სიგანე*/
+  height: 650px;
   display: flex; /*სიმაღლეზე ცენტრში დაშორებით*/
   align-items: center;
   gap: 142px;
+  border: 1px solid red;
 }
 .connectBox { /*უბრალოდ ყუთი*/
   width: 540px; /*სიგრძე სიგანე*/
@@ -1516,10 +1521,11 @@ h4 {
 }
 /*მეხუთე არტიკლი*/
 .issuing { /*კონტენტის ყუთი*/
-  width: 1080px; /*სიგრძე სიგანე*/
+  width: 1075px; /*სიგრძე სიგანე*/
   height: 449px;
   display: flex;
   gap: 86.83px;
+  border: 1px solid red;
 }
 .issuing-logo { /*კონტენტის ლოგო და სახელი*/
   width: 100px; /*სიგრძე სიგანე*/
@@ -1595,198 +1601,38 @@ h4 {
 }
 
 /* რესპონსივი */
-@media (max-width: 1080px ) {
+@media(max-width: 1024px) {
   .container-inside-container {
-    /* width: 90%; */
+    width: 992px;
   }
 
   .modular-solutions {
-    width: 100%;
-    height: 880px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-
-  .modular-solutions h3 {
-    width: 170px;
-    margin: 8px;
-  }
-
-  .to-manage-content {
-    width: 1080px;
-    height: 208px;
-    display: flex;
-    text-align: center;
-    align-items: center;
+    width: 976px;
+    height: 495px;
   }
 
   .container {
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
+    /* flex-direction: column; */
+  }
+  .to-manage-content {
+    width: 470px;
+    height: 470px;
   }
 
   .to-manage-content h2 {
-    font-size: 36px;
-    width: 600px;
-    height: 87px;
-    margin: 8px;
+    width: 400px;
   }
 
   .to-manage-content p {
-    font-size: 16px;
-    width: 700px;
-    height: 85px;
-    margin: 8px;
+    width: 400px;
+    height: 175px;
   }
+
   .card-container {
     display: block;
   }
 
   .icon-container {
     display: none;
-  }
-
-  .payments, .billing, .connect {
-    flex-direction: column;
-    gap: 20px;
-    height: 1180px;
-  }
-
-  .payments .Container, .billing .viewBox, .connectBox {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .primary {
-    width: 180px;
-  }
-
-  .connect-img, .quantum, .payment {
-    width: 100%;
-    height: auto;
-    background-size: contain;
-  }
-
-  /* Adjusting image sizes */
-  .pay, .quantum, .connect-img {
-    height: 300px; /* Adjust image sizes */
-  }
-}
-
-@media (max-width: 768px) {
-  .first-container a {
-    font-size: 14px;
-  }
-
-  .container-inside-container {
-    width: 100%;
-    padding: 10px;
-  }
-
-  .to-manage-content h2 {
-    font-size: 28px;
-    margin-left: 10px;
-  }
-
-  .to-manage-content p {
-    font-size: 14px;
-    width: 100%;
-  }
-
-  .card-container {
-    display: none;
-  }
-
-  .icon-container {
-    display: block;
-  }
-
-  .logo img {
-    width: 15px;
-    height: 15px;
-  }
-
-  .primary {
-    width: 100%;
-    font-size: 12px;
-  }
-
-  .connect {
-    gap: 50px;
-  }
-
-  .connectBox {
-    width: 100%;
-  }
-
-  .connect-img {
-    height: 250px;
-  }
-
-  /* Adjust text for mobile */
-  .viewBox h2, .issuing h2 {
-    font-size: 28px;
-  }
-
-  .box-logo, .issuing-logo, .connectlogo {
-    font-size: 15px;
-  }
-
-  .viewBox h2, .issuing h2, .connectBox h2 {
-    font-size: 26px;
-  }
-}
-
-@media (max-width: 480px) {
-  .first-container {
-    padding: 0 10px;
-  }
-
-  .modular-solutions, .payments, .billing, .connect {
-    width: 100%;
-    height: auto;
-  }
-
-  .to-manage-content h2 {
-    font-size: 22px;
-  }
-
-  .to-manage-content p {
-    font-size: 12px;
-  }
-
-  .logo img {
-    width: 12px;
-    height: 12px;
-  }
-
-  .primary {
-    width: 100%;
-    padding: 10px;
-    font-size: 12px;
-  }
-
-  .connect, .issuing {
-    gap: 20px;
-  }
-
-  .connectBox, .viewBox {
-    width: 100%;
-  }
-
-  .connect-img {
-    height: 200px;
-  }
-
-  .pay {
-    height: 250px;
   }
 }
