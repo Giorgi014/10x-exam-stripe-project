@@ -568,6 +568,10 @@ i {
   height: 100%;
 }
 
+
+
+
+
 /* ---- THIRD CONTANER ---- */
 
 .third-container {
@@ -807,6 +811,19 @@ i {
 /* ---- RESPONSIVE ---- */
 
 @media screen and (max-width: 1022px) {
+  /* ლაშას მეშვიდე სექციისთვის */
+  .seventh-container .mainready {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+  }
+  .sixth-container .card3 {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+  }
+}
+
+@media screen and (max-width: 1022px) {
   header {
     display: none;
   }
@@ -911,6 +928,9 @@ i {
   }
 }
 
+
+
+
 @media screen and (max-width: 890px) {
   .section-container .stripe .email-and-contact {
     position: relative;
@@ -949,14 +969,23 @@ i {
   .section-container .stripe {
     width: 368px;
   }
+  
 }
 
+
+@media screen and (max-width: 700px) {
+  .second-container .global-scale-main-container .global-scale-container {
+    grid-template-columns: repeat(1,auto);
+  }
+}
 @media screen and (max-width: 700px) {
   .sites-section {
     width: clamp(347px, 18vw, 668px);
     height: 340px;
     margin: 73px auto;
   }
+
+
 
   .sites-section .sites-container {
     display: flex;
@@ -980,6 +1009,14 @@ i {
   .second-container .global-scale-main-container .global-scale-container {
     grid-template-columns: repeat(1, auto);
   }
+}
+
+@media screen and (max-width: 500px) {
+    .seventh-container .mainready .second {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 30px;
+    }
 }
 
 @media screen and (max-width: 414px) {
@@ -1046,20 +1083,33 @@ i {
 
 }
 
-.forth-container .banners .Banner1 {
+.forth-container .Banner1 {
   margin-top: 130px;
 
 }
 
 .forth-container .banner {
-  width: 465px;
+  position: relative;
+  margin: 16px;
+  padding: 8px;
+  width: 500px;
   height: 525px;
   border-radius: 8px;
   box-shadow: 0px 0px 8px 2px rgba(167, 167, 167, 0.532)
 }
 
 .forth-container .bannertext {
-  margin: 16px;
+  margin: 20px;
+}
+
+.forth-container .banner .bannerlink {
+  display: none;
+  position: absolute;
+  bottom: 16px;
+}
+
+.forth-container .banner:hover .bannerlink {
+  display: flex;
 }
 
 
@@ -1076,18 +1126,26 @@ i {
 /* fifth-container ----------------------------------------------------------- */
 
 .fifth-container {
-  height: 1200px;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #0A2540;
+  clip-path: polygon(0% 10%, 0% 100%, 100% 90%, 100% 0%);
+}
+
+.fifth-container .devblock {
+  width: 1080px;
+  margin: 287px auto;
 }
 
 .fifth-container .devsection {
-  width: 496px;
+  padding: 0px 0px 16px 0px;
+  width: 500px;
+  height: 417;
 }
 
-.fifth-container .devsection p2 {
+.fifth-container .devsection .p2 {
   font-size: 17.02px;
   font-weight: 500;
   line-height: 28px;
@@ -1106,6 +1164,7 @@ i {
 
 .fifth-container .devsection p {
   padding: 0px 0px 24px 0px;
+  width: 450px;
   font-size: 17.16px;
   font-weight: 500;
   line-height: 28px;
@@ -1123,20 +1182,23 @@ i {
 }
 
 .fifth-container .devcodarea {
-  width: 1024px;
   display: flex;
-  justify-content: center;
-}
-
-.fifth-container .devoptions {
-  width: 992px;
-  display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
+.fifth-container .devcodingarea {
+}
+
+.fifth-container .devoptions {
+  margin-top: 80px;;
+  width: 1080px;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  justify-content: space-between;
+}
+
 .fifth-container .devoptions .option {
-  width: 200px;
+  width: 212px;
 }
 
 .fifth-container .devoptions .option h3 {
@@ -1177,17 +1239,39 @@ i {
 
 .sixth-container {
   margin: 0 auto;
-  width: 1080px;
+  width: 100%;
+}
+
+.sixth-container .launch {
+  margin: 0 auto;
+  width: clamp(390px, 100vw, 1080px);
 }
 
 .sixth-container .launch3 {
-  padding: 0px 0px 24px 16px;
+  padding: 16px 0px 24px 0px;
   color: #635BFF;
   font-size: 16.88px;
   font-weight: 500;
   line-height: 28px;
   letter-spacing: 0.2px;
 }
+
+.sixth-container h2 {
+  padding: 0px 0px 24px 0px;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 36px;
+}
+
+.sixth-container .launchbar {
+  padding: 0px 0px 24px 0px;
+  width: 980px;
+  font-size: 16.45px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+}
+
 
 .sixth-container .card h3 {
   padding: 0px 0px 16px 16px;
@@ -1198,21 +1282,7 @@ i {
   letter-spacing: 0.2px;
 }
 
-.sixth-container h2 {
-  padding: 0px 0px 24px 16px;
-  font-size: 36px;
-  font-weight: 500;
-  line-height: 36px;
-}
 
-.sixth-container .launchbar {
-  padding: 0px 0px 24px 16px;
-  width: 980px;
-  font-size: 16.45px;
-  font-weight: 500;
-  line-height: 28px;
-  letter-spacing: 0.2px;
-}
 
 .sixth-container .cardbar {
   padding: 0px 16px 16px 16px;
@@ -1232,12 +1302,22 @@ i {
 }
 
 .sixth-container .card3 .card {
-  width: 308px;
+  position: relative;
+  padding: 8px;
+  width: 331px;
   height: 508px;
   border-radius: 8px;
-  box-shadow: 0px 0px 8px 2px rgba(167, 167, 167, 0.532)
+  box-shadow: 0px 0px 8px 2px rgba(167, 167, 167, 0.532);
 }
 
+.sixth-container .card3 .card h3 {
+  margin-top: 8px;
+}
+
+.sixth-container .card3 .card .cardlink {
+  position: absolute;
+  bottom: 16px;
+}
 
 
 
@@ -1254,13 +1334,17 @@ i {
 /* Seventh Container -------------------------------------------------------- */
 
 .seventh-container {
-  width: 1080px;
-  height: 590px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin-top: 50px;
+  padding: 1px 0px 50px 0px;
   width: 100%;
   background-color: rgb(246, 249, 252);
+}
+
+.seventh-container .mainready {
+  width: clamp(390px, 100vw, 1080px);
+  display: flex;
+  justify-content: center;
+  margin: 100px auto;
 }
 
 .seventh-container h3 {
@@ -1279,12 +1363,6 @@ i {
 
 .seventh-container .ready {
   width: 496px;
-}
-
-.seventh-container .mainready {
-  width: 1024px;
-  display: flex;
-  justify-content: center;
 }
 
 .seventh-container .second1 {
@@ -1370,6 +1448,7 @@ h4 {
   background-color: rgba(249, 252, 249);
   width: 100%;
   margin: 0 auto;
+  padding-top: 1px;
 }
 
 .first-container a {
@@ -1378,11 +1457,13 @@ h4 {
 
 .container-inside-container {
   width: 1080px;
-  margin: 0 auto;
+  height: 4427px;
+  margin: 123px auto;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  border: 1px solid red;
 }
 
 /*პირველი არტიკლი*/
@@ -1390,7 +1471,6 @@ h4 {
   /*სექცია კონტეინერის პირველი შვილი*/
   width: 1080px;
   /*სიგრძე სიგანე*/
-  height: 504px;
 }
 
 .container {
@@ -1456,12 +1536,14 @@ h4 {
   margin-left: 16px;
 }
 
-.icon-container {
+.icon-container { 
   width: 736px;
+  visibility: hidden;
   height: 588px;
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 1px solid red;
 }
 
 .first-pair,
@@ -1472,6 +1554,7 @@ h4 {
 .third-pair {
   width: 122px;
   height: 588px;
+  border: 1px solid red;
 }
 
 .third-pair div:nth-child(1),
@@ -1485,6 +1568,7 @@ h4 {
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 1px solid red;
 }
 
 .third-pair,
@@ -1494,6 +1578,7 @@ h4 {
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
+  border: 1px solid red;
 }
 
 .second-triplet div:nth-child(1),
@@ -1507,6 +1592,7 @@ h4 {
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 1px solid red;
 }
 
 .quattro {
@@ -1515,6 +1601,7 @@ h4 {
   align-items: center;
   flex-direction: column;
   gap: 12px;
+  border: 1px solid red;
 }
 
 .quattro div:nth-child(1),
@@ -1522,18 +1609,18 @@ h4 {
 .quattro div:nth-child(3),
 .quattro div:nth-child(4) {
   width: 122px;
-  height: 102px;
+  height: 102px; 
+  border: 1px solid red;
 }
 
 /*მეორე არტიკლი payments*/
-.payments {
-  /*არტიკლის სრულად სამართავად*/
-  width: 1080px;
-  /*სიგრძე სიგანე*/
-  height: 900px;
-  display: flex;
-  /*სიგრძეზე ცენტრში*/
+
+.payments { /*არტიკლის სრულად სამართავად*/
+  width: 1075px; /*სიგრძე სიგანე*/
+  height: 645px;
+  display: flex; /*სიგრძეზე ცენტრში*/
   align-items: center;
+  border: 1px solid red;
 }
 
 .Container {
@@ -1543,10 +1630,10 @@ h4 {
   height: 477px;
 }
 
-.Container h2 {
-  /*ამ არტიკლის მთავარი სათაური*/
-  width: 460px;
-  /*სიგრძე სიგანე*/
+.issuing h2,
+.connectBox h2,
+.Container h2 { /*ამ არტიკლის მთავარი სათაური*/
+  width: 460px; /*სიგრძე სიგანე*/
   height: 96px;
   margin: 0 0 24px 16px;
   /*დაშორება მარცხნიდან და ქვემოდან*/
@@ -1558,25 +1645,25 @@ h4 {
   color: #0a2540;
 }
 
-.logo {
-  /*მესამე დონის სათაური ლოგოსთან ერთად*/
-  width: 140px;
-  /*გავზარდე რათა დატეულიყო სახელიც და ლოგოც*/
+.issuing-h3,
+.connect-h3,
+.box-h3,
+.payments-h3 { /*მესამე დონის სათაური ლოგოსთან ერთად*/
+  width: 140px; /*გავზარდე რათა დატეულიყო სახელიც და ლოგოც*/
   height: 28px;
-  margin: 0 0 16px 16px;
-  /*დაშორება მარცხნიდან და ქვემოდან*/
-  font-weight: 500;
-  /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
+  margin: 0 0 16px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
+  font-weight: 700; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
   font-size: 17.16px;
   line-height: 28px;
   letter-spacing: 0.2px;
   color: #2e3a55;
 }
 
-.logo img {
-  /*ლოგო სვგ ფორმატში*/
-  width: 20px;
-  /*სიგრძე სიგანე მოშორება მარჯვნიდან*/
+.issuing-logo img,
+.connectlogo img,
+.box-logo img,
+.logo img { /*ლოგო სვგ ფორმატში*/
+  width: 20px; /*სიგრძე სიგანე მოშორება მარჯვნიდან*/
   height: 20px;
   margin-right: 10px;
 }
@@ -1631,10 +1718,8 @@ h4 {
   /*დაშორება მარცხნიდან და ქვემოდან*/
 }
 
-.tax {
-  /*პარაგრაფი*/
-  width: 508px;
-  /*სიგრძე სიგანე*/
+.short-story { /*  */
+  width: 508px; /*სიგრძე სიგანე*/
   height: 24px;
   font-weight: 500;
   /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
@@ -1646,51 +1731,15 @@ h4 {
   color: #425466;
 }
 
-.rader {
-  /*პარაგრაფი*/
-  width: 508px;
-  /*სიგრძე სიგანე*/
-  height: 24px;
-  font-weight: 500;
-  /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
-  font-size: 13.71px;
-  line-height: 24px;
-  letter-spacing: 0.2px;
-  margin: 0 0 4px 16px;
-  /*დაშორება მარცხნიდან და ქვემოდან*/
-  color: #425466;
-}
-
-.terminal {
-  /*პარაგრაფი*/
-  width: 508px;
-  /*სიგრძე სიგანე*/
-  height: 24px;
-  font-weight: 500;
-  /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
-  font-size: 13.71px;
-  line-height: 24px;
-  letter-spacing: 0.2px;
-  margin: 0 0 4px 16px;
-  /*დაშორება მარცხნიდან და ქვემოდან*/
-  color: #425466;
-}
-
-.chir-pay {
-  /*შვილის გაცენტვრისთვის*/
-  width: 540px;
-  /*სიგრძე სიგანე*/
-  height: 900px;
-  display: flex;
-  /*გაცენტვრა*/
+.chir-pay { /*შვილის გაცენტვრისთვის*/
+  width: 540px; /*სიგრძე სიგანე*/
+  height: 300px;
+  display: flex; /*გაცენტვრა*/
   justify-content: center;
   align-items: center;
 }
-
-.pay {
-  /*შვილი რომელშიც სვგ ფოტოა ჩაგდებული*/
-  width: 450px;
-  /*სიგრძე სიგანე*/
+.chir-pay img { /*შვილი რომელშიც სვგ ფოტოა ჩაგდებული*/
+  width: 450px; /*სიგრძე სიგანე*/
   height: 700px;
   background-size: cover;
   /*ქავერზე მოსარგებად*/
@@ -1699,15 +1748,14 @@ h4 {
 }
 
 /*მესამე არტიკლი billing*/
-.billing {
-  /*მშობელი კლასი*/
-  width: 1080px;
-  /*სიგრძე სიგანე*/
-  height: 900px;
-  display: flex;
-  /*სიმაღლეზე ცენტრში დაშორებით*/
+
+.billing { /*მშობელი კლასი*/
+  width: 1075px; /*სიგრძე სიგანე*/
+  height: 450px;
+  display: flex; /*სიმაღლეზე ცენტრში დაშორებით*/
   align-items: center;
   gap: 25px;
+  border: 1px solid red;
 }
 
 .viewBox {
@@ -1730,18 +1778,8 @@ h4 {
   color: #2e3a55;
 }
 
-.box-logo img {
-  /*სვგ სამართავად*/
-  width: 20px;
-  /*სიგრძე სიგანე მოშორება მარჯვნიდან*/
-  height: 20px;
-  margin-right: 10px;
-}
-
-.viewBox h2 {
-  /*სათაურის სტილისთვის*/
-  width: 460px;
-  /*სიგრძე სიგანე*/
+.viewBox h2 { /*სათაურის სტილისთვის*/
+  width: 460px; /*სიგრძე სიგანე*/
   height: 48px;
   margin: 0 0 24px 16px;
   /*დაშორება მარცხნიდან და ქვემოდან*/
@@ -1753,70 +1791,11 @@ h4 {
   color: #0a2540;
 }
 
-.mini-paragraf {
-  /*პარაგრაფის სტილისტიკა*/
-  width: 460px;
-  /*სიგრძე სიგანე*/
-  height: 56px;
-  font-weight: 500;
-  /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
-  font-size: 16.45px;
-  line-height: 28px;
-  letter-spacing: 0.2px;
-  color: #425466;
-  margin: 0 0 24px 16px;
-  /*დაშორება მარცხნიდან და ქვემოდან*/
-}
-
-.Invoicing {
-  /*ერთ ხაზიანი პარაგრაფი*/
-  width: 508px;
-  /*სიგრძე სიგანე*/
-  height: 24px;
-  font-weight: 500;
-  /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
-  font-size: 13.71px;
-  line-height: 24px;
-  letter-spacing: 0.2px;
-  margin: 0 0 4px 16px;
-  /*დაშორება მარცხნიდან და ქვემოდან*/
-  color: #425466;
-}
-
-.Revenue {
-  /*ერთ ხაზიანი პარაგრაფი*/
-  width: 508px;
-  /*სიგრძე სიგანე*/
-  height: 24px;
-  font-weight: 500;
-  /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
-  font-size: 13.83px;
-  line-height: 24px;
-  letter-spacing: 0.2px;
-  margin: 0 0 4px 16px;
-  /*დაშორება მარცხნიდან და ქვემოდან*/
-  color: #425466;
-}
-
-.Sigma {
-  /*ერთ ხაზიანი პარაგრაფი*/
-  width: 508px;
-  /*სიგრძე სიგანე*/
-  height: 24px;
-  font-weight: 500;
-  /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
-  font-size: 13.71px;
-  line-height: 24px;
-  letter-spacing: 0.2px;
-  margin: 0 0 4px 16px;
-  /*დაშორება მარცხნიდან და ქვემოდან*/
-  color: #425466;
-}
-
-.quantum {
-  /*ფოტოსთვის*/
-  width: 511px;
-  /*სიგრძე სიგანე*/
+.card-container,
+.issuing-img,
+.connect-img,
+.quantum { /*ფოტოსთვის*/
+  width: 511px; /*სიგრძე სიგანე*/
   height: 400px;
   background-size: cover;
   /*ქავერზე მოსარგებად*/
@@ -1825,15 +1804,14 @@ h4 {
 }
 
 /*მეოთხე არტიკლა connect*/
-.connect {
-  /*კონტენტის სამართავად*/
-  width: 1080px;
-  /*სიგრძე სიგანე*/
-  height: 900px;
-  display: flex;
-  /*სიმაღლეზე ცენტრში დაშორებით*/
+
+.connect { /*კონტენტის სამართავად*/
+  width: 1075px; /*სიგრძე სიგანე*/
+  height: 650px;
+  display: flex; /*სიმაღლეზე ცენტრში დაშორებით*/
   align-items: center;
   gap: 142px;
+  border: 1px solid red;
 }
 
 .connectBox {
@@ -1858,93 +1836,13 @@ h4 {
   color: #2e3a55;
 }
 
-.connectlogo img {
-  /*ლოგოს სვგ*/
-  width: 20px;
-  /*სიგრძე სიგანე მოშორება მარჯვნიდან*/
-  height: 20px;
-  margin-right: 10px;
-}
-
-.connectBox h2 {
-  /*მთავარი სათაური*/
-  width: 460px;
-  /*სიგრძე სიგანე*/
-  height: 96px;
-  margin: 0 0 24px 16px;
-  /*დაშორება მარცხნიდან და ქვემოდან*/
-  font-weight: 700;
-  /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
-  font-size: 34.92px;
-  line-height: 48px;
-  letter-spacing: -0.2px;
-  color: #0a2540;
-}
-
-.connect-paragraf {
-  /*კონტენტის შინარსი*/
-  width: 460px;
-  /*სიგრძე სიგანე*/
-  height: 56px;
-  font-weight: 500;
-  /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
-  font-size: 16.31px;
-  line-height: 28px;
-  letter-spacing: 0.2px;
-  color: #425466;
-  margin: 0 0 24px 16px;
-  /*დაშორება მარცხნიდან და ქვემოდან*/
-}
-
-.instant {
-  /*ერთ ხაზიანი პარაგრაფი*/
-  width: 508px;
-  /*სიგრძე სიგანე*/
-  height: 24px;
-  font-weight: 500;
-  /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
-  font-size: 13.71px;
-  line-height: 24px;
-  letter-spacing: 0.2px;
-  margin: 0 0 4px 16px;
-  /*დაშორება მარცხნიდან და ქვემოდან*/
-  color: #425466;
-}
-
-.payment {
-  /*ერთ ხაზიანი პარაგრაფი*/
-  width: 508px;
-  /*სიგრძე სიგანე*/
-  height: 24px;
-  font-weight: 500;
-  /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
-  font-size: 13.71px;
-  line-height: 24px;
-  letter-spacing: 0.2px;
-  margin: 0 0 4px 16px;
-  /*დაშორება მარცხნიდან და ქვემოდან*/
-  color: #425466;
-}
-
-.connect-img {
-  /*კონტენტის ფოტო*/
-  width: 511px;
-  /*სიგრძე სიგანე*/
-  height: 400px;
-  background-size: cover;
-  /*ქავერზე მოსარგებად*/
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
 /*მეხუთე არტიკლი*/
-.issuing {
-  /*კონტენტის ყუთი*/
-  width: 1080px;
-  /*სიგრძე სიგანე*/
+.issuing { /*კონტენტის ყუთი*/
+  width: 1075px; /*სიგრძე სიგანე*/
   height: 449px;
   display: flex;
   gap: 86.83px;
+  border: 1px solid red;
 }
 
 .issuing-logo {
@@ -1961,49 +1859,8 @@ h4 {
   letter-spacing: 0.2px;
   color: #2e3a55;
 }
-
-.issuing-logo img {
-  /*კონტენტის ლოგოს სვგ*/
-  width: 20px;
-  /*სიგრძე სიგანე მოშორება მარჯვნიდან*/
-  height: 20px;
-  margin-right: 10px;
-}
-
-.issuing h2 {
-  /*კონტენტის მთავარი სათაური*/
-  width: 460px;
-  /*სიგრძე სიგანე*/
-  height: 96px;
-  margin: 0 0 24px 16px;
-  /*დაშორება მარცხნიდან და ქვემოდან*/
-  font-weight: 700;
-  /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
-  font-size: 34.92px;
-  line-height: 48px;
-  letter-spacing: -0.2px;
-  color: #0a2540;
-}
-
-.issuing-paragraf {
-  /*კონტანტის შინარსი*/
-  width: 460px;
-  /*სიგრძე სიგანე*/
-  height: 56px;
-  font-weight: 500;
-  /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
-  font-size: 16.31px;
-  line-height: 28px;
-  letter-spacing: 0.2px;
-  color: #425466;
-  margin: 0 0 24px 16px;
-  /*დაშორება მარცხნიდან და ქვემოდან*/
-}
-
-.treasury {
-  /*ერთ ხაზიანი პარაგრაფი*/
-  width: 508px;
-  /*სიგრძე სიგანე*/
+.isuing-connect { /*ერთ ხაზიანი პარაგრაფი*/
+  width: 508px; /*სიგრძე სიგანე*/
   height: 24px;
   font-weight: 500;
   /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
@@ -2014,44 +1871,125 @@ h4 {
   /*დაშორება მარცხნიდან და ქვემოდან*/
   color: #425466;
 }
+/* რესპონსივი */
+@media(max-width: 1024px) {
+  .container-inside-container {
+    width: 992px;
+  }
 
-.capital {
-  /*ერთ ხაზიანი პარაგრაფი*/
-  width: 508px;
-  /*სიგრძე სიგანე*/
-  height: 24px;
-  font-weight: 500;
-  /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
-  font-size: 13.71px;
-  line-height: 24px;
-  letter-spacing: 0.2px;
-  margin: 0 0 4px 16px;
-  /*დაშორება მარცხნიდან და ქვემოდან*/
-  color: #425466;
+  .issuing,
+  .connect,
+  .billing,
+  .payments,
+  .modular-solutions {
+    width: 976px;
+    height: 645px;
+  }
+
+  .to-manage-content {
+    width: 470px;
+    height: 470px;
+  }
+
+  .modular-solutions h3 { /*სათაური პირველი შვილის */
+    width: 150px; /*სიგრძე სიგანე*/
+    height: 28px;
+    font-weight: 500; /*წრწერის ფონი სტილი და ზომა*/
+    font-size: 16.73px;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+    color: #635bff;/*ფერი და დაშორება გარედან*/
+    margin-left: 16px;
+  }
+
+  .to-manage-content h2,
+  .to-manage-content p {
+    width: 400px;
+  }
+
+  .card-container {
+    display: block;
+  }
+
+  .icon-container {
+    visibility: hidden;
+  }
+
+  /* payment */
+
+  .Container {
+    width: 370px;
+  }
+  .Container h2 {
+    width: 350px;
+  }
+
+  .paragraf {
+    width: 350px;
+  }
+
+  .short-story {
+    width: 385px;
+  }
+
+  .pay {
+    width: 540px;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .pay img {
+    width: 540px;
+    height: 500px;
+  }
+
+  /* biling */
+
+  .viewBox {
+    width: 471px;
+  }
+
+  .quantum {
+    width: 511px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .quantum img {
+    width: 540px;
+    height: 500px;
+  }
+
+  /* connect */
+
+  .connect {
+    gap: 90px;
+  }
+
+  .connect-img img {
+    width: 330px;
+    height: 445px;
+  }
+
+  /* isuing */
+
+  .issuing-img img {
+    width: 485px;
+  }
 }
 
-.isuing-connect {
-  /*ერთ ხაზიანი პარაგრაფი*/
-  width: 508px;
-  /*სიგრძე სიგანე*/
-  height: 24px;
-  font-weight: 500;
-  /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
-  font-size: 13.71px;
-  line-height: 24px;
-  letter-spacing: 0.2px;
-  margin: 0 0 4px 16px;
-  /*დაშორება მარცხნიდან და ქვემოდან*/
-  color: #425466;
-}
-
-.issuing-img {
-  /*ფოტოსთვის*/
-  width: 511px;
-  /*სიგრძე სიგანე*/
-  height: 400px;
-  background-size: cover;
-  /*ქავერზე მოსარგებად*/
-  background-position: center;
-  background-repeat: no-repeat;
+@media(max-width: 768px) {
+  .container-inside-container {
+    width: 752px;
+  }
+   
+  .issuing,
+  .connect,
+  .billing,
+  .payments,
+  .modular-solutions {
+    width: 736px;
+  }
 }
