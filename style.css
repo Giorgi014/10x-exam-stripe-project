@@ -553,13 +553,37 @@ i {
   height: 100%;
 }
 
+
+
+
+
 /* ---- THIRD CONTANER ---- */
 
 .third-container{
 
 }
 
+
+
+
+
+
+
+
 /* ---- RESPONSIVE ---- */
+
+@media screen and (max-width: 1022px) {
+  /* ლაშას მეშვიდე სექციისთვის */
+  .seventh-container .mainready {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+  }
+  .sixth-container .card3 {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+  }
+}
 
 @media screen and (max-width: 1022px) {
   header {
@@ -665,6 +689,9 @@ i {
   }
 }
 
+
+
+
 @media screen and (max-width: 890px) {
   .section-container .stripe .email-and-contact {
     position: relative;
@@ -703,7 +730,11 @@ i {
   .section-container .stripe {
     width: 368px;
   }
+  
 }
+
+
+
 @media screen and (max-width: 700px) {
   .second-container .global-scale-main-container .global-scale-container {
     grid-template-columns: repeat(1,auto);
@@ -715,6 +746,8 @@ i {
     height: 340px;
     margin: 73px auto;
   }
+
+
 
   .sites-section .sites-container {
     display: flex;
@@ -734,6 +767,14 @@ i {
   .sites-section .sites-container .bottom-sites .icon {
     width: clamp(170px, 35vw, 370px);
   }
+}
+
+@media screen and (max-width: 500px) {
+    .seventh-container .mainready .second {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 30px;
+    }
 }
 
 @media screen and (max-width: 414px) {
@@ -800,20 +841,33 @@ i {
 
 }
 
-.forth-container .banners .Banner1 {
+.forth-container .Banner1 {
   margin-top: 130px;
 
 }
 
 .forth-container .banner {
-  width: 465px;
+  position: relative;
+  margin: 16px;
+  padding: 8px;
+  width: 500px;
   height: 525px;
   border-radius: 8px;
   box-shadow: 0px 0px 8px 2px rgba(167, 167, 167, 0.532)
 }
 
 .forth-container .bannertext {
-  margin: 16px;
+  margin: 20px;
+}
+
+.forth-container .banner .bannerlink {
+  display: none;
+  position: absolute;
+  bottom: 16px;
+}
+
+.forth-container .banner:hover .bannerlink {
+  display: flex;
 }
 
 
@@ -830,18 +884,26 @@ i {
 /* fifth-container ----------------------------------------------------------- */
 
 .fifth-container {
-  height: 1200px;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #0A2540;
+  clip-path: polygon(0% 10%, 0% 100%, 100% 90%, 100% 0%);
+}
+
+.fifth-container .devblock {
+  width: 1080px;
+  margin: 287px auto;
 }
 
 .fifth-container .devsection {
-  width: 496px;
+  padding: 0px 0px 16px 0px;
+  width: 500px;
+  height: 417;
 }
 
-.fifth-container .devsection p2 {
+.fifth-container .devsection .p2 {
   font-size: 17.02px;
   font-weight: 500;
   line-height: 28px;
@@ -860,6 +922,7 @@ i {
 
 .fifth-container .devsection p {
   padding: 0px 0px 24px 0px;
+  width: 450px;
   font-size: 17.16px;
   font-weight: 500;
   line-height: 28px;
@@ -877,20 +940,23 @@ i {
 }
 
 .fifth-container .devcodarea {
-  width: 1024px;
   display: flex;
-  justify-content: center;
-}
-
-.fifth-container .devoptions {
-  width: 992px;
-  display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
+.fifth-container .devcodingarea {
+}
+
+.fifth-container .devoptions {
+  margin-top: 80px;;
+  width: 1080px;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  justify-content: space-between;
+}
+
 .fifth-container .devoptions .option {
-  width: 200px;
+  width: 212px;
 }
 
 .fifth-container .devoptions .option h3 {
@@ -931,17 +997,39 @@ i {
 
 .sixth-container {
   margin: 0 auto;
-  width: 1080px;
+  width: 100%;
+}
+
+.sixth-container .launch {
+  margin: 0 auto;
+  width: clamp(390px, 100vw, 1080px);
 }
 
 .sixth-container .launch3 {
-  padding: 0px 0px 24px 16px;
+  padding: 16px 0px 24px 0px;
   color: #635BFF;
   font-size: 16.88px;
   font-weight: 500;
   line-height: 28px;
   letter-spacing: 0.2px;
 }
+
+.sixth-container h2 {
+  padding: 0px 0px 24px 0px;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 36px;
+}
+
+.sixth-container .launchbar {
+  padding: 0px 0px 24px 0px;
+  width: 980px;
+  font-size: 16.45px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+}
+
 
 .sixth-container .card h3 {
   padding: 0px 0px 16px 16px;
@@ -952,21 +1040,7 @@ i {
   letter-spacing: 0.2px;
 }
 
-.sixth-container h2 {
-  padding: 0px 0px 24px 16px;
-  font-size: 36px;
-  font-weight: 500;
-  line-height: 36px;
-}
 
-.sixth-container .launchbar {
-  padding: 0px 0px 24px 16px;
-  width: 980px;
-  font-size: 16.45px;
-  font-weight: 500;
-  line-height: 28px;
-  letter-spacing: 0.2px;
-}
 
 .sixth-container .cardbar {
   padding: 0px 16px 16px 16px;
@@ -986,12 +1060,22 @@ i {
 }
 
 .sixth-container .card3 .card {
-  width: 308px;
+  position: relative;
+  padding: 8px;
+  width: 331px;
   height: 508px;
   border-radius: 8px;
-  box-shadow: 0px 0px 8px 2px rgba(167, 167, 167, 0.532)
+  box-shadow: 0px 0px 8px 2px rgba(167, 167, 167, 0.532);
 }
 
+.sixth-container .card3 .card h3 {
+  margin-top: 8px;
+}
+
+.sixth-container .card3 .card .cardlink {
+  position: absolute;
+  bottom: 16px;
+}
 
 
 
@@ -1008,13 +1092,17 @@ i {
 /* Seventh Container -------------------------------------------------------- */
 
 .seventh-container {
-  width: 1080px;
-  height: 590px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin-top: 50px;
+  padding: 1px 0px 50px 0px;
   width: 100%;
   background-color: rgb(246, 249, 252);
+}
+
+.seventh-container .mainready {
+  width: clamp(390px, 100vw, 1080px);
+  display: flex;
+  justify-content: center;
+  margin: 100px auto;
 }
 
 .seventh-container h3 {
@@ -1033,12 +1121,6 @@ i {
 
 .seventh-container .ready {
   width: 496px;
-}
-
-.seventh-container .mainready {
-  width: 1024px;
-  display: flex;
-  justify-content: center;
 }
 
 .seventh-container .second1 {
