@@ -64,6 +64,10 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+
+// GLOBE CODE
+
+
 const vertex = `
   #ifdef GL_ES
   precision mediump float;

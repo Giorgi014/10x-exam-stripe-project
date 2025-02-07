@@ -457,7 +457,7 @@ i {
   width: 100%;
   background-color: rgb(10, 37, 64);
   height: 1020px;
-  clip-path: polygon(0% 10%, 0% 100%, 100% 100%, 100% 0%);
+  clip-path: polygon(0% 10%, 0% 100%, 100% 100%, 100% 0%); 
   padding-top: 1px;
   overflow-x: hidden;
 }
