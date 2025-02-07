@@ -1119,7 +1119,6 @@ h4 {
 
 
 /*davit-section*/
-
 .first-container { /*ჰეადერის შემდეკი სექცია კონტეინერი*/
   background-color: rgba(249, 252, 249);
   width: 100%;
@@ -1187,10 +1186,8 @@ h4 {
   color: #425466; /*ფერი და დაშორება გარედან*/
   margin-left: 16px;
 }
-
-
 .icon-container { 
-  display: none;
+  visibility: hidden;
   height: 588px;
   display: flex;
   justify-content: center;
@@ -1255,6 +1252,8 @@ h4 {
   width: 540px; /*სიგრძე სიგანე*/
   height: 477px;
 }
+.issuing h2,
+.connectBox h2,
 .Container h2 { /*ამ არტიკლის მთავარი სათაური*/
   width: 460px; /*სიგრძე სიგანე*/
   height: 96px;
@@ -1265,16 +1264,22 @@ h4 {
   letter-spacing: -0.2px;
   color: #0a2540;
 }
-.logo { /*მესამე დონის სათაური ლოგოსთან ერთად*/
+.issuing-h3,
+.connect-h3,
+.box-h3,
+.payments-h3 { /*მესამე დონის სათაური ლოგოსთან ერთად*/
   width: 140px; /*გავზარდე რათა დატეულიყო სახელიც და ლოგოც*/
   height: 28px;
   margin: 0 0 16px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
-  font-weight: 500; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
+  font-weight: 700; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
   font-size: 17.16px;
   line-height: 28px;
   letter-spacing: 0.2px;
   color: #2e3a55;
 }
+.issuing-logo img,
+.connectlogo img,
+.box-logo img,
 .logo img { /*ლოგო სვგ ფორმატში*/
   width: 20px; /*სიგრძე სიგანე მოშორება მარჯვნიდან*/
   height: 20px;
@@ -1315,27 +1320,7 @@ h4 {
   color: #0a2540;
   margin: 0 0 8px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
 }
-.tax { /*პარაგრაფი*/
-  width: 508px; /*სიგრძე სიგანე*/
-  height: 24px;
-  font-weight: 500; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
-  font-size: 13.71px;
-  line-height: 24px;
-  letter-spacing: 0.2px;
-  margin: 0 0 4px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
-  color: #425466;
-}
-.rader { /*პარაგრაფი*/
-  width: 508px; /*სიგრძე სიგანე*/
-  height: 24px;
-  font-weight: 500; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
-  font-size: 13.71px;
-  line-height: 24px;
-  letter-spacing: 0.2px;
-  margin: 0 0 4px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
-  color: #425466;
-}
-.terminal { /*პარაგრაფი*/
+.short-story { /*  */
   width: 508px; /*სიგრძე სიგანე*/
   height: 24px;
   font-weight: 500; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
@@ -1352,7 +1337,7 @@ h4 {
   justify-content: center;
   align-items: center;
 }
-.pay { /*შვილი რომელშიც სვგ ფოტოა ჩაგდებული*/
+.chir-pay img { /*შვილი რომელშიც სვგ ფოტოა ჩაგდებული*/
   width: 450px; /*სიგრძე სიგანე*/
   height: 700px;
   background-size: cover; /*ქავერზე მოსარგებად*/
@@ -1382,11 +1367,6 @@ h4 {
   letter-spacing: 0.2px;
   color: #2e3a55;
 }
-.box-logo img { /*სვგ სამართავად*/
-  width: 20px; /*სიგრძე სიგანე მოშორება მარჯვნიდან*/
-  height: 20px;
-  margin-right: 10px;
-}
 .viewBox h2 { /*სათაურის სტილისთვის*/
   width: 460px; /*სიგრძე სიგანე*/
   height: 48px;
@@ -1397,46 +1377,9 @@ h4 {
   letter-spacing: -0.2px;
   color: #0a2540;
 }
-.mini-paragraf { /*პარაგრაფის სტილისტიკა*/
-  width: 460px; /*სიგრძე სიგანე*/
-  height: 56px;
-  font-weight: 500; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
-  font-size: 16.45px;
-  line-height: 28px;
-  letter-spacing: 0.2px;
-  color: #425466;
-  margin: 0 0 24px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
-}
-.Invoicing { /*ერთ ხაზიანი პარაგრაფი*/
-  width: 508px; /*სიგრძე სიგანე*/
-  height: 24px;
-  font-weight: 500; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
-  font-size: 13.71px;
-  line-height: 24px;
-  letter-spacing: 0.2px;
-  margin: 0 0 4px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
-  color: #425466;
-}
-.Revenue { /*ერთ ხაზიანი პარაგრაფი*/
-  width: 508px; /*სიგრძე სიგანე*/
-  height: 24px;
-  font-weight: 500; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
-  font-size: 13.83px;
-  line-height: 24px;
-  letter-spacing: 0.2px;
-  margin: 0 0 4px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
-  color: #425466;
-}
-.Sigma { /*ერთ ხაზიანი პარაგრაფი*/
-  width: 508px; /*სიგრძე სიგანე*/
-  height: 24px;
-  font-weight: 500; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
-  font-size: 13.71px;
-  line-height: 24px;
-  letter-spacing: 0.2px;
-  margin: 0 0 4px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
-  color: #425466;
-}
+.card-container,
+.issuing-img,
+.connect-img,
 .quantum { /*ფოტოსთვის*/
   width: 511px; /*სიგრძე სიგანე*/
   height: 400px;
@@ -1467,58 +1410,6 @@ h4 {
   letter-spacing: 0.2px;
   color: #2e3a55;
 }
-.connectlogo img { /*ლოგოს სვგ*/
-  width: 20px; /*სიგრძე სიგანე მოშორება მარჯვნიდან*/
-  height: 20px;
-  margin-right: 10px;
-}
-.connectBox h2 { /*მთავარი სათაური*/
-  width: 460px; /*სიგრძე სიგანე*/
-  height: 96px;
-  margin: 0 0 24px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
-  font-weight: 700; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
-  font-size: 34.92px;
-  line-height: 48px;
-  letter-spacing: -0.2px;
-  color: #0a2540;
-}
-.connect-paragraf { /*კონტენტის შინარსი*/
-  width: 460px; /*სიგრძე სიგანე*/
-  height: 56px;
-  font-weight: 500; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
-  font-size: 16.31px;
-  line-height: 28px;
-  letter-spacing: 0.2px;
-  color: #425466;
-  margin: 0 0 24px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
-}
-.instant { /*ერთ ხაზიანი პარაგრაფი*/
-  width: 508px; /*სიგრძე სიგანე*/
-  height: 24px;
-  font-weight: 500; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
-  font-size: 13.71px;
-  line-height: 24px;
-  letter-spacing: 0.2px;
-  margin: 0 0 4px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
-  color: #425466;
-}
-.payment { /*ერთ ხაზიანი პარაგრაფი*/
-  width: 508px; /*სიგრძე სიგანე*/
-  height: 24px;
-  font-weight: 500; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
-  font-size: 13.71px;
-  line-height: 24px;
-  letter-spacing: 0.2px;
-  margin: 0 0 4px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
-  color: #425466;
-}
-.connect-img { /*კონტენტის ფოტო*/
-  width: 511px; /*სიგრძე სიგანე*/
-  height: 400px;
-  background-size: cover; /*ქავერზე მოსარგებად*/
-  background-position: center;
-  background-repeat: no-repeat;
-}
 /*მეხუთე არტიკლი*/
 .issuing { /*კონტენტის ყუთი*/
   width: 1075px; /*სიგრძე სიგანე*/
@@ -1537,51 +1428,6 @@ h4 {
   letter-spacing: 0.2px;
   color: #2e3a55;
 }
-.issuing-logo img { /*კონტენტის ლოგოს სვგ*/
-  width: 20px; /*სიგრძე სიგანე მოშორება მარჯვნიდან*/
-  height: 20px;
-  margin-right: 10px;
-}
-.issuing h2 { /*კონტენტის მთავარი სათაური*/
-  width: 460px; /*სიგრძე სიგანე*/
-  height: 96px;
-  margin: 0 0 24px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
-  font-weight: 700; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
-  font-size: 34.92px;
-  line-height: 48px;
-  letter-spacing: -0.2px;
-  color: #0a2540;
-}
-.issuing-paragraf { /*კონტანტის შინარსი*/
-  width: 460px; /*სიგრძე სიგანე*/
-  height: 56px;
-  font-weight: 500; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
-  font-size: 16.31px;
-  line-height: 28px;
-  letter-spacing: 0.2px;
-  color: #425466;
-  margin: 0 0 24px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
-}
-.treasury { /*ერთ ხაზიანი პარაგრაფი*/
-  width: 508px; /*სიგრძე სიგანე*/
-  height: 24px;
-  font-weight: 500; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
-  font-size: 13.71px;
-  line-height: 24px;
-  letter-spacing: 0.2px;
-  margin: 0 0 4px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
-  color: #425466;
-}
-.capital { /*ერთ ხაზიანი პარაგრაფი*/
-  width: 508px; /*სიგრძე სიგანე*/
-  height: 24px;
-  font-weight: 500; /*შრიფტის ზომა დაშორება ასოებს შორის ფერი*/
-  font-size: 13.71px;
-  line-height: 24px;
-  letter-spacing: 0.2px;
-  margin: 0 0 4px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
-  color: #425466;
-}
 .isuing-connect { /*ერთ ხაზიანი პარაგრაფი*/
   width: 508px; /*სიგრძე სიგანე*/
   height: 24px;
@@ -1592,40 +1438,40 @@ h4 {
   margin: 0 0 4px 16px; /*დაშორება მარცხნიდან და ქვემოდან*/
   color: #425466;
 }
-.issuing-img { /*ფოტოსთვის*/
-  width: 511px; /*სიგრძე სიგანე*/
-  height: 400px;
-  background-size: cover; /*ქავერზე მოსარგებად*/
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
 /* რესპონსივი */
 @media(max-width: 1024px) {
   .container-inside-container {
     width: 992px;
   }
 
+  .issuing,
+  .connect,
+  .billing,
+  .payments,
   .modular-solutions {
     width: 976px;
-    height: 495px;
+    height: 645px;
   }
 
-  .container {
-    /* flex-direction: column; */
-  }
   .to-manage-content {
     width: 470px;
     height: 470px;
   }
 
-  .to-manage-content h2 {
-    width: 400px;
+  .modular-solutions h3 { /*სათაური პირველი შვილის */
+    width: 150px; /*სიგრძე სიგანე*/
+    height: 28px;
+    font-weight: 500; /*წრწერის ფონი სტილი და ზომა*/
+    font-size: 16.73px;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+    color: #635bff;/*ფერი და დაშორება გარედან*/
+    margin-left: 16px;
   }
 
+  .to-manage-content h2,
   .to-manage-content p {
     width: 400px;
-    height: 175px;
   }
 
   .card-container {
@@ -1633,6 +1479,84 @@ h4 {
   }
 
   .icon-container {
-    display: none;
+    visibility: hidden;
+  }
+
+  /* payment */
+
+  .Container {
+    width: 370px;
+  }
+  .Container h2 {
+    width: 350px;
+  }
+
+  .paragraf {
+    width: 350px;
+  }
+
+  .short-story {
+    width: 385px;
+  }
+
+  .pay {
+    width: 540px;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .pay img {
+    width: 540px;
+    height: 500px;
+  }
+
+  /* biling */
+
+  .viewBox {
+    width: 471px;
+  }
+
+  .quantum {
+    width: 511px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .quantum img {
+    width: 540px;
+    height: 500px;
+  }
+
+  /* connect */
+
+  .connect {
+    gap: 90px;
+  }
+
+  .connect-img img {
+    width: 330px;
+    height: 445px;
+  }
+
+  /* isuing */
+
+  .issuing-img img {
+    width: 485px;
+  }
+}
+
+@media(max-width: 768px) {
+  .container-inside-container {
+    width: 752px;
+  }
+   
+  .issuing,
+  .connect,
+  .billing,
+  .payments,
+  .modular-solutions {
+    width: 736px;
   }
 }
