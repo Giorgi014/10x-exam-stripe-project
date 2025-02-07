@@ -1,6 +1,10 @@
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 
+
+
+// RESPONSIVE HEADER
+
 const openBtn = document.querySelector('#burger-button');
 const btnIcon = document.querySelector('#burger-button-icon');
 const headerContainer = document.querySelector('header');
@@ -8,6 +12,7 @@ const headerIcon = document.querySelector('.header-icon');
 const navBar = document.querySelector('nav');
 const contactBtn = document.querySelector('.contact');
 const sgnIn = document.querySelector('.sign-in');
+
 
 openBtn.addEventListener('click', () => {
 
@@ -34,6 +39,29 @@ openBtn.addEventListener('click', () => {
 
 
 
+// SLIDE CONTAINER 
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const lines = document.querySelectorAll(".line");
+  let currentIndex = 0;
+
+  function startAnimation(index) {
+      if (index >= lines.length) {
+          index = 0;
+      }
+
+      lines.forEach(line => line.style.animation = "none");
+
+      lines[index].style.animation = "borderGrow 10s ease-in-out infinite";
+
+      setTimeout(() => {
+          startAnimation(index + 1);
+      }, 10000);
+  }
+
+  startAnimation(currentIndex);
+});
 
 
 const vertex = `
@@ -422,3 +450,5 @@ const render = () => {
 }
 
 setScene();
+
+
