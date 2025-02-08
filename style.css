@@ -1245,7 +1245,6 @@ h4 {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid red;
 }
 
 /*პირველი არტიკლი*/
@@ -1318,9 +1317,8 @@ h4 {
   margin-left: 16px;
 }
 
-.icon-container { 
+.icon-container { /*ვერ გამოვაჩინე ბიჭებს ვკითხო*/
   width: 736px;
-  visibility: hidden;
   height: 588px;
   display: flex;
   justify-content: center;
@@ -1402,7 +1400,6 @@ h4 {
   height: 645px;
   display: flex; /*სიგრძეზე ცენტრში*/
   align-items: center;
-  border: 1px solid red;
 }
 
 .Container {
@@ -1537,7 +1534,6 @@ h4 {
   display: flex; /*სიმაღლეზე ცენტრში დაშორებით*/
   align-items: center;
   gap: 25px;
-  border: 1px solid red;
 }
 
 .viewBox {
@@ -1593,7 +1589,6 @@ h4 {
   display: flex; /*სიმაღლეზე ცენტრში დაშორებით*/
   align-items: center;
   gap: 142px;
-  border: 1px solid red;
 }
 
 .connectBox {
@@ -1624,7 +1619,6 @@ h4 {
   height: 449px;
   display: flex;
   gap: 86.83px;
-  border: 1px solid red;
 }
 
 .issuing-logo {
@@ -1731,7 +1725,9 @@ h4 {
   .viewBox {
     width: 471px;
   }
-
+   
+  .issuing-img,
+  .connect-img,
   .quantum {
     width: 511px;
     background-size: cover;
@@ -1765,6 +1761,8 @@ h4 {
 @media(max-width: 768px) {
   .container-inside-container {
     width: 752px;
+    border: 1px solid red;
+    gap: 1px;
   }
    
   .issuing,
@@ -1773,6 +1771,113 @@ h4 {
   .payments,
   .modular-solutions {
     width: 736px;
+    height: auto;
+    border: 1px solid red;
+  }
+   
+  .payments,
+  .billing,
+  .connect,
+  .issuing,
+  .container {
+    align-items: start;
+    flex-direction: column;
+    border: 1px solid red;
+    gap: 1px;
+  }
+   
+  .connect h2,
+  .issuing h2 {
+    width: 460px;
+    height: 70px; /*შევამცირე*/
+    margin: 0 0 0 16px; /*შევამცირე დაშორება ქვემოდან*/
+    font-weight: 700;
+    font-size: 35.77px;
+    line-height: 30px; /*შევამცირე*/
+    letter-spacing: -0.3px;
+    color: #0a2540;
+  }
+   
+  .connect-h3,
+  .issuing h3 {
+    width: 140px;
+    height: 28px;
+    margin: 0 0 6px 16px; /*შევამცირე დაშორება ქვემოდან*/
+    font-weight: 700;
+    font-size: 17.16px;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+    color: #2e3a55;
+  }
+
+  .paragraf {
+    width: 460px;
+    height: 66px; /*შევამცირე*/
+    font-weight: 700;
+    font-size: 16.59px;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+    color: #425466;
+    margin: 0 0 0 16px; /*შევამცირე დაშორება ქვემოდან*/
+  }
+
+  .primary {
+    width: 183.7px;
+    height: 33px;
+    border-radius: 16.5px;
+    background-color: #635bff;
+    border: none;
+    margin: 0 0 20px 16px; /*შევამცირე დაშორება ქვემოდან*/
+    font-weight: 500;
+    font-size: 13.48px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #fff;
+  }
+
+  .sa {
+    width: 140px;
+    height: 24px;
+    font-weight: 700;
+    font-size: 14.18px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #0a2540;
+    margin: 0 0 0 16px; /*შევამცირე დაშორება ქვემოდან*/
+  }
+
+  .short-story {
+    height: 24px;
+    font-weight: 500;
+    font-size: 13.71px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    margin: 0 0 0 16px; /*შევამცირე დაშორება ქვემოდან*/
+    color: #425466;
+  }
+   
+  .chir-pay,
+  .quantum,
+  .connect-img,
+  .issuing-img {
+    width: 736px;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .card-container img {
+    visibility: hidden;
+  }
+  
+  .first-pair,
+  .second-pair,
+  .first-triplet,
+  .quattro,
+  .second-triplet,
+  .third-pair,
+  .icon-container {
+    display:  block !important;
   }
 }
 
