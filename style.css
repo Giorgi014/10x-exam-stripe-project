@@ -1761,7 +1761,6 @@ h4 {
 @media(max-width: 768px) {
   .container-inside-container {
     width: 752px;
-    border: 1px solid red;
     gap: 1px;
   }
    
@@ -1772,7 +1771,6 @@ h4 {
   .modular-solutions {
     width: 736px;
     height: auto;
-    border: 1px solid red;
   }
    
   .payments,
@@ -1782,14 +1780,14 @@ h4 {
   .container {
     align-items: start;
     flex-direction: column;
-    border: 1px solid red;
     gap: 1px;
   }
    
+  .to-manage-content h2,
   .connect h2,
   .issuing h2 {
     width: 460px;
-    height: 70px; /*შევამცირე*/
+    height: auto; /*გადავიყვანე აუტოზე რათა განსაზღვრულიყო ავტომატურად*/
     margin: 0 0 0 16px; /*შევამცირე დაშორება ქვემოდან*/
     font-weight: 700;
     font-size: 35.77px;
@@ -1810,9 +1808,10 @@ h4 {
     color: #2e3a55;
   }
 
+  .to-manage-content p,
   .paragraf {
     width: 460px;
-    height: 66px; /*შევამცირე*/
+    height: auto; /*გადავიყვანე აუტოზე რათა განსაზღვრულიყო ავტომატურად*/
     font-weight: 700;
     font-size: 16.59px;
     line-height: 28px;
@@ -1861,7 +1860,7 @@ h4 {
   .connect-img,
   .issuing-img {
     width: 736px;
-    height: auto;
+    height: auto;/*გადავიყვანე აუტოზე რათა განსაზღვრულიყო ავტომატურად*/
     display: flex;
     justify-content: flex-end;
   }
@@ -1870,14 +1869,95 @@ h4 {
     visibility: hidden;
   }
   
-  .first-pair,
-  .second-pair,
-  .first-triplet,
-  .quattro,
-  .second-triplet,
-  .third-pair,
   .icon-container {
     display:  block !important;
+  }
+}
+
+@media (max-width: 390px){
+  .container-inside-container {
+    width: 374px;
+    height: auto; /*გადავიყვანე აუტოზე რათა განსაზღვრულიყო ავტომატურად*/
+    gap: 5px; /**/
+  }
+
+  .modular-solutions,
+  .payments,
+  .billing,
+  .connect,
+  .issuing {
+    width: 374px;
+    height: auto; /*გადავიყვანე აუტოზე რათა განსაზღვრულიყო ავტომატურად*/
+  }
+ 
+  .issuing-box,
+  .connectBox,
+  .viewBox,
+  .container {
+    width: 374px;
+    height: auto; /*გადავიყვანე აუტოზე რათა განსაზღვრულიყო ავტომატურად*/
+  }
+
+  .issuing h2,
+  .connectBox h2,
+  .viewBox h2,
+  .payments h2,
+  .container h2 {
+    width: 374px;
+    height: auto; /*გადავიყვანე აუტოზე რათა განსაზღვრულიყო ავტომატურად*/
+    margin: 0 0 3px 16px; /*დავამატე დაშორება ქვემოდან*/
+    font-weight: 500;
+    font-size: 35.77px;
+    line-height: 30px;
+    letter-spacing: -0.3px;
+    color: #0a2540;
+  }
+
+  .paragraf,
+  .container p {
+    width: 370px;
+    height: auto; /*გადავიყვანე აუტოზე რათა განსაზღვრულიყო ავტომატურად*/
+    font-weight: 700;
+    font-size: 16.59px;
+    line-height: 28px;
+    letter-spacing: 0.2px;
+    color: #425466;
+    margin: 0 0 3px 16px; /*დავამატე დაშორება ქვემოდან*/
+    font-weight: 500;
+  }
+   
+  .Container,
+  .to-manage-content {
+    height: auto; /*გადავიყვანე აუტოზე რათა განსაზღვრულიყო ავტომატურად*/
+  }
+
+  .short-story {
+    width: 370px;
+    height: auto; /*გადავიყვანე აუტოზე რათა განსაზღვრულიყო ავტომატურად*/
+    font-weight: 500;
+    font-size: 13.71px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    margin: 0 0 3px 16px; /*დავამატე დაშორება ქვემოდან*/
+    font-weight: 500;
+    color: #425466;
+  }
+
+  .issuing-img,
+  .connect-img,
+  .quantum,
+  .chir-pay {
+    width: 374px;
+    height: auto; /*გადავიყვანე აუტოზე რათა განსაზღვრულიყო ავტომატურად*/
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .issuing-img img,
+  .quantum img {
+    width: 360px;
+    height: auto; /*გადავიყვანე აუტოზე რათა განსაზღვრულიყო ავტომატურად*/
   }
 }
 
