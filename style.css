@@ -823,12 +823,17 @@ i {
 
 
 .forth-container {
+  width: 100%;
+}
+
+.forth-container .textbanners {
   margin: 0 auto;
-  width: 1080px;
+  /* width: 1080px; */
+  width: clamp(390px, 100vw, 1080px);
 }
 
 .forth-container .textarea {
-  width: 650px;
+  width: clamp(390px, 100vw, 650px);
   justify-content: center;
   align-items: center;
 }
@@ -862,7 +867,6 @@ i {
 .forth-container .banners {
   display: grid;
   grid-template-columns: repeat(2, auto);
-
 }
 
 .forth-container .Banner1 {
@@ -872,16 +876,26 @@ i {
 
 .forth-container .banner {
   position: relative;
-  margin: 16px;
+  margin: 16px auto;
   padding: 8px;
-  width: 500px;
+  width: clamp(350px, 45vw, 500px);
   height: 525px;
   border-radius: 8px;
   box-shadow: 0px 0px 8px 2px rgba(167, 167, 167, 0.532)
 }
 
+.forth-container .banner img {
+  width: 100%;
+  border-radius: 8px;
+}
+
 .forth-container .bannertext {
-  margin: 20px;
+  margin-top: 20px;
+}
+
+.forth-container .bannertext img {
+  width: 109px;
+  height: 40px;
 }
 
 .forth-container .banner .bannerlink {
@@ -917,13 +931,12 @@ i {
 }
 
 .fifth-container .devblock {
-  width: 1080px;
+  width: clamp(390px, 95vw, 1080px);
   margin: 287px auto;
 }
 
 .fifth-container .devsection {
   padding: 0px 0px 16px 0px;
-  width: 500px;
   height: 417;
 }
 
@@ -936,7 +949,7 @@ i {
 }
 
 .fifth-container .devsection h2 {
-  width: 416px;
+  width: 390px;
   font-size: 32.27px;
   font-weight: 500;
   line-height: 44px;
@@ -946,7 +959,7 @@ i {
 
 .fifth-container .devsection p {
   padding: 0px 0px 24px 0px;
-  width: 450px;
+  width: 390px;
   font-size: 17.16px;
   font-weight: 500;
   line-height: 28px;
@@ -968,19 +981,24 @@ i {
   align-items: center;
 }
 
-.fifth-container .devcodingarea {
+
+.fifth-container .codingarea {
+  width: clamp(390px, 100vw, 580px);
+}
+
+.fifth-container .codingarea img {
+  width: 100%;
 }
 
 .fifth-container .devoptions {
-  margin-top: 80px;;
-  width: 1080px;
+  margin: 80px auto;
+  width: clamp(390px, 95vw, 1080px);
   display: grid;
   grid-template-columns: repeat(4, auto);
-  justify-content: space-between;
 }
 
 .fifth-container .devoptions .option {
-  width: 212px;
+  width: clamp(190px, 44vw, 212px);
 }
 
 .fifth-container .devoptions .option h3 {
@@ -1047,7 +1065,6 @@ i {
 
 .sixth-container .launchbar {
   padding: 0px 0px 24px 0px;
-  width: 980px;
   font-size: 16.45px;
   font-weight: 500;
   line-height: 28px;
@@ -1123,7 +1140,7 @@ i {
 }
 
 .seventh-container .mainready {
-  width: clamp(390px, 100vw, 1080px);
+  width: clamp(390px, 95vw, 1080px);
   display: flex;
   justify-content: center;
   margin: 100px auto;
@@ -1194,14 +1211,20 @@ h4 {
 /* Footer */
 
 .footer {
-  height: 1000px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 100%;
+ 
+}
+
+.footers {
+  width: clamp(390px, 100vw, 1080px);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
 }
 
 .footer .column {
   width: 248px;
+  margin: 16px auto;
 }
 
 .footer .unitedstate {
@@ -1210,6 +1233,7 @@ h4 {
   flex-direction: column;
   justify-content: space-between;
 }
+
 
 
 
@@ -1779,20 +1803,14 @@ h4 {
 
 
 
+
+
+
 /* ---- RESPONSIVE ---- */
 
-@media screen and (max-width: 1022px) {
-  /* ლაშას მეშვიდე სექციისთვის */
-  .seventh-container .mainready {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 30px;
-  }
-  .sixth-container .card3 {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-  }
-}
+
+
+
 
 @media screen and (max-width: 1022px) {
   header {
@@ -1897,8 +1915,34 @@ h4 {
   .second-container .global-scale-main-container .global-scale-container {
     grid-template-columns: repeat(2, auto);
   }
-}
+ 
+  
+  /* ლაშას სექციისთვის */
+  .seventh-container .mainready {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+  }
+  .sixth-container .card3 {
+    row-gap: 16px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+  }
+  .footers {
+    grid-template-columns: repeat(2, auto);
+  }
+  .fifth-container .devoptions {
+  grid-template-columns: repeat(2, auto);
+  justify-content: center;
+  }
+  .fifth-container .devcodarea {
+    flex-direction: column;
+  }
+  .forth-container .textarea {
+    margin: 0 auto;
+  }
 
+}
 
 
 
@@ -1911,7 +1955,6 @@ h4 {
     width: 250px;
     margin-left: -18px;
   }
-
   .section-container .stripe .email-and-contact .email-address input {
     display: none;
   }
@@ -1936,11 +1979,26 @@ h4 {
   }
 }
 
+
+
 @media screen and (max-width: 768px) {
   .section-container .stripe {
     width: 368px;
   }
   
+}
+
+/* ლაშას სექცია მეშვიდე */
+@media screen and (max-width: 766px) {
+  .sixth-container .card3 {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+  }
+  .forth-container .banners {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+  }
 }
 
 
@@ -1982,11 +2040,16 @@ h4 {
   }
 }
 
+
+/* ლაშას სექციისთვის */
 @media screen and (max-width: 500px) {
     .seventh-container .mainready .second {
       flex-direction: column;
       align-items: flex-start;
       gap: 30px;
+    }
+    .footers {
+      grid-template-columns: repeat(1, auto);
     }
 }
 
