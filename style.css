@@ -662,6 +662,10 @@ i {
   height: 397.81px;
 }
 
+.third-container .slide-main .slide-container .slide .slide-head p{
+  width: 202px;
+}
+
 .third-container .slide-main .slide-container .slide .slide-head .number {
   padding-left: 16px;
   border-left: 1px solid #635BFF;
@@ -721,16 +725,28 @@ i {
   margin-right: 16px;
 }
 
-.third-container .slide-main .slide-container .slide .slide-img {
+.third-container .slide-img {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 810px;
-  height: 410px;
+  height: 440px;
+  border-radius: 10px;
 }
 
-.third-container .slide-main .slide-container .slide .slide-img img {
+.third-container .slide-img img {
   width: 100%;
   height: 100%;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  border-radius: 10px;
 }
 
+.third-container .slide-img img.active {
+  opacity: 1;
+}
 .third-container .slide-partner-sites {
   margin-top: 40px;
   display: flex;
@@ -745,8 +761,7 @@ i {
   height: 100px;
   position: relative;
 }
-
-.third-container .slide-partner-sites .slide-bmw .line {
+.third-container .slide-partner-sites .slide-bmw .line{
   position: absolute;
   top: 0;
   left: 0;
@@ -755,8 +770,7 @@ i {
   background: linear-gradient(90deg, rgba(0, 32, 96, 0.8) 100%, rgba(0, 32, 96, 0.8) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
   animation: borderGrow 10s infinite;
 }
-
-.third-container .slide-partner-sites .slide-amazon {
+.third-container .slide-partner-sites .slide-amazon{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -764,8 +778,7 @@ i {
   height: 100px;
   position: relative;
 }
-
-.third-container .slide-partner-sites .slide-amazon .line {
+.third-container .slide-partner-sites .slide-amazon .line{
   position: absolute;
   top: 0;
   left: 0;
@@ -774,8 +787,7 @@ i {
   background: linear-gradient(90deg, rgba(204, 153, 0, 0.8) 100%, rgba(204, 153, 0, 0.8) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
   animation: borderGrow 10s infinite;
 }
-
-.third-container .slide-partner-sites .slide-maersk {
+.third-container .slide-partner-sites .slide-maersk{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -783,13 +795,12 @@ i {
   height: 100px;
   position: relative;
 }
-
-.third-container .slide-partner-sites .slide-maersk .line {
+.third-container .slide-partner-sites .slide-maersk .line{
   position: absolute;
   top: 0;
   left: 0;
   right: 100%;
-  height: 1px;
+  height: 1px;  
   background: linear-gradient(90deg, rgba(0, 202, 175, 0.8) 100%, rgba(0, 131, 192, 0.8) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
   animation: borderGrow 10s infinite;
 }
@@ -802,13 +813,12 @@ i {
   height: 100px;
   position: relative;
 }
-
-.third-container .slide-partner-sites .slide-twilio .line {
+.third-container .slide-partner-sites .slide-twilio .line{
   position: absolute;
   top: 0;
   left: 0;
   right: 100%;
-  height: 1px;
+  height: 1px; 
   background: linear-gradient(90deg, rgba(174, 40, 30, 0.8) 100%, rgba(174, 40, 30, 0.8) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
   animation: borderGrow 10s infinite;
 }
