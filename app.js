@@ -5,36 +5,58 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 
 // RESPONSIVE HEADER
 
-const openBtn = document.querySelector('#burger-button');
-const btnIcon = document.querySelector('#burger-button-icon');
-const headerContainer = document.querySelector('header');
-const headerIcon = document.querySelector('.header-icon');
-const navBar = document.querySelector('nav');
-const contactBtn = document.querySelector('.contact');
-const sgnIn = document.querySelector('.sign-in');
+// const openBtn = document.querySelector('#burger-button');
+// const btnIcon = document.querySelector('#burger-button-icon');
+// const headerContainer = document.querySelector('header');
+// const headerIcon = document.querySelector('.header-icon');
+// const navBar = document.querySelector('nav');
+// const contactBtn = document.querySelector('.contact');
+// const sgnIn = document.querySelector('.sign-in');
 
+
+// openBtn.addEventListener('click', () => {
+
+//     if (openBtn.classList.contains('active')) {
+//         openBtn.classList.remove('active')
+//         headerContainer.classList.remove('active');
+//         headerIcon.classList.remove('active');
+//         navBar.classList.remove('active');
+//         contactBtn.classList.remove('active');
+//         sgnIn.classList.remove('active');
+//         btnIcon.classList.add('fa-bars')
+//         btnIcon.classList.remove('fa-xmark')
+//     } else {
+//         openBtn.classList.add('active')
+//         headerContainer.classList.add('active');
+//         headerIcon.classList.add('active');
+//         navBar.classList.add('active');
+//         contactBtn.classList.add('active');
+//         sgnIn.classList.add('active');
+//         btnIcon.classList.add('fa-xmark')
+//         btnIcon.classList.remove('fa-bars')
+//     }
+// });
+// Elements Selection
+
+const elements = [
+  '#burger-button', 
+  'header', 
+  '.header-icon', 
+  'nav', 
+  '.contact', 
+  '.sign-in'
+].map(selector => document.querySelector(selector));
+
+const openBtn = elements[0];
+const btnIcon = openBtn.querySelector('i'); 
 
 openBtn.addEventListener('click', () => {
+  const isActive = openBtn.classList.toggle('active');
+  
+  elements.slice(1).forEach(element => element.classList.toggle('active', isActive));
 
-    if (openBtn.classList.contains('active')) {
-        openBtn.classList.remove('active')
-        headerContainer.classList.remove('active');
-        headerIcon.classList.remove('active');
-        navBar.classList.remove('active');
-        contactBtn.classList.remove('active');
-        sgnIn.classList.remove('active');
-        btnIcon.classList.add('fa-bars')
-        btnIcon.classList.remove('fa-xmark')
-    } else {
-        openBtn.classList.add('active')
-        headerContainer.classList.add('active');
-        headerIcon.classList.add('active');
-        navBar.classList.add('active');
-        contactBtn.classList.add('active');
-        sgnIn.classList.add('active');
-        btnIcon.classList.add('fa-xmark')
-        btnIcon.classList.remove('fa-bars')
-    }
+  btnIcon.classList.toggle('fa-bars', !isActive);
+  btnIcon.classList.toggle('fa-xmark', isActive);
 });
 
 
@@ -42,27 +64,40 @@ openBtn.addEventListener('click', () => {
 // SLIDE CONTAINER 
 
 
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", () => {
   const lines = document.querySelectorAll(".line");
   let currentIndex = 0;
 
-  function startAnimation(index) {
-      if (index >= lines.length) {
-          index = 0;
-      }
+  const startAnimation = () => {
+      lines.forEach((line, index) => 
+          line.style.animation = index === currentIndex ? "borderGrow 10s ease-in-out infinite" : "none"
+      );
 
-      lines.forEach(line => line.style.animation = "none");
+      currentIndex = (currentIndex + 1) % lines.length;
+  };
 
-      lines[index].style.animation = "borderGrow 10s ease-in-out infinite";
-
-      setTimeout(() => {
-          startAnimation(index + 1);
-      }, 10000);
-  }
-
-  startAnimation(currentIndex);
+  setInterval(startAnimation, 10000);
+  startAnimation(); 
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+    const slides = document.querySelectorAll(".slide-img img");
+    let currentIndex = 0;
+
+    const showSlide = (index) => {
+        slides.forEach(slide => slide.classList.remove("active"));
+        slides[index].classList.add("active");
+    };
+
+    setInterval(() => {
+        currentIndex = (currentIndex + 1) % slides.length;
+        showSlide(currentIndex);
+    }, 10000); // 10 წამი (10000ms)
+});
+
+
+
+// GLOBE
 
 const vertex = `
   #ifdef GL_ES
